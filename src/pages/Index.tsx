@@ -2,12 +2,10 @@ import { Footer } from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import { Helmet } from "react-helmet-async";
 import {
-  Mail, ShieldCheck,
-  ClipboardCheck,
-  Plane,
-  Truck,
-  Syringe,
-  PillBottle,
+  Mail,
+  Clock,
+  Phone,
+  MapPin,
 } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -16,83 +14,39 @@ import { Navigation, Keyboard } from "swiper/modules";
 import { motion } from "framer-motion";
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
+import { address, directionsUrl, mapUrl, services } from '@/constant/helper';
+import ServiceCard from '@/components/ServiceCard';
 
-const services = [
+const chooseOlympic = [
   {
-    title: "Rapid Strep Testing",
-    description:
-      "Quick and convenient strep testing with professional guidance from our pharmacy team.",
-    icon: <ClipboardCheck size={22} />
+    title: "Comprehensive Services",
+    desc: `Lorem ipsum dolor sit, amet consectetur 
+                  adipisicing elit. Voluptatibus laborum temporibus, modi 
+                  expedita rerum itaque laudantium incidunt, sapiente adipisci 
+                  ut quo! Atque tempora illo aliquid aperiam quaerat quidem `
   },
-
   {
-    title: "Medication Reviews",
-    description:
-      "Personalized medication reviews to help you safely manage prescriptions and treatments.",
-    icon: <ShieldCheck size={22} />
+    title: "Comprehensive Services",
+    desc: `Lorem ipsum dolor sit, amet consectetur 
+                  adipisicing elit. Voluptatibus laborum temporibus, modi 
+                  expedita rerum itaque laudantium incidunt, sapiente adipisci 
+                  ut quo! Atque tempora illo aliquid aperiam quaerat quidem `
   },
-
   {
-    title: "Travel Vaccines",
-    description:
-      "Stay protected while traveling with recommended vaccines and travel health advice.",
-    icon: <Plane size={22} />
+    title: "Comprehensive Services",
+    desc: `Lorem ipsum dolor sit, amet consectetur 
+                  adipisicing elit. Voluptatibus laborum temporibus, modi 
+                  expedita rerum itaque laudantium incidunt, sapiente adipisci 
+                  ut quo! Atque tempora illo aliquid aperiam quaerat quidem `
   },
-
   {
-    title: "Free Delivery",
-    description:
-      "Convenient prescription delivery services to help you get your medications on time.",
-    icon: <Truck size={22} />
-  },
-
-  {
-    title: "Vaccinations & Immunizations",
-    description:
-      "Protect yourself and your family with routine and seasonal vaccination services.",
-    icon: <Syringe size={22} />
-  },
-
-  {
-    title: "Compliance Packaging",
-    description:
-      "Organized medication packaging designed to help you take medications correctly and on schedule.",
-    icon: <PillBottle size={22} />
+    title: "Comprehensive Services",
+    desc: `Lorem ipsum dolor sit, amet consectetur 
+                  adipisicing elit. Voluptatibus laborum temporibus, modi 
+                  expedita rerum itaque laudantium incidunt, sapiente adipisci 
+                  ut quo! Atque tempora illo aliquid aperiam quaerat quidem `
   }
-];
-
-type ServiceProp = {
-  index: number;
-  title: string;
-  description: string;
-  icon: React.ReactNode;
-}
-
-const ServiceCard = ({ index, title, description, icon }: ServiceProp) => {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.45, delay: index * 0.08 }}
-      viewport={{ once: true, amount: 0.3 }}
-      className="h-full"
-    >
-      <div className="group flex h-full min-h-65 flex-col rounded-3xl border border-emerald-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-emerald-200 hover:shadow-xl">
-        <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-700 transition group-hover:bg-emerald-600 group-hover:text-white">
-          {icon}
-        </div>
-
-        <h3 className="text-xl font-bold text-slate-950">
-          {title}
-        </h3>
-
-        <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-600">
-          {description}
-        </p>
-      </div>
-    </motion.div>
-  );
-};
+]
 
 const Index = () => {
   const navigate = useNavigate();
@@ -133,7 +87,13 @@ const Index = () => {
 
             {/* Text Content */}
             <div className="lg:px-12 px-5 md:px-8 relative z-10 flex h-full items-center justify-center text-center">
-              <div className="flex flex-col items-start w-full h-full">
+              <motion.div
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.45, delay: 0.08 }}
+                viewport={{ once: true, amount: 0.3 }} 
+                className="flex flex-col items-start w-full h-full"
+              >
                 <span className="text-accent-grey w-58 mb-4 mt-14 inline-block rounded-full bg-white/20 px-4 py-1 text-sm backdrop-blur-md">
                   Trusted Community Pharmacy
                 </span>
@@ -167,8 +127,53 @@ const Index = () => {
                     Contact Us
                   </Button>
                 </div>
-              </div>
+              </motion.div>
             </div>
+          </section>
+
+          <section className="bg-access-grey lg:px-12 px-5 md:px-8 py-16">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.45, delay: 0.08 }}
+              viewport={{ once: true, amount: 0.3 }}
+              className="mx-auto max-w-7xl"
+            >
+              <div className="mx-auto mb-10 max-w-3xl text-center">
+                <span className="mt-5 text-2xl tracking-tight text-main md:text-4xl">
+                  Why Choose Olympic Park Pharmacy
+                </span>
+              </div>
+              <div className="grid items-start gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+                <div className="relative">
+                  <img
+                    src="/choose.jpg"
+                    alt="Pharmacist helping customers"
+                    className="w-full h-120 object-cover rounded-3xl shadow-2xl"
+                  />
+
+                  <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur rounded-2xl p-5 shadow-lg">
+                    <p className="text-blue-900 font-bold text-xl">
+                      Friendly, local pharmacy care
+                    </p>
+                    <p className="text-slate-600 mt-1">
+                      Supporting our community with trusted health services.
+                    </p>
+                  </div>
+                </div>
+
+                <ul className="list-disc pl-6 space-y-3">
+                  {chooseOlympic.map((item, index) => (
+                    <li key={index} className="text-gray-600 text-left">
+                      <span className="text-black font-bold">
+                        {item.title}
+                      </span>
+                      : {item.desc}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </motion.div>
           </section>
 
           {/* Prescription Section */}
@@ -180,14 +185,13 @@ const Index = () => {
               viewport={{ once: true, amount: 0.3 }}
               className="mx-auto max-w-7xl"
             >
-            {/* <div className="mx-auto max-w-7xl"> */}
               <div className="mx-auto mb-12 max-w-3xl text-center">
 
-                <span className="mt-5 text-4xl font-bold tracking-tight text-main sm:text-5xl">
+                <span className="mt-5 text-2xl tracking-tight text-main md:text-4xl">
                   Switching pharmacies made simple.
                 </span>
 
-                <p className="mt-4 text-lg leading-relaxed text-gray-600">
+                <p className="mt-4 text-lg leading-relaxed text-gray-600 font-light">
                   Send us your details and our pharmacy team will help transfer your prescription safely and conveniently.
                 </p>
               </div>
@@ -365,51 +369,55 @@ const Index = () => {
 
           {/* Services Preview */}
           <section className="bg-white lg:px-12 px-5 md:px-8 py-16">
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.45, delay: 0.08 }}
-              viewport={{ once: true, amount: 0.3 }}
-              className="mx-auto max-w-7xl"
-            >
+            <div className="mx-auto max-w-7xl">
               <div className="text-center">
-                <span className="mt-5 text-4xl font-bold tracking-tight text-main sm:text-5xl">
-                  Pharmacy Services
+                <span className="mt-5 text-2xl tracking-tight text-main md:text-4xl">
+                  Our Services
                 </span>
-                <p className="mt-4 text-lg leading-relaxed text-gray-600">
+                <p className="mt-4 text-lg font-light leading-relaxed text-gray-600">
                   Helpful pharmacy services designed around your health needs.
                 </p>
               </div>
-
-              <Swiper
-                spaceBetween={24}
-                slidesPerView={1}
-                keyboard={{ enabled: true }}
-                navigation
-                modules={[Navigation, Keyboard]}
-                className="w-full pb-12 [&_.swiper-slide]:h-auto [&_.swiper-slide]:flex mt-10"
-                breakpoints={{
-                  640: {
-                    slidesPerView: 2,
-                    spaceBetween: 24,
-                  },
-                  1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 28,
-                  },
-                }}
-              >
+              <div className='md:hidden'>
+                <Swiper
+                  spaceBetween={24}
+                  slidesPerView={1}
+                  keyboard={{ enabled: true }}
+                  navigation
+                  modules={[Navigation, Keyboard]}
+                  className="w-full pb-12 [&_.swiper-slide]:h-auto [&_.swiper-slide]:flex mt-10"
+                  breakpoints={{
+                    640: {
+                      slidesPerView: 2,
+                      spaceBetween: 24,
+                    },
+                    1024: {
+                      slidesPerView: 3,
+                      spaceBetween: 28,
+                    },
+                  }}
+                >
+                  {services.map((service, index) => (
+                    <SwiperSlide key={service.title} className="h-auto mb-12">
+                      <ServiceCard index={index} {...service} />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
+              <div className="hidden md:grid xl:grid-cols-3 md:grid-cols-2 gap-8 mt-10">
                 {services.map((service, index) => (
-                  <SwiperSlide key={service.title} className="h-auto mb-12">
-                    <ServiceCard index={index} {...service} />
-                  </SwiperSlide>
+                  <ServiceCard
+                    key={service.title}
+                    index={index}
+                    {...service}
+                  />
                 ))}
-              </Swiper>
-            </motion.div>
+              </div>
+            </div>
 
             <Button
               onClick={()=>navigate('/services')}
-              className="bg-main px-6 py-6 font-semibold text-white shadow-lg cursor-pointer transition hover:bg-main-light"
+              className="bg-main px-6 py-6 mt-8 font-semibold text-white shadow-lg cursor-pointer transition hover:bg-main-light"
             >
               View All Services
             </Button>
@@ -459,6 +467,56 @@ const Index = () => {
                 </p>
               </div>
             </motion.div>
+          </section>
+
+          <section className="pb-10 lg:px-12 px-5 md:px-8 w-full bg-slate-50 ">
+            <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div className="overflow-hidden">
+                <iframe
+                  title="Olympic Park Pharmacy Location"
+                  src={mapUrl}
+                  className="h-112.5 w-full border-0 rounded-2xl"
+                  loading="lazy"
+                  allowFullScreen
+                />
+              </div>
+
+              <div className="shadow-md border border-accent-grey bg-linear-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
+                <h3 className="text-xl font-bold mb-4 text-left" style={{ color: '#205090' }}>Visit Our Pharmacy</h3>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <MapPin className="w-5 h-5 text-main mt-1" />
+                    <div className="text-left">
+                      <p className="font-semibold text-gray-900">{address}</p>
+                      <p className="text-sm text-gray-600">Sydney, NSW 2127</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Phone className="w-5 h-5 text-main mt-1" />
+                    <div className="text-left">
+                      <p className="font-semibold text-gray-900">+1 (555) 123-4567</p>
+                      <p className="text-sm text-gray-600">Call us anytime</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Clock className="w-5 h-5 text-main mt-1" />
+                    <div className="text-left">
+                      <p className="font-semibold text-gray-900">Mon-Fri: 9am-6pm</p>
+                      <p className="text-sm text-gray-600">Sat: 9am-2pm, Sun: Closed</p>
+                    </div>
+                  </div>
+                </div>
+
+                  <a
+                  href={directionsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full mt-6 inline-flex items-center justify-center rounded-full bg-main px-6 py-3 text-white font-semibold hover:bg-main-light transition"
+                >
+                  Get Directions
+                </a>
+              </div>
+            </div>
           </section>
         </main>
 

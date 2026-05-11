@@ -8,9 +8,9 @@ import { useLocation } from "react-router-dom";
 
 const links = [
   { to: "/", label: "Home" },
-  { to: "/about", label: "About" },
   { to: "/services", label: "Services" },
-  { to: "/contact", label: "Contact" },
+  { to: "/about", label: "About Us" },
+  { to: "/contact", label: "Contact Us" },
 ];
 
 const Navbar = () => {
@@ -44,7 +44,7 @@ const Navbar = () => {
                 <NavLink
                   to={l.to}
                   end={l.to === "/"}
-                  className={`text-base font-medium transition-colors ${pathname === '/' ? 'hover:text-accent-grey text-accent-grey font-light' : 'hover:text-main-light text-muted-foreground'}`}
+                  className={`text-base font-medium transition-colors ${pathname === '/' ? 'hover:text-accent-grey text-accent-grey' : 'hover:text-main-light text-muted-foreground'} font-light`}
                   activeClassName={`${pathname === '/' ? 'text-white' : 'text-main'} font-semibold`}
                 >
                   {l.label}
@@ -56,7 +56,7 @@ const Navbar = () => {
           <Button 
             className="h-8 px-3 py-2.5 bg-main text-white font-semibold shadow-md hover:bg-main-light] transition"
           >
-            Book Appointment
+            Book Now
           </Button>
         </div>
 
