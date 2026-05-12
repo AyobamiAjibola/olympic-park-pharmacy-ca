@@ -9,17 +9,39 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog"
+import { 
+    Pill,
+    ShieldCheck,
+    Truck,
+    Stethoscope,
+    Activity,
+    PackageCheck,
+    Plane,
+    TestTube,
+    Syringe
+ } from "lucide-react";
 
-type ServiceProp = {
+export type ServiceProp = {
   index: number;
   title: string;
   desc: string;
   short_desc: string;
-  icon: React.ReactNode;
   isServicePage?: boolean;
 }
 
-export default function ServiceCard({ isServicePage=false, index, title, short_desc, desc, icon }: ServiceProp) {
+const servicesIcons =[
+   <Pill size={22} />,
+   <ShieldCheck size={22} />,
+   <Truck size={22} />,
+   <Stethoscope size={22} />,
+   <Activity size={22} />,
+   <PackageCheck size={22} />,
+   <Plane size={22} />,
+   <TestTube size={22} />,
+   <Syringe size={22} />
+]
+
+export default function ServiceCard({ isServicePage=false, index, title, short_desc, desc }: ServiceProp) {
     const [isService, setIsService] = useState<boolean>(false);
     
     return (
@@ -31,9 +53,9 @@ export default function ServiceCard({ isServicePage=false, index, title, short_d
                 viewport={{ once: true, amount: 0.3 }}
                 className="h-full"
             >
-                <div className={`group flex h-full min-h-65 max-h-80 flex-col rounded-3xl border  bg-white p-6 shadow-sm transition-all duration-300 ${isServicePage ? 'hover:-translate-y-2 hover:shadow-xl' : ''}`}>
+                <div className={`group flex h-full min-h-65 max-h-90 flex-col rounded-3xl border border-black/10 bg-white p-6 shadow-sm transition-all duration-300 ${isServicePage ? 'hover:-translate-y-2 hover:shadow-xl' : ''}`}>
                     <div className={`mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-700 transition ${isServicePage && 'group-hover:bg-emerald-600 group-hover:text-white'}`}>
-                        {icon}
+                        {servicesIcons[index]}
                     </div>
 
                     <h3 className="text-xl font-bold text-slate-950 text-left">

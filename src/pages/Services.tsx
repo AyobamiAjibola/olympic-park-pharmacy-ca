@@ -6,10 +6,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Keyboard } from "swiper/modules";
-import { services } from "@/constant/helper";
 import ServiceCard from "@/components/ServiceCard";
+import { useTranslation } from "react-i18next";
+import type { ServicesTypes } from "./Index";
 
 export default function Services() {
+  const { t } = useTranslation();
+  const services = t(
+    "HomePage.services.services",
+    { returnObjects: true }
+  ) as ServicesTypes[];
+
   return (
     <>
         <Helmet>
@@ -31,10 +38,10 @@ export default function Services() {
             <section className="pb-10 lg:px-12 px-5 md:px-8 w-full bg-slate-50 ">
               <div className="flex flex-col justify-center items-center pt-15">
                 <span className="inline-block text-3xl md:text-6xl font-bold text-main">
-                  Our Services
+                  {t("HomePage.services.title")}
                 </span>
                 <span className="inline-block text-sm md:text-lg font-normal text-slate-600">
-                  Helpful pharmacy services designed around your health needs.
+                  {t("HomePage.services.subTitle")}
                 </span>
 
                 <img

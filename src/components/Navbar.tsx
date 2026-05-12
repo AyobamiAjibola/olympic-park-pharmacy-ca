@@ -5,17 +5,28 @@ import { Button } from "../components/ui/button";
 import { cn } from "../lib/utils";
 import logo from "../assets/logo.png";
 import { useLocation } from "react-router-dom";
-
-const links = [
-  { to: "/", label: "Home" },
-  { to: "/services", label: "Services" },
-  { to: "/about", label: "About Us" },
-  { to: "/contact", label: "Contact Us" },
-];
+import { useTranslation } from "react-i18next";
+import LangSelect from "./LangSelect";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const {pathname} = useLocation();
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lang: string) => {
+    i18n.changeLanguage(lang);
+    localStorage.setItem("language", lang);
+  };
+
+  const links = [
+    { to: "/", label: t("Navigation.home")},
+    { to: "/services", label: t("Navigation.services")},
+    { to: "/about", label: t("Navigation.about")},
+    { to: "/contact", label: t("Navigation.contact")},
+    { to: "/careers", label: t("Navigation.career")}
+  ];
+
+  const isHome = pathname === '/';
 
   return (
     <header className={`sticky top-0 z-50 w-full backdrop-blur-md ${pathname === '/' ? '' : 'border-b border-grey-border bg-background/80'}`}>
@@ -58,8 +69,15 @@ const Navbar = () => {
           >
             Book Now
           </Button>
+
+          <LangSelect 
+            changeLanguage={changeLanguage}
+            lang={i18n.language}
+            isHome={isHome}
+          />
         </div>
 
+        
         <button
           aria-label="Toggle menu"
           className="md:hidden text-foreground"
@@ -95,6 +113,13 @@ const Navbar = () => {
             </Button>
           </li>
         </ul>
+        <div className="flex justify-center items-center my-6">
+          <LangSelect 
+          changeLanguage={changeLanguage}
+          lang={i18n.language}
+          isHome={isHome}
+        />
+        </div>
       </div>
     </header>
   );

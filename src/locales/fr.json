@@ -1,0 +1,183 @@
+{
+  "Navigation": {
+    "home": "Accueil",
+    "services": "Services",
+    "about": "À propos de nous",
+    "contact": "Contactez-nous",
+    "career": "Carrières",
+    "btn": "Réserver maintenant"
+  },
+  "HomePage": {
+    "hero": {
+      "badge": "Pharmacie communautaire de confiance",
+      "title": "Bienvenue",
+      "subText": "Nous rendons les soins pharmaceutiques simples, accessibles et fiables. Que vous ayez besoin d’ordonnances, de conseils sur les médicaments ou d’un soutien pharmaceutique quotidien, notre équipe est là pour vous aider.",
+      "btnText1": "Transférer une ordonnance",
+      "btnText2": "Contactez-nous"
+    },
+    "chooseOlympic": {
+      "title": "Pourquoi choisir",
+      "why_choose": [
+        {
+          "title": "Équipe pharmaceutique expérimentée",
+          "desc": "Nos pharmaciens agréés et professionnels de la santé se consacrent à vous aider à prendre des décisions éclairées concernant vos médicaments et votre bien-être général."
+        },
+        {
+          "title": "Éducation et accompagnement des patients",
+          "desc": "Nous prenons le temps de répondre à vos questions et de nous assurer que vous comprenez vos médicaments, vos plans de traitement et vos options de soins de santé."
+        },
+        {
+          "title": "Soins axés sur la famille",
+          "desc": "Des enfants aux aînés, nous offrons des services pharmaceutiques adaptés à chaque étape de la vie."
+        },
+        {
+          "title": "Transferts d’ordonnances pratiques",
+          "desc": "Changer de pharmacie est rapide et sans tracas — notre équipe s’occupe du processus pour vous."
+        },
+        {
+          "title": "Solutions de soins de santé accessibles",
+          "desc": "Nous nous efforçons de rendre les soins pharmaceutiques simples, pratiques et accessibles à tous dans la communauté."
+        }
+      ],
+      "text1": "Des soins pharmaceutiques amicaux et locaux.",
+      "text2": "Soutenir notre communauté avec des services de santé fiables."
+    },
+    "switchPharmacy": {
+      "title": "Changer de pharmacie en toute simplicité.",
+      "subTitle": "Envoyez-nous vos informations et notre équipe pharmaceutique vous aidera à transférer votre ordonnance en toute sécurité et commodité.",
+      "howTo": {
+        "title": "Comment ça fonctionne",
+        "subTitle": "Nous facilitons le processus de transfert en contactant votre pharmacie actuelle et en vous guidant à travers les prochaines étapes.",
+        "steps": [
+          {
+            "num": "1",
+            "title": "Soumettez votre demande",
+            "subTitle": "Partagez vos coordonnées et les informations de votre pharmacie actuelle."
+          },
+          {
+            "num": "2",
+            "title": "Nous gérons le transfert",
+            "subTitle": "Notre équipe contacte votre pharmacie en votre nom."
+          },
+          {
+            "num": "3",
+            "title": "Recevez une notification",
+            "subTitle": "Nous vous informerons lorsque votre médicament sera prêt."
+          }
+        ],
+        "bottomText": "Sécurisé, confidentiel et pris en charge par notre équipe pharmaceutique."
+      },
+      "transfer": {
+        "title": "Transférez votre ordonnance",
+        "subTitle": "Remplissez le formulaire ci-dessous et nous vous contacterons pour vous aider avec le transfert de votre ordonnance.",
+        "fn": "Nom complet",
+        "ph": "Numéro de téléphone",
+        "email": "Adresse e-mail",
+        "currentPharm": {
+          "name": "Pharmacie actuelle",
+          "placeholder": "Nom de la pharmacie"
+        },
+        "pharmPhone": "Téléphone de la pharmacie",
+        "prescription": {
+          "name": "Détails de l’ordonnance",
+          "placeholder": "Noms des médicaments, numéros d’ordonnance ou toute information supplémentaire."
+        },
+        "btnText": "Soumettre la demande de transfert",
+        "bottomText": "Veuillez éviter de partager des informations médicales sensibles inutiles."
+      }
+    },
+    "services": {
+      "title": "Nos services",
+      "subTitle": "Des services pharmaceutiques utiles conçus selon vos besoins de santé.",
+      "services": [
+        {
+          "title": "Préparation magistrale",
+          "desc": "Chaque patient a des besoins de santé uniques, et les médicaments standards ne conviennent pas toujours parfaitement. Nos solutions médicamenteuses personnalisées sont conçues pour offrir des options de traitement adaptées à votre condition médicale, votre mode de vie, vos allergies, vos besoins de dosage ou vos préférences personnelles. Grâce à nos services spécialisés de préparation magistrale, nous pouvons collaborer avec votre professionnel de la santé afin de créer des médicaments dans des concentrations, formes posologiques ou combinaisons personnalisées qui peuvent ne pas être disponibles commercialement. Ce service est particulièrement bénéfique pour les enfants ayant de la difficulté à avaler des comprimés, les patients nécessitant des formulations sans allergènes, les personnes ayant besoin d’ajustements de dosage spécifiques ou celles vivant avec des maladies chroniques nécessitant des soins personnalisés. Les médicaments personnalisés peuvent améliorer l’efficacité du traitement, l’adhésion aux médicaments et le confort global du patient. Notre équipe pharmaceutique s’engage à fournir des solutions sûres, précises et de haute qualité tout en vous accompagnant tout au long de votre parcours de soins.",
+          "short_desc": "Nous pouvons préparer des médicaments personnalisés adaptés à vos besoins de santé et exigences de traitement."
+        },
+        {
+          "title": "Facturation directe aux assurances",
+          "desc": "La gestion des coûts de santé et des réclamations d’assurance peut parfois être complexe, surtout lorsqu’il s’agit de traitements ou d’ordonnances continues. Afin de simplifier le processus, notre pharmacie offre la facturation directe aux assurances pour les ordonnances et services admissibles. Cela signifie que nous travaillons directement avec plusieurs grands fournisseurs d’assurance en votre nom, réduisant ainsi les paiements initiaux et la paperasse. La facturation directe offre plus de commodité, permet de gagner du temps et aide à garantir que vous receviez les médicaments et services de santé dont vous avez besoin sans stress financier inutile ni retard. Notre équipe expérimentée peut vous aider à vérifier votre couverture, répondre à vos questions liées à l’assurance et vous aider à mieux comprendre vos avantages pharmaceutiques.",
+          "short_desc": "Pour votre commodité, nous pouvons facturer directement votre fournisseur d’assurance pour les ordonnances et services admissibles."
+        },
+        {
+          "title": "Livraison gratuite des ordonnances",
+          "desc": "Nous comprenons qu’il n’est pas toujours pratique de se rendre à la pharmacie, surtout pour les personnes occupées, les aînés, les patients à mobilité réduite ou ceux en convalescence. C’est pourquoi nous offrons un service gratuit de livraison d’ordonnances directement à votre domicile ou lieu de travail afin de vous aider à recevoir vos médicaments de façon sécuritaire et ponctuelle. Notre service de livraison est conçu pour offrir confort, commodité et tranquillité d’esprit en réduisant les déplacements inutiles et en facilitant le respect de votre plan de traitement. Un accès fiable aux médicaments joue un rôle essentiel dans le maintien d’une bonne santé, particulièrement pour les personnes vivant avec des maladies chroniques ou suivant des traitements continus.",
+          "short_desc": "Profitez d’une livraison pratique et fiable de vos médicaments directement à votre domicile ou lieu de travail."
+        },
+        {
+          "title": "Pharmacien prescripteur",
+          "desc": "L’accès rapide aux soins de santé est essentiel, surtout lorsqu’il s’agit de maladies courantes ou de préoccupations liées aux médicaments. Notre pharmacie dispose d’un pharmacien prescripteur autorisé pouvant évaluer certaines conditions mineures et prescrire les médicaments appropriés. Ce service permet aux patients de recevoir des soins professionnels rapidement et commodément, souvent sans avoir besoin d’un rendez-vous médical distinct. Que vous ayez besoin d’un traitement pour des infections mineures, des allergies, des problèmes de peau, des symptômes de rhume ou de grippe, des renouvellements d’ordonnances ou un soutien en gestion des médicaments, notre pharmacien est là pour vous aider.",
+          "short_desc": "Notre pharmacie dispose d’un pharmacien autorisé pouvant évaluer et prescrire des médicaments pour certaines conditions et besoins de santé."
+        },
+
+        {
+          "title": "Fournitures complètes pour le diabète",
+          "desc": "Une bonne gestion du diabète nécessite une surveillance constante, des fournitures médicales fiables et un soutien continu. Notre pharmacie propose une vaste gamme de produits pour les soins du diabète conçus pour aider les patients à mieux gérer leur condition et maintenir un mode de vie plus sain. Nous offrons des glucomètres, bandelettes de test, lancettes, fournitures d’insuline, chaussettes diabétiques, dispositifs de surveillance et autres produits essentiels provenant de marques de confiance. Avoir accès aux bonnes fournitures diabétiques est essentiel pour maintenir une glycémie stable, prévenir les complications et soutenir la santé à long terme.",
+          "short_desc": "Nous offrons une vaste sélection de produits pour le diabète, incluant glucomètres, bandelettes, lancettes et autres fournitures essentielles."
+        },
+
+        {
+          "title": "Emballage de conformité",
+          "desc": "La gestion de plusieurs médicaments peut parfois devenir complexe, surtout pour les patients prenant plusieurs ordonnances à différents moments de la journée. Notre service d’emballage de conformité est conçu pour simplifier la gestion des médicaments en organisant vos médicaments dans des emballages clairement identifiés et faciles à suivre, classés par date et heure. Ce service aide à réduire les doses oubliées, les erreurs médicamenteuses et la confusion en s’assurant que les médicaments sont pris correctement et selon l’horaire prescrit. L’emballage de conformité est particulièrement bénéfique pour les aînés, les personnes vivant avec des maladies chroniques, les aidants naturels et les patients ayant des routines médicamenteuses complexes.",
+          "short_desc": "Un emballage organisé conçu pour vous aider à prendre vos médicaments correctement et à temps."
+        },
+
+        {
+          "title": "Consultation voyage",
+          "desc": "Vivre avec une stomie nécessite des produits fiables, des soins personnalisés et un soutien attentionné. Notre pharmacie offre une gamme complète de produits de soins pour stomie conçus pour aider les patients à maintenir confort, confiance et qualité de vie au quotidien. Nous proposons différents sacs, barrières cutanées, adhésifs, produits nettoyants et accessoires provenant de fabricants de confiance. Notre équipe comprend la nature sensible des soins de stomie et s’engage à offrir une assistance respectueuse, discrète et personnalisée.",
+          "short_desc": "Nous offrons une large gamme de fournitures pour stomie, incluant sacs, barrières cutanées et accessoires pour le confort et les soins quotidiens."
+        },
+
+        {
+          "title": "Test rapide et précis du streptocoque",
+          "desc": "Les maux de gorge et symptômes associés peuvent être inconfortables et parfois indiquer une infection streptococcique nécessitant des soins rapides. Notre pharmacie offre des services rapides et précis de dépistage du streptocoque afin d’identifier rapidement les infections et fournir des conseils appropriés pour le traitement et les prochaines étapes. Un diagnostic précoce est important puisque les infections non traitées peuvent entraîner des complications et un inconfort prolongé.",
+          "short_desc": "Protégez-vous et votre famille grâce à notre gamme de vaccins, incluant les vaccins contre la grippe et autres services d’immunisation."
+        },
+        {
+          "title": "Vaccinations et vaccins contre la grippe",
+          "desc": "Les vaccinations sont l’un des moyens les plus efficaces de vous protéger, ainsi que votre famille et votre communauté, contre les maladies évitables. Notre pharmacie offre divers services de vaccination et d’immunisation, incluant les vaccins contre la grippe saisonnière, les immunisations de routine et certains vaccins de voyage administrés par des professionnels qualifiés dans un environnement sécuritaire et pratique. Les immunisations jouent un rôle essentiel dans la réduction de la propagation des maladies infectieuses et dans la protection de la santé publique.",
+          "short_desc": "Protégez-vous et votre famille grâce à notre gamme de vaccins, incluant les vaccins contre la grippe saisonnière et autres services d’immunisation."
+        }
+      ],
+      "btnText": "Voir tous les services"
+    },
+    "subscribe": {
+      "title": "Recevez des mises à jour de la pharmacie et des rappels santé",
+      "subTitle": "Abonnez-vous pour recevoir des mises à jour utiles, des annonces et des nouvelles de la pharmacie.",
+      "placeholder": "Entrez votre e-mail",
+      "btnText": "S’abonner",
+      "bottomText": "Aucun spam. Vous pouvez vous désabonner à tout moment."
+    }
+  },
+  "map": {
+    "title": "Visitez notre pharmacie",
+    "callUs": "Appelez-nous à tout moment",
+    "btnText": "Obtenir l’itinéraire"
+  },
+  "footer": {
+    "text1": "Prendre soin de votre santé, près de chez vous.",
+    "text2": "Sur demande, le titulaire du permis fournira le nom et le numéro de permis d’exercice de tout membre réglementé qui fournit un service pharmaceutique au patient ou qui exerce la pharmacie à l’égard du patient."
+  },
+  "About": {
+    "title": "À propos de nous",
+    "subTitle": "Engagés à fournir des services de santé accessibles, fiables et axés sur la communauté à Calgary.",
+    "paragraphs": [
+      "Chez Olympic Park Pharmacy, nous nous engageons à offrir des soins de santé attentionnés, personnalisés et accessibles aux individus et aux familles de notre communauté. Notre objectif est de créer un environnement accueillant où chaque patient se sent valorisé, soutenu et en confiance tout au long de son parcours de santé.",
+      "Grâce à plusieurs années d’expérience professionnelle en pharmacie, tant à l’international qu’au Canada, la direction de notre pharmacie apporte une solide expertise, un grand sens du service et un véritable engagement envers le bien-être des patients. Notre propriétaire a débuté sa carrière en pharmacie en Inde avant d’obtenir son permis d’exercice canadien en 2016. Depuis, il exerce au Canada depuis près de dix ans, en servant des communautés sous les juridictions de la Saskatchewan et de la Colombie-Britannique. Cette expérience diversifiée nous permet d’offrir une compréhension approfondie des soins aux patients, des services pharmaceutiques et des normes de santé à travers différentes provinces canadiennes.",
+      "Chez Olympic Park Pharmacy, nous croyons que les soins pharmaceutiques vont bien au-delà de la simple distribution de médicaments. Nous prenons le temps de comprendre vos besoins de santé uniques afin d’offrir des conseils personnalisés, un accompagnement fiable et un soutien continu pour vous aider à atteindre de meilleurs résultats de santé. Que vous ayez besoin de médicaments sur ordonnance, d’évaluations de médicaments, de soutien pour les maladies chroniques, de vaccinations, de prescriptions pour des affections mineures, de consultations voyage ou de solutions médicamenteuses personnalisées, notre équipe expérimentée est là pour vous accompagner à chaque étape.",
+      "Nous sommes fiers d’offrir une vaste gamme de services de santé conçus pour rendre vos soins plus simples et accessibles. De la prescription par le pharmacien pour certaines affections mineures à la gestion des médicaments, en passant par l’emballage de conformité, les fournitures pour le diabète et la livraison gratuite des ordonnances, notre priorité est de fournir des solutions pratiques adaptées à votre mode de vie et à vos besoins.",
+      "Notre équipe est dévouée à créer une atmosphère chaleureuse, conviviale et professionnelle où votre santé et votre bien-être demeurent nos principales priorités. Nous comprenons que la confiance est essentielle dans le domaine des soins de santé, et nous sommes honorés d’être un partenaire de confiance pour nos patients et notre communauté.",
+      "Chez Olympic Park Pharmacy, nous sommes passionnés par l’idée d’aider vous et votre famille à vivre en meilleure santé grâce à des soins de qualité, un service fiable et des relations humaines durables.",
+      "Prenez rendez-vous dès aujourd’hui et découvrez comment Olympic Park Pharmacy peut répondre à vos besoins de santé grâce à des soins personnalisés et une expertise professionnelle.",
+      "Merci de nous faire confiance pour vos soins et de choisir Olympic Park Pharmacy comme partenaire de votre santé."
+    ]
+  },
+  "Career": {
+    "badge": "Nous recrutons",
+    "title": "Rejoignez l’équipe d’Olympic Park Pharmacy",
+    "subTitle": "Nous sommes toujours à la recherche de professionnels passionnés, attentionnés et dévoués qui s’engagent à soutenir la santé et le bien-être de notre communauté. Découvrez nos postes actuellement disponibles et postulez via notre formulaire de candidature en ligne.",
+    "btnText": "Voir les postes disponibles",
+    "bottomText": "Les opportunités actuelles et les candidatures sont gérées en ligne."
+  }
+}

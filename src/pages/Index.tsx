@@ -14,42 +14,45 @@ import { Navigation, Keyboard } from "swiper/modules";
 import { motion } from "framer-motion";
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
-import { address, directionsUrl, mapUrl, services } from '@/constant/helper';
+import { address, directionsUrl, mapUrl } from '@/constant/helper';
 import ServiceCard from '@/components/ServiceCard';
+import { useTranslation } from "react-i18next";
 
-const chooseOlympic = [
-  {
-    title: "Comprehensive Services",
-    desc: `Lorem ipsum dolor sit, amet consectetur 
-                  adipisicing elit. Voluptatibus laborum temporibus, modi 
-                  expedita rerum itaque laudantium incidunt, sapiente adipisci 
-                  ut quo! Atque tempora illo aliquid aperiam quaerat quidem `
-  },
-  {
-    title: "Comprehensive Services",
-    desc: `Lorem ipsum dolor sit, amet consectetur 
-                  adipisicing elit. Voluptatibus laborum temporibus, modi 
-                  expedita rerum itaque laudantium incidunt, sapiente adipisci 
-                  ut quo! Atque tempora illo aliquid aperiam quaerat quidem `
-  },
-  {
-    title: "Comprehensive Services",
-    desc: `Lorem ipsum dolor sit, amet consectetur 
-                  adipisicing elit. Voluptatibus laborum temporibus, modi 
-                  expedita rerum itaque laudantium incidunt, sapiente adipisci 
-                  ut quo! Atque tempora illo aliquid aperiam quaerat quidem `
-  },
-  {
-    title: "Comprehensive Services",
-    desc: `Lorem ipsum dolor sit, amet consectetur 
-                  adipisicing elit. Voluptatibus laborum temporibus, modi 
-                  expedita rerum itaque laudantium incidunt, sapiente adipisci 
-                  ut quo! Atque tempora illo aliquid aperiam quaerat quidem `
-  }
-]
+type WhyChooseItem = {
+  title: string;
+  desc: string;
+};
+
+type HowToSteps = {
+  num: string;
+  title: string;
+  subTitle: string;
+};
+
+export type ServicesTypes = {
+  title: string;
+  desc: string;
+  short_desc: string;
+}
 
 const Index = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
+
+  const whyChoose = t(
+    "HomePage.chooseOlympic.why_choose",
+    { returnObjects: true }
+  ) as WhyChooseItem[];
+
+  const steps = t(
+    "HomePage.switchPharmacy.howTo.steps",
+    { returnObjects: true }
+  ) as HowToSteps[];
+
+  const services = t(
+    "HomePage.services.services",
+    { returnObjects: true }
+  ) as ServicesTypes[];
 
   return (
     <>
@@ -91,22 +94,22 @@ const Index = () => {
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.45, delay: 0.08 }}
-                viewport={{ once: true, amount: 0.3 }} 
+                viewport={{ once: true, amount: 0.08 }} 
                 className="flex flex-col items-start w-full h-full"
               >
-                <span className="text-accent-grey w-58 mb-4 mt-14 inline-block rounded-full bg-white/20 px-4 py-1 text-sm backdrop-blur-md">
-                  Trusted Community Pharmacy
+                <span className="text-accent-grey w-auto mb-4 mt-14 inline-block rounded-full bg-white/20 px-4 py-1 text-sm backdrop-blur-md">
+                  {t("HomePage.hero.badge")}
                 </span>
 
                 <span className="hidden md:block text-white text-4xl mt-6 font-bold leading-tight sm:text-5xl md:text-6xl text-left">
-                  Welcome to Olympic Park <br/> Pharmacy
+                  {t("HomePage.hero.title")} Olympic Park <br/> Pharmacy
                 </span>
                 <span className="block md:hidden text-white text-4xl mt-6 font-bold leading-tight sm:text-5xl md:text-6xl text-left">
-                  Welcome to Olympic Park Pharmacy
+                  {t("HomePage.hero.title")} Olympic Park Pharmacy
                 </span>
 
                 <p className="mt-6 text-lg leading-tight text-white md:text-xl text-left md:max-w-2xl font-light">
-                  We make pharmacy care simple, accessible, and dependable. Whether you need prescriptions, medication guidance, or everyday pharmacy support, our team is here to help.
+                  {t("HomePage.hero.subText")}
                 </p>
 
                 <div className="mt-10 flex flex-wrap justify-center gap-4">
@@ -118,13 +121,13 @@ const Index = () => {
                     }}
                     className="cursor-pointer py-6 rounded-xl bg-main px-6 font-medium text-white shadow-lg transition hover:bg-main-light"
                   >
-                    Transfer Prescription
+                    {t("HomePage.hero.btnText1")}
                   </Button>
 
                   <Button 
                     onClick={()=>navigate('/contact')}
                     className="cursor-pointer py-6 rounded-xl border border-white/40 bg-white/10 px-6 font-medium text-white backdrop-blur-md transition hover:bg-white/20">
-                    Contact Us
+                    {t("HomePage.hero.btnText2")}
                   </Button>
                 </div>
               </motion.div>
@@ -136,12 +139,12 @@ const Index = () => {
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.45, delay: 0.08 }}
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.08 }}
               className="mx-auto max-w-7xl"
             >
               <div className="mx-auto mb-10 max-w-3xl text-center">
                 <span className="mt-5 text-2xl tracking-tight text-main md:text-4xl">
-                  Why Choose Olympic Park Pharmacy
+                  {t("HomePage.chooseOlympic.title")} Olympic Park Pharmacy
                 </span>
               </div>
               <div className="grid items-start gap-6 lg:grid-cols-[0.9fr_1.1fr]">
@@ -149,21 +152,21 @@ const Index = () => {
                   <img
                     src="/choose.jpg"
                     alt="Pharmacist helping customers"
-                    className="w-full h-120 object-cover rounded-3xl shadow-2xl"
+                    className="w-full h-90 object-cover rounded-3xl shadow-2xl"
                   />
 
-                  <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur rounded-2xl p-5 shadow-lg">
-                    <p className="text-blue-900 font-bold text-xl">
-                      Friendly, local pharmacy care
+                  <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur rounded-2xl p-2 shadow-lg">
+                    <p className="text-blue-900 font-bold text-lg">
+                      {t("HomePage.chooseOlympic.text1")}
                     </p>
-                    <p className="text-slate-600 mt-1">
-                      Supporting our community with trusted health services.
+                    <p className="text-slate-600 mt-1 text-sm">
+                      {t("HomePage.chooseOlympic.text2")}
                     </p>
                   </div>
                 </div>
 
                 <ul className="list-disc pl-6 space-y-3">
-                  {chooseOlympic.map((item, index) => (
+                  {whyChoose.map((item, index) => (
                     <li key={index} className="text-gray-600 text-left">
                       <span className="text-black font-bold">
                         {item.title}
@@ -177,22 +180,22 @@ const Index = () => {
           </section>
 
           {/* Prescription Section */}
-          <section id="prescription" className="lg:px-12 px-5 md:px-8 relative overflow-hidden bg-linear-to-br from-emerald-50 via-white to-blue-50 py-20">
+          <section id="prescription" className="lg:px-12 px-5 md:px-8 relative overflow-hidden bg-linear-to-br from-emerald-50 via-white to-blue-50 pt-10 pb-20">
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.45, delay: 0.08 }}
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.08 }}
               className="mx-auto max-w-7xl"
             >
               <div className="mx-auto mb-12 max-w-3xl text-center">
 
                 <span className="mt-5 text-2xl tracking-tight text-main md:text-4xl">
-                  Switching pharmacies made simple.
+                  {t("HomePage.switchPharmacy.title")}
                 </span>
 
                 <p className="mt-4 text-lg leading-relaxed text-gray-600 font-light">
-                  Send us your details and our pharmacy team will help transfer your prescription safely and conveniently.
+                  {t("HomePage.switchPharmacy.subTitle")}
                 </p>
               </div>
 
@@ -206,46 +209,30 @@ const Index = () => {
                     <div className="absolute right-0 top-0 h-40 w-40 rounded-full bg-white/10 blur-2xl" />
 
                     <h3 className="text-2xl font-bold">
-                      How it works
+                      {t("HomePage.switchPharmacy.howTo.title")}
                     </h3>
 
                     <p className="mt-3 text-base leading-5 text-white/85">
-                      We make the transfer process easy by contacting your current pharmacy and guiding you through the next steps.
+                      {t("HomePage.switchPharmacy.howTo.subTitle")}
                     </p>
 
                     <div className="mt-8 space-y-4">
-                      {[
-                        {
-                          number: "1",
-                          title: "Submit your request",
-                          text: "Share your contact and current pharmacy details.",
-                        },
-                        {
-                          number: "2",
-                          title: "We handle the transfer",
-                          text: "Our team contacts your pharmacy on your behalf.",
-                        },
-                        {
-                          number: "3",
-                          title: "Get notified",
-                          text: "We’ll let you know when your medication is ready.",
-                        },
-                      ].map((step) => (
+                      {steps.map((step) => (
                         <div
-                          key={step.number}
+                          key={step.num}
                           className="flex gap-4 rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur-md"
                         >
                           <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white font-bold text-emerald-600">
-                            {step.number}
+                            {step.num}
                           </div>
 
-                          <div>
+                          <div className='text-left'>
                             <h4 className="font-semibold">
                               {step.title}
                             </h4>
 
                             <p className="mt-1 text-sm leading-relaxed text-white/75">
-                              {step.text}
+                              {step.subTitle}
                             </p>
                           </div>
                         </div>
@@ -253,7 +240,7 @@ const Index = () => {
                     </div>
 
                     <div className="mt-8 rounded-2xl border border-white/15 bg-white/10 p-4 text-sm leading-relaxed text-white/85 backdrop-blur-md">
-                      Secure, confidential, and handled by our pharmacy team.
+                      {t("HomePage.switchPharmacy.howTo.bottomText")}
                     </div>
                   </div>
                 </div>
@@ -262,11 +249,11 @@ const Index = () => {
                 <div className="rounded-[2rem] border border-gray-100 bg-white p-6 shadow-2xl md:p-8">
                   <div className="mb-8 text-center">
                     <h3 className="text-3xl font-bold text-gray-900">
-                      Transfer your prescription
+                      {t("HomePage.switchPharmacy.transfer.title")}
                     </h3>
 
                     <p className="mx-auto mt-3 max-w-xl leading-relaxed text-gray-600">
-                      Fill out the form below and we’ll contact you to assist with your prescription transfer.
+                      {t("HomePage.switchPharmacy.transfer.subTitle")}
                     </p>
                   </div>
 
@@ -274,7 +261,7 @@ const Index = () => {
                     <div className="grid gap-5 sm:grid-cols-2">
                       <div className="space-y-2">
                         <label className="block text-left text-sm font-semibold text-gray-700">
-                          Full name
+                          {t("HomePage.switchPharmacy.transfer.fn")}
                         </label>
 
                         <input
@@ -286,7 +273,7 @@ const Index = () => {
 
                       <div className="space-y-2">
                         <label className="block text-left text-sm font-semibold text-gray-700">
-                          Phone number
+                          {t("HomePage.switchPharmacy.transfer.ph")}
                         </label>
 
                         <input
@@ -298,7 +285,7 @@ const Index = () => {
                     </div>
                     <div className="space-y-2 ">
                       <label className="block text-left text-sm font-semibold text-gray-700">
-                        Email address
+                        {t("HomePage.switchPharmacy.transfer.email")}
                       </label>
                       <input
                         type="email"
@@ -310,19 +297,19 @@ const Index = () => {
                     <div className="grid gap-5 sm:grid-cols-2">
                       <div className="space-y-2">
                         <label className="block text-left text-sm font-semibold text-gray-700">
-                          Current Pharmacy
+                          {t("HomePage.switchPharmacy.transfer.currentPharm.name")}
                         </label>
 
                         <input
                           type="text"
-                          placeholder="Pharmacy name"
+                          placeholder={t("HomePage.switchPharmacy.transfer.currentPharm.placeholder")}
                           className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 outline-none transition focus:border-main focus:bg-white"
                         />
                       </div>
 
                       <div className="space-y-2">
                         <label className="block text-left text-sm font-semibold text-gray-700">
-                          Pharmacy phone
+                          {t("HomePage.switchPharmacy.transfer.pharmPhone")}
                         </label>
 
                         <input
@@ -335,12 +322,12 @@ const Index = () => {
 
                     <div className="space-y-2 ">
                       <label className="block text-left text-sm font-semibold text-gray-700">
-                        Prescription Details
+                        {t("HomePage.switchPharmacy.transfer.prescription.name")}
                       </label>
 
                       <textarea
                         rows={4}
-                        placeholder="Medication names, prescription numbers or any additional information..."
+                        placeholder={t("HomePage.switchPharmacy.transfer.prescription.placeholder")}
                         className="w-full resize-none rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 outline-none transition focus:border-main focus:bg-white"
                       />
                     </div>
@@ -349,17 +336,11 @@ const Index = () => {
                       type="submit"
                       className="w-full bg-main px-6 py-6 font-semibold text-white shadow-lg cursor-pointer transition hover:bg-main-light"
                     >
-                      Submit Transfer Request
+                      {t("HomePage.switchPharmacy.transfer.btnText")}
                     </Button>
 
-                    {/* <div className="grid gap-3 pt-2 text-sm text-gray-600 sm:grid-cols-3">
-                      <span>✓ Secure request</span>
-                      <span>✓ Fast support</span>
-                      <span>✓ Friendly team</span>
-                    </div> */}
-
                     <p className="text-center text-xs leading-relaxed text-gray-500">
-                      Please avoid sharing unnecessary sensitive medical information.
+                      {t("HomePage.switchPharmacy.transfer.bottomText")}
                     </p>
                   </form>
                 </div>
@@ -372,10 +353,10 @@ const Index = () => {
             <div className="mx-auto max-w-7xl">
               <div className="text-center">
                 <span className="mt-5 text-2xl tracking-tight text-main md:text-4xl">
-                  Our Services
+                  {t("HomePage.services.title")}
                 </span>
                 <p className="mt-4 text-lg font-light leading-relaxed text-gray-600">
-                  Helpful pharmacy services designed around your health needs.
+                  {t("HomePage.services.subTitle")}
                 </p>
               </div>
               <div className='md:hidden'>
@@ -397,7 +378,7 @@ const Index = () => {
                     },
                   }}
                 >
-                  {services.map((service, index) => (
+                  {services.slice(0, 6).map((service, index) => (
                     <SwiperSlide key={service.title} className="h-auto mb-12">
                       <ServiceCard index={index} {...service} />
                     </SwiperSlide>
@@ -405,7 +386,7 @@ const Index = () => {
                 </Swiper>
               </div>
               <div className="hidden md:grid xl:grid-cols-3 md:grid-cols-2 gap-8 mt-10">
-                {services.map((service, index) => (
+                {services.slice(0, 6).map((service, index) => (
                   <ServiceCard
                     key={service.title}
                     index={index}
@@ -419,7 +400,7 @@ const Index = () => {
               onClick={()=>navigate('/services')}
               className="bg-main px-6 py-6 mt-8 font-semibold text-white shadow-lg cursor-pointer transition hover:bg-main-light"
             >
-              View All Services
+              {t("HomePage.services.btnText")}
             </Button>
           </section>
 
@@ -429,7 +410,7 @@ const Index = () => {
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.45, delay: 0.08 }}
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.08 }}
               className="relative mx-auto max-w-4xl overflow-hidden rounded-3xl bg-linear-to-br from-slate-900 via-slate-800 to-emerald-950 p-8 text-center text-white shadow-2xl md:p-12"
             >
               {/* Glow Effects */}
@@ -441,17 +422,17 @@ const Index = () => {
                 <Mail className="mx-auto mb-4 text-emerald-400" size={36} />
 
                 <h2 className="text-3xl font-bold">
-                  Get pharmacy updates and health reminders
+                  {t("HomePage.subscribe.title")}
                 </h2>
 
                 <p className="mt-3 text-slate-300">
-                  Subscribe to receive helpful updates, announcements, and pharmacy news.
+                  {t("HomePage.subscribe.subTitle")}
                 </p>
 
                 <form className="mx-auto mt-8 flex max-w-xl flex-col gap-3 sm:flex-row mb-6">
                   <input
                     type="email"
-                    placeholder="Enter your email"
+                    placeholder= {t("HomePage.subscribe.placeholder")}
                     className="min-h-12 flex-1 rounded-full border border-white/10 bg-white px-5 text-slate-900 outline-none"
                   />
 
@@ -459,11 +440,11 @@ const Index = () => {
                     type="submit"
                     className="rounded-full bg-main px-6 py-3 font-semibold text-white transition hover:bg-main-light cursor-pointer"
                   >
-                    Subscribe
+                    {t("HomePage.subscribe.btnText")}
                   </button>
                 </form>
                 <p className="text-center text-xs leading-relaxed text-accent-grey">
-                  No spam. You can unsubscribe anytime.
+                  {t("HomePage.subscribe.bottomText")}
                 </p>
               </div>
             </motion.div>
@@ -482,7 +463,7 @@ const Index = () => {
               </div>
 
               <div className="shadow-md border border-accent-grey bg-linear-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
-                <h3 className="text-xl font-bold mb-4 text-left" style={{ color: '#205090' }}>Visit Our Pharmacy</h3>
+                <h3 className="text-xl font-bold mb-4 text-left" style={{ color: '#205090' }}>{t("map.title")}</h3>
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
                     <MapPin className="w-5 h-5 text-main mt-1" />
@@ -495,7 +476,7 @@ const Index = () => {
                     <Phone className="w-5 h-5 text-main mt-1" />
                     <div className="text-left">
                       <p className="font-semibold text-gray-900">+1 (555) 123-4567</p>
-                      <p className="text-sm text-gray-600">Call us anytime</p>
+                      <p className="text-sm text-gray-600">{t("map.callUs")}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -507,13 +488,13 @@ const Index = () => {
                   </div>
                 </div>
 
-                  <a
+                <a
                   href={directionsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full mt-6 inline-flex items-center justify-center rounded-full bg-main px-6 py-3 text-white font-semibold hover:bg-main-light transition"
                 >
-                  Get Directions
+                  {t("map.btnText")}
                 </a>
               </div>
             </div>

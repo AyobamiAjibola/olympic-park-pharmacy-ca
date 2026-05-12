@@ -1,6 +1,9 @@
-import logo from "../assets/logo.png"; // update path
+import logo from "../assets/logo.png";
+import { useTranslation } from "react-i18next";
 
 export function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-main text-white">
       <div className="max-w-7xl mx-auto px-5 md:px-8 py-14 grid gap-10 md:grid-cols-4">
@@ -17,25 +20,24 @@ export function Footer() {
             <div>
               <span className="text-2xl font-extrabold text-left text-blue-100">Olympic Park Pharmacy</span>
               <p className="text-sm text-blue-100 text-left">
-                Caring for your health, close to home.
+                {t("footer.text1")}
               </p>
             </div>
           </div>
 
           <p className="max-w-md text-blue-100 text-sm leading-6 text-left">
-            Your trusted local pharmacy for prescriptions, health consultations,
-            medication support, Vaccination and friendly care.
+            {t("footer.text2")}
           </p>
         </div>
 
         <div>
           <h3 className="font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-3 text-sm text-blue-100">
-            <li><a href="/" className="hover:text-white">Home</a></li>
-            <li><a href="/about" className="hover:text-white">About</a></li>
-            <li><a href="/services" className="hover:text-white">Services</a></li>
-            <li><a href="/contact" className="hover:text-white">Contact</a></li>
-            <li><a href="/careers" className="hover:text-white">Careers</a></li>
+            <li><a href="/" className="hover:text-white">{t("Navigation.home")}</a></li>
+            <li><a href="/services" className="hover:text-white">{t("Navigation.services")}</a></li>
+            <li><a href="/about" className="hover:text-white">{t("Navigation.about")}</a></li>
+            <li><a href="/contact" className="hover:text-white">{t("Navigation.contact")}</a></li>
+            <li><a href="/careers" className="hover:text-white">{t("Navigation.career")}</a></li>
           </ul>
         </div>
 

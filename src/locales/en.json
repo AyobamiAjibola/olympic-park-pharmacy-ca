@@ -1,0 +1,186 @@
+{
+    "Navigation": {
+        "home": "Home",
+        "services": "Services",
+        "about": "About Us",
+        "contact": "Contact Us",
+        "career": "Careers",
+        "btn": "Book Now"
+    },
+    "HomePage": {
+        "hero": {
+            "badge": "Trusted Community Pharmacy",
+            "title": "Welcome to",
+            "subText": "We make pharmacy care simple, accessible, and dependable. Whether you need prescriptions, medication guidance, or everyday pharmacy support, our team is here to help.",
+            "btnText1": "Transfer Prescription",
+            "btnText2": "Contact Us"
+        },
+        "chooseOlympic": {
+            "title": "Why Choose",
+            "why_choose": [
+                {
+                    "title": "Experienced Pharmacy Team",
+                    "desc": "Our licensed pharmacists and healthcare professionals are dedicated to helping you make informed decisions about your medications and overall wellness."
+                },
+                {
+                    "title": "Patient Education & Guidance",
+                    "desc": "We take the time to answer your questions and ensure you understand your medications, treatment plans, and healthcare options."
+                },
+                {
+                    "title": "Family-Focused Care",
+                    "desc": "From children to seniors, we provide pharmacy services tailored to every stage of life."
+                },
+                {
+                    "title": "Convenient Prescription Transfers",
+                    "desc": "Switching to our pharmacy is quick and hassle-free — our team handles the process for you."
+                },
+                {
+                    "title": "Accessible Healthcare Solutions",
+                    "desc": "We aim to make pharmacy care simple, convenient, and accessible for everyone in the community."
+                }
+            ],
+            "text1": "Friendly, local pharmacy care",
+            "text2": "Supporting our community with trusted health services."
+        },
+        "switchPharmacy": {
+            "title": "Switching pharmacies made simple.",
+            "subTitle": "Send us your details and our pharmacy team will help transfer your prescription safely and conveniently.",
+            "howTo": {
+                "title": "How it works",
+                "subTitle": "We make the transfer process easy by contacting your current pharmacy and guiding you through the next steps.",
+                "steps": [
+                    {
+                        "num": "1",
+                        "title": "Submit your request",
+                        "subTitle": "Share your contact and current pharmacy details."
+                    },
+                    {
+                        "num": "2",
+                        "title": "We handle the transfer",
+                        "subTitle": "Our team contacts your pharmacy on your behalf."
+                    },
+                    {
+                        "num": "3",
+                        "title": "Get notified",
+                        "subTitle": "We’ll let you know when your medication is ready."
+                    }
+                ],
+                "bottomText": "Secure, confidential, and handled by our pharmacy team."
+            },
+            "transfer": {
+                "title": "Transfer your prescription",
+                "subTitle": "Fill out the form below and we’ll contact you to assist with your prescription transfer.",
+                "fn": "Full name",
+                "ph": "Phone number",
+                "email": "Email address",
+                "currentPharm": {"name": "Current Pharmacy", "placeholder": "Pharmacy name"},
+                "pharmPhone": "Pharmacy phone",
+                "prescription": {"name": "Prescription Details", "placeholder": "Medication names, prescription numbers or any additional information."},
+                "btnText": "Submit Transfer Request",
+                "bottomText": "Please avoid sharing unnecessary sensitive medical information."
+            }
+        },
+        "services": {
+            "title": "Our Services",
+            "subTitle": "Helpful pharmacy services designed around your health needs.",
+            "services": [
+                {
+                    "title": "Compounding",
+                    "desc": "Every patient has unique healthcare needs, and sometimes standard medications may not always provide the best fit. Our customized medication solutions are designed to provide personalized treatment options tailored specifically to your medical condition, lifestyle, allergies, dosage requirements, or personal preferences. Through specialized medication preparation and compounding services, we can work with your healthcare provider to create medications in customized strengths, dosage forms, or combinations that may not be commercially available. This service is especially beneficial for children who may struggle with swallowing tablets, patients requiring allergy-friendly formulations, individuals with specific dosage adjustments, or those managing chronic health conditions that require personalized care. Customized medications can improve treatment effectiveness, medication adherence, and overall patient comfort, helping ensure you receive care that truly meets your needs. Our pharmacy team is committed to delivering safe, precise, and high-quality medication solutions while providing guidance and support throughout your treatment journey.",
+                    "short_desc":
+                    "We can prepare personalized medications tailored to your unique health needs and treatment requirements."
+                },
+
+                {
+                    "title": "Direct Insurance Billing",
+                    "desc": "Managing healthcare costs and insurance claims can often feel overwhelming, especially when dealing with ongoing prescriptions or medical treatments. To help simplify the process, our pharmacy offers direct insurance billing for eligible prescriptions and pharmacy services. This means we work directly with many major insurance providers on your behalf, reducing the need for upfront payments and minimizing paperwork for you. Direct billing provides greater convenience, saves time, and helps ensure you receive the medications and healthcare services you need without unnecessary financial stress or delays. Our knowledgeable team can assist in verifying coverage, answering insurance-related questions, and helping you better understand your prescription benefits. We are committed to making healthcare more accessible and affordable while ensuring a smooth and hassle-free pharmacy experience for every patient.",
+                    "short_desc":
+                    "For your convenience, we can bill your insurance provider directly for eligible prescriptions and pharmacy services."
+                },
+
+                {
+                    "title": "Free Prescription Delivery",
+                    "desc": "We understand that visiting the pharmacy may not always be convenient, especially for busy individuals, seniors, patients with mobility challenges, or those recovering from illness. That is why we offer free prescription delivery services directly to your home or workplace, helping ensure you receive your medications safely and on time. Our delivery service is designed to provide comfort, convenience, and peace of mind by reducing unnecessary travel and making it easier to stay consistent with your treatment plan. Reliable access to medications plays a vital role in maintaining good health, particularly for individuals managing chronic conditions or ongoing treatments. By offering prompt and dependable delivery, we help patients avoid interruptions in medication therapy while providing a more convenient healthcare experience. Our team carefully handles all prescriptions with professionalism and confidentiality to ensure your medications arrive securely and efficiently.",
+                    "short_desc":
+                    "Enjoy convenient and reliable delivery of your prescription medications directly to your home or workplace."
+                },
+
+                {
+                    "title": "Prescribing Pharmacist",
+                    "desc": "Access to timely healthcare is important, especially when dealing with common illnesses or medication-related concerns. Our pharmacy has a licensed prescribing pharmacist available to assess and prescribe medications for a variety of minor ailments and healthcare needs. This service allows patients to receive professional care quickly and conveniently, often without the need for a separate doctor’s appointment. Whether you need treatment for minor infections, allergy symptoms, skin conditions, cold and flu symptoms, prescription renewals, or medication management support, our pharmacist can help evaluate your condition and recommend appropriate treatment options. Prescribing pharmacists also play an important role in improving medication safety by reviewing your current medications, monitoring for interactions, and ensuring your treatment plan aligns with your overall health needs. This service offers greater accessibility, reduced wait times, and faster access to care, making it easier for patients to manage their health with confidence and convenience.",
+                    "short_desc":
+                    "Our pharmacy has a licensed pharmacist available to assess and prescribe medications for select conditions and healthcare needs."
+                },
+
+                {
+                    "title": "Comprehensive Diabetic Supplies",
+                    "desc": "Proper diabetes management requires consistent monitoring, reliable medical supplies, and ongoing support. Our pharmacy carries a comprehensive range of diabetic care products designed to help patients effectively manage their condition and maintain a healthier lifestyle. We offer glucose meters, test strips, lancets, insulin supplies, diabetic socks, monitoring devices, and other essential diabetes management products from trusted healthcare brands. Having access to the right diabetic supplies is critical for maintaining stable blood sugar levels, preventing complications, and supporting long-term health. Our pharmacy team is available to provide education, guidance, and product recommendations tailored to your specific needs and treatment plan. We can also help answer questions about proper device usage, blood sugar monitoring, medication adherence, and lifestyle management. By providing quality diabetic supplies and personalized support, we aim to empower patients to take control of their health with greater confidence, comfort, and convenience.",
+                    "short_desc":
+                    "We carry a wide selection of diabetic care products, including glucose meters, test strips, lancets, and other essential supplies to support your daily health."
+                },
+                {
+                    "title": "Compliance Packaging",
+                    "desc": "Managing multiple medications can sometimes become confusing, especially for patients taking several prescriptions at different times throughout the day. Our compliance packaging service is designed to simplify medication management by organizing your medications into clearly labeled, easy-to-follow packages sorted by date and time. This service helps reduce missed doses, medication errors, and confusion by ensuring medications are taken correctly and according to schedule. Compliance packaging is especially beneficial for seniors, individuals managing chronic conditions, caregivers supporting loved ones, and patients with complex medication routines. Proper medication adherence plays an important role in improving treatment effectiveness, preventing complications, and supporting better overall health outcomes. By providing organized and convenient packaging solutions, we help patients stay consistent with their treatment plans while offering greater peace of mind, independence, and confidence in managing their medications safely and effectively.",
+                    "short_desc":
+                    "Organized medication packaging designed to help you take medications correctly and on schedule."
+                },
+                {
+                    "title": "Travel Consultation",
+                    "desc": "Living with an ostomy requires dependable products, personalized care, and compassionate support. Our pharmacy offers a complete selection of ostomy care products designed to help patients maintain comfort, confidence, and quality of life in their daily routines. We carry a wide range of pouches, skin barriers, adhesives, cleansing products, accessories, and specialized ostomy supplies from trusted manufacturers. Proper ostomy care is essential for protecting skin health, preventing irritation, improving comfort, and supporting an active lifestyle. Our pharmacy team understands the sensitive nature of ostomy care and is committed to providing respectful, discreet, and personalized assistance when selecting products that best suit your needs. We strive to ensure patients have reliable access to the products and support they need to feel comfortable, confident, and supported throughout their healthcare journey.",
+                    "short_desc":
+                    "We offer a broad range of ostomy supplies, including pouches, skin barriers, and accessories designed for comfort, confidence, and everyday care."
+                },
+                {
+                    "title": "Fast & Accurate Strep Testing",
+                    "desc": "Sore throats and related symptoms can be uncomfortable and may sometimes indicate a strep infection that requires timely medical attention. Our pharmacy offers fast and accurate strep testing services to help identify infections quickly and provide guidance on appropriate next steps for treatment and care. Early testing and diagnosis are important because untreated strep infections can lead to complications and prolonged discomfort. Our healthcare team provides efficient assessments in a professional and supportive environment, helping patients receive answers and care sooner. Fast strep testing can help reduce uncertainty, support quicker treatment decisions, and improve recovery outcomes while minimizing unnecessary delays in care. We are committed to providing accessible healthcare services that prioritize your comfort, safety, and overall well-being.",
+                    "short_desc":
+                    "Protect yourself and your family with our range of vaccinations, including seasonal flu shots and other immunization services."
+                },
+                {
+                    "title": "Vaccinations and Flu Shots",
+                    "desc": "Vaccinations are one of the most effective ways to protect yourself, your family, and your community from preventable illnesses. Our pharmacy offers a variety of vaccination and immunization services, including seasonal flu shots, routine immunizations, and select travel vaccines administered by trained healthcare professionals in a safe and convenient environment. Immunizations play a critical role in reducing the spread of infectious diseases, lowering the risk of serious complications, and supporting long-term public health. Annual flu shots, for example, can help reduce the severity of illness, protect vulnerable individuals, and minimize disruptions to daily life during flu season. Our pharmacy makes staying up to date with recommended vaccines simple and accessible, helping patients receive timely protection without lengthy appointments or wait times. We are committed to promoting preventive healthcare and helping our community stay healthy year-round.",
+                    "short_desc":
+                    "Protect yourself and your family with our range of vaccinations, including seasonal flu shots and other immunization services."
+                }
+            ],
+            "btnText": "View All Services"
+        },
+        "subscribe": {
+            "title": "Get pharmacy updates and health reminders",
+            "subTitle": "Subscribe to receive helpful updates, announcements, and pharmacy news.",
+            "placeholder": "Enter your email",
+            "btnText": "Subscribe",
+            "bottomText": "No spam. You can unsubscribe anytime."
+        }
+    },
+    "map": {
+        "title": "Visit Our Pharmacy",
+        "callUs": "Call us anytime",
+        "btnText": "Get Directions"
+    },
+    "footer": {
+        "text1": "Caring for your health, close to home.",
+        "text2": "On request, the licensee will provide the name and practice permit number of any regulated member who provides a pharmacy service to the patient or who engages in the practice of pharmacy with respect to the patient." 
+    },
+    "About": {
+        "title": "About Us",
+        "subTitle": "Committed to providing accessible, trusted, and community-focused healthcare services in Calgary.",
+        "paragraphs": [
+            "At Olympic Park Pharmacy, we are committed to providing compassionate, personalized, and accessible healthcare services to individuals and families in our community. Our goal is to create a welcoming environment where every patient feels valued, supported, and confident in their healthcare journey.",
+            "With years of professional pharmacy experience both internationally and within Canada, our pharmacy leadership brings a strong foundation of knowledge, care, and dedication to patient wellness. Our owner began their pharmacy career in India before obtaining Canadian pharmacy licensure in 2016 and has since spent nearly a decade serving communities across Canada. With professional experience practicing under Saskatchewan and British Columbia jurisdictions, we bring a broad understanding of patient care, pharmacy services, and healthcare standards across multiple provinces.",
+            "At Olympic Park Pharmacy, we believe pharmacy care should go beyond simply dispensing medications. We take the time to understand your unique health needs and provide personalized guidance, trusted advice, and ongoing support to help you achieve better health outcomes. Whether you need prescription medications, medication reviews, chronic disease support, vaccinations, minor ailment prescribing, travel consultations, or customized medication solutions, our experienced pharmacy team is here to help every step of the way.",
+            "We are proud to offer a wide range of healthcare services designed to make caring for your health more convenient and accessible. From pharmacist prescribing for select minor conditions to medication management solutions, compliance packaging, diabetic supplies, and free prescription delivery, our focus is on providing practical healthcare support tailored to your lifestyle and needs.",
+            "Our team is dedicated to creating a warm, friendly, and professional atmosphere where your health and well-being remain our top priorities. We understand that trust is an important part of healthcare, and we are honored to serve as a reliable healthcare partner for our patients and community.",
+            "At Olympic Park Pharmacy, we are passionate about helping you and your family live healthier lives through quality care, trusted service, and meaningful patient relationships.",
+            "Book a consultation today and discover how Olympic Park Pharmacy can support your healthcare needs with personalized care and professional expertise.",
+            "Thank you for trusting us with your care and for choosing Olympic Park Pharmacy as your healthcare partner."
+        ]
+    },
+    "Career": {
+        "badge": "We're Hiring",
+        "title": "Join the Olympic Park Pharmacy Team",
+        "subTitle": "We are always looking for passionate, caring, and dedicated professionals who are committed to supporting the health and well-being of our community. Explore our current openings and apply through our online application form.",
+        "btnText": "View Open Positions",
+        "bottomText": "Current opportunities and applications are managed online."
+    }
+}

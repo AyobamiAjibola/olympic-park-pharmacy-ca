@@ -1,0 +1,187 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "services": "Mga Serbisyo",
+    "about": "Tungkol Sa Amin",
+    "contact": "Makipag-ugnayan",
+    "career": "Mga Karera",
+    "btn": "Mag-book Ngayon"
+  },
+  "HomePage": {
+    "hero": {
+      "badge": "Pinagkakatiwalaang Parmasyang Pangkomunidad",
+      "title": "Maligayang Pagdating",
+      "subText": "Ginagawa naming simple, accessible, at maaasahan ang pangangalagang pangparmasya. Kailangan mo man ng reseta, gabay sa gamot, o pang-araw-araw na suporta sa parmasya, narito ang aming koponan upang tumulong.",
+      "btnText1": "Ilipat ang Reseta",
+      "btnText2": "Makipag-ugnayan"
+    },
+    "chooseOlympic": {
+      "title": "Bakit Piliin",
+      "why_choose": [
+        {
+          "title": "May Karanasang Koponan ng Parmasya",
+          "desc": "Ang aming mga lisensyadong pharmacist at healthcare professionals ay nakatuon sa pagtulong sa iyo na makagawa ng tamang desisyon tungkol sa iyong mga gamot at pangkalahatang kalusugan."
+        },
+        {
+          "title": "Edukasyon at Gabay para sa mga Pasyente",
+          "desc": "Naglalaan kami ng oras upang sagutin ang iyong mga tanong at tiyaking nauunawaan mo ang iyong mga gamot, treatment plans, at mga opsyon sa pangangalagang pangkalusugan."
+        },
+        {
+          "title": "Pangangalagang Nakatuon sa Pamilya",
+          "desc": "Mula sa mga bata hanggang sa mga nakatatanda, nagbibigay kami ng mga serbisyong pangparmasya na angkop para sa bawat yugto ng buhay."
+        },
+        {
+          "title": "Maginhawang Paglipat ng Reseta",
+          "desc": "Mabilis at walang abalang lumipat sa aming parmasya — ang aming koponan ang bahala sa buong proseso para sa iyo."
+        },
+        {
+          "title": "Accessible na Solusyon sa Pangangalagang Pangkalusugan",
+          "desc": "Layunin naming gawing simple, maginhawa, at accessible ang pangangalagang pangparmasya para sa lahat sa komunidad."
+        }
+      ],
+      "text1": "Magiliw at lokal na pangangalagang pangparmasya.",
+      "text2": "Pagsuporta sa aming komunidad sa pamamagitan ng mapagkakatiwalaang serbisyong pangkalusugan."
+    },
+    "switchPharmacy": {
+      "title": "Madali na ang paglipat ng parmasya.",
+      "subTitle": "Ipadala sa amin ang iyong mga detalye at tutulungan ka ng aming koponan sa parmasya na mailipat ang iyong reseta nang ligtas at maginhawa.",
+      "howTo": {
+        "title": "Paano ito gumagana",
+        "subTitle": "Pinapadali namin ang proseso ng paglilipat sa pamamagitan ng pakikipag-ugnayan sa iyong kasalukuyang parmasya at paggabay sa iyo sa mga susunod na hakbang.",
+        "steps": [
+          {
+            "num": "1",
+            "title": "Isumite ang iyong kahilingan",
+            "subTitle": "Ibahagi ang iyong contact at detalye ng kasalukuyang parmasya."
+          },
+          {
+            "num": "2",
+            "title": "Kami ang bahala sa paglilipat",
+            "subTitle": "Makikipag-ugnayan ang aming koponan sa iyong parmasya para sa iyo."
+          },
+          {
+            "num": "3",
+            "title": "Makakatanggap ng abiso",
+            "subTitle": "Ipapaalam namin sa iyo kapag handa na ang iyong gamot."
+          }
+        ],
+        "bottomText": "Ligtas, kumpidensyal, at pinangangasiwaan ng aming koponan sa parmasya."
+      },
+      "transfer": {
+        "title": "Ilipat ang iyong reseta",
+        "subTitle": "Sagutan ang form sa ibaba at makikipag-ugnayan kami upang tulungan ka sa paglilipat ng iyong reseta.",
+        "fn": "Buong pangalan",
+        "ph": "Numero ng telepono",
+        "email": "Email address",
+        "currentPharm": {
+          "name": "Kasalukuyang Parmasya",
+          "placeholder": "Pangalan ng parmasya"
+        },
+        "pharmPhone": "Telepono ng parmasya",
+        "prescription": {
+          "name": "Detalye ng Reseta",
+          "placeholder": "Mga pangalan ng gamot, numero ng reseta, o anumang karagdagang impormasyon."
+        },
+        "btnText": "Isumite ang Kahilingan sa Paglipat",
+        "bottomText": "Mangyaring iwasan ang pagbabahagi ng hindi kinakailangang sensitibong impormasyong medikal."
+      }
+    },
+    "services": {
+      "title": "Aming Mga Serbisyo",
+      "subTitle": "Mga kapaki-pakinabang na serbisyong pangparmasya na idinisenyo para sa iyong pangangailangang pangkalusugan.",
+      "services": [
+        {
+          "title": "Compounding",
+          "desc": "Bawat pasyente ay may natatanging pangangailangan sa kalusugan, at minsan ay hindi sapat ang mga karaniwang gamot upang matugunan ang mga ito. Ang aming customized medication solutions ay idinisenyo upang magbigay ng personalized na mga opsyon sa paggamot batay sa iyong kondisyon sa kalusugan, pamumuhay, allergies, dosage requirements, at personal na kagustuhan. Sa pamamagitan ng aming specialized compounding services, maaari kaming makipagtulungan sa iyong healthcare provider upang gumawa ng mga gamot na may customized na lakas, porma, o kombinasyon na maaaring hindi available sa merkado. Ang serbisyong ito ay lalong kapaki-pakinabang para sa mga batang nahihirapang lumunok ng tableta, mga pasyenteng nangangailangan ng allergy-friendly formulations, mga taong may espesyal na dosage adjustments, at mga pasyenteng may chronic conditions na nangangailangan ng personalized na pangangalaga. Ang customized medications ay makakatulong upang mapabuti ang bisa ng paggamot, medication adherence, at pangkalahatang kaginhawaan ng pasyente. Ang aming pharmacy team ay nakatuon sa pagbibigay ng ligtas, tumpak, at mataas na kalidad na medication solutions habang nagbibigay ng suporta at gabay sa buong treatment journey mo.",
+          "short_desc": "Maaari kaming gumawa ng personalized na mga gamot na naaayon sa iyong natatanging pangangailangan sa kalusugan at paggamot."
+        },
+
+        {
+          "title": "Direct Insurance Billing",
+          "desc": "Ang pamamahala ng healthcare expenses at insurance claims ay maaaring maging nakaka-stress, lalo na kung may tuloy-tuloy na prescriptions o medical treatments. Upang gawing mas simple ang proseso, nag-aalok ang aming pharmacy ng direct insurance billing para sa mga kwalipikadong prescriptions at pharmacy services. Ibig sabihin nito ay direkta kaming nakikipag-ugnayan sa maraming pangunahing insurance providers para sa iyo, na nakakatulong upang mabawasan ang upfront payments at paperwork. Ang direct billing ay nagbibigay ng higit na convenience, nakakatipid ng oras, at tumutulong upang matiyak na matatanggap mo ang mga gamot at healthcare services na kailangan mo nang walang hindi kinakailangang financial stress o delays. Ang aming knowledgeable team ay handang tumulong sa pag-verify ng coverage, pagsagot sa insurance-related questions, at pagpapaliwanag ng iyong prescription benefits.",
+          "short_desc": "Para sa iyong convenience, maaari naming direktang singilin ang iyong insurance provider para sa mga kwalipikadong prescriptions at pharmacy services."
+        },
+
+        {
+          "title": "Libreng Prescription Delivery",
+          "desc": "Nauunawaan namin na hindi laging maginhawa ang pagpunta sa pharmacy, lalo na para sa mga abalang indibidwal, seniors, mga pasyenteng may mobility challenges, o mga nagpapagaling mula sa sakit. Kaya naman nag-aalok kami ng libreng prescription delivery diretso sa iyong bahay o workplace upang matiyak na matatanggap mo ang iyong mga gamot nang ligtas at nasa tamang oras. Ang aming delivery service ay idinisenyo upang magbigay ng comfort, convenience, at peace of mind sa pamamagitan ng pagbawas ng hindi kinakailangang biyahe at pagtulong sa iyong manatiling consistent sa treatment plan mo. Ang maaasahang access sa gamot ay mahalaga sa pagpapanatili ng mabuting kalusugan, lalo na para sa mga may chronic conditions o ongoing treatments.",
+          "short_desc": "Mag-enjoy ng maginhawa at maaasahang delivery ng iyong prescription medications diretso sa iyong bahay o workplace."
+        },
+
+        {
+          "title": "Prescribing Pharmacist",
+          "desc": "Mahalaga ang mabilis na access sa healthcare, lalo na kapag may mga common illnesses o medication-related concerns. Ang aming pharmacy ay may licensed prescribing pharmacist na maaaring mag-assess at magreseta ng gamot para sa iba't ibang minor ailments at healthcare needs. Ang serbisyong ito ay nagbibigay-daan sa mga pasyente na makatanggap ng propesyonal na pangangalaga nang mabilis at maginhawa, kadalasan nang hindi na kailangan ng hiwalay na doctor’s appointment. Kung kailangan mo ng treatment para sa minor infections, allergies, skin conditions, cold and flu symptoms, prescription renewals, o medication management support, handa kaming tumulong.",
+          "short_desc": "May licensed pharmacist ang aming pharmacy na maaaring mag-assess at magreseta ng gamot para sa piling kondisyon at healthcare needs."
+        },
+
+        {
+          "title": "Komprehensibong Diabetic Supplies",
+          "desc": "Ang tamang diabetes management ay nangangailangan ng regular na monitoring, maaasahang medical supplies, at tuloy-tuloy na suporta. Ang aming pharmacy ay may malawak na selection ng diabetic care products upang tulungan ang mga pasyente na mas epektibong pamahalaan ang kanilang kondisyon at mapanatili ang mas malusog na lifestyle. Nag-aalok kami ng glucose meters, test strips, lancets, insulin supplies, diabetic socks, monitoring devices, at iba pang essential diabetes management products mula sa trusted healthcare brands. Ang pagkakaroon ng tamang diabetic supplies ay mahalaga upang mapanatiling stable ang blood sugar levels, maiwasan ang complications, at masuportahan ang long-term health.",
+          "short_desc": "Mayroon kaming malawak na selection ng diabetic care products kabilang ang glucose meters, test strips, lancets, at iba pang essential supplies."
+        },
+
+        {
+          "title": "Compliance Packaging",
+          "desc": "Ang pag-manage ng maraming gamot ay maaaring maging nakakalito, lalo na para sa mga pasyenteng umiinom ng iba’t ibang prescriptions sa magkakaibang oras ng araw. Ang aming compliance packaging service ay idinisenyo upang gawing mas simple ang medication management sa pamamagitan ng pag-aayos ng iyong mga gamot sa malinaw na label at madaling sundang packaging ayon sa petsa at oras. Nakakatulong ito upang mabawasan ang missed doses, medication errors, at kalituhan sa pag-inom ng gamot. Ang compliance packaging ay partikular na kapaki-pakinabang para sa seniors, mga taong may chronic conditions, caregivers, at mga pasyenteng may komplikadong medication routines.",
+          "short_desc": "Organisadong medication packaging na tumutulong sa iyong inumin ang iyong mga gamot nang tama at nasa tamang schedule."
+        },
+
+        {
+          "title": "Travel Consultation",
+          "desc": "Ang pamumuhay na may ostomy ay nangangailangan ng maaasahang produkto, personalized na pangangalaga, at compassionate support. Ang aming pharmacy ay nag-aalok ng kumpletong selection ng ostomy care products upang matulungan ang mga pasyente na mapanatili ang comfort, confidence, at quality of life sa kanilang pang-araw-araw na routine. Mayroon kaming pouches, skin barriers, adhesives, cleansing products, accessories, at iba pang specialized ostomy supplies mula sa trusted manufacturers. Ang aming pharmacy team ay committed sa pagbibigay ng respectful, discreet, at personalized na assistance upang matulungan kang mahanap ang tamang products para sa iyong pangangailangan.",
+          "short_desc": "Nag-aalok kami ng malawak na range ng ostomy supplies kabilang ang pouches, skin barriers, at accessories para sa comfort at everyday care."
+        },
+
+        {
+          "title": "Mabilis at Tumpak na Strep Testing",
+          "desc": "Ang sore throat at kaugnay na sintomas ay maaaring hindi komportable at minsan ay indikasyon ng strep infection na nangangailangan ng agarang medical attention. Ang aming pharmacy ay nag-aalok ng mabilis at tumpak na strep testing upang mabilis na matukoy ang impeksyon at makapagbigay ng gabay para sa tamang treatment at care. Ang maagang testing at diagnosis ay mahalaga upang maiwasan ang complications at prolonged discomfort.",
+          "short_desc": "Protektahan ang iyong sarili at pamilya sa pamamagitan ng aming vaccinations kabilang ang seasonal flu shots at iba pang immunization services."
+        },
+
+        {
+          "title": "Vaccinations at Flu Shots",
+          "desc": "Ang vaccinations ay isa sa pinakaepektibong paraan upang maprotektahan ang iyong sarili, pamilya, at komunidad laban sa mga sakit na maaaring maiwasan. Ang aming pharmacy ay nag-aalok ng iba’t ibang vaccination at immunization services kabilang ang seasonal flu shots, routine immunizations, at piling travel vaccines na ibinibigay ng trained healthcare professionals sa ligtas at maginhawang environment. Ang immunizations ay may mahalagang papel sa pagbabawas ng pagkalat ng infectious diseases at sa pagpapanatili ng pangmatagalang public health.",
+          "short_desc": "Protektahan ang iyong sarili at pamilya sa pamamagitan ng aming vaccinations kabilang ang seasonal flu shots at iba pang immunization services."
+        }
+      ],
+      "btnText": "Tingnan Lahat ng Serbisyo"
+    },
+    "subscribe": {
+      "title": "Makakuha ng mga update sa parmasya at health reminders",
+      "subTitle": "Mag-subscribe upang makatanggap ng mga kapaki-pakinabang na update, anunsyo, at balita mula sa parmasya.",
+      "placeholder": "Ilagay ang iyong email",
+      "btnText": "Mag-subscribe",
+      "bottomText": "Walang spam. Maaari kang mag-unsubscribe anumang oras."
+    }
+  },
+  "map": {
+    "title": "Bisitahin ang Aming Parmasya",
+    "callUs": "Tawagan kami anumang oras",
+    "btnText": "Kumuha ng Direksyon"
+  },
+  "footer": {
+    "text1": "Pag-aalaga sa iyong kalusugan, malapit sa tahanan.",
+    "text2": "Kapag hiniling, ibibigay ng lisensyado ang pangalan at numero ng permit ng sinumang regulated member na nagbibigay ng serbisyo sa parmasya sa pasyente o nagsasagawa ng practice ng pharmacy kaugnay ng pasyente."
+  },
+  "About": {
+    "title": "Tungkol sa Amin",
+    "subTitle": "Nakatuon sa pagbibigay ng accessible, mapagkakatiwalaan, at community-focused na serbisyong pangkalusugan sa Calgary.",
+    "paragraphs": [
+      "Sa Olympic Park Pharmacy, kami ay nakatuon sa pagbibigay ng maalaga, personalized, at accessible na serbisyong pangkalusugan para sa mga indibidwal at pamilya sa aming komunidad. Layunin naming lumikha ng isang mainit at welcoming na kapaligiran kung saan ang bawat pasyente ay nakakaramdam ng pagpapahalaga, suporta, at kumpiyansa sa kanilang healthcare journey.",
+      "Sa maraming taong karanasan sa pharmacy practice sa ibang bansa at sa Canada, ang aming pharmacy leadership ay nagdadala ng malawak na kaalaman, dedikasyon, at malasakit para sa kalusugan ng mga pasyente. Sinimulan ng aming may-ari ang kanyang karera sa pharmacy sa India bago makuha ang kanyang Canadian pharmacy license noong 2016. Mula noon, halos sampung taon na siyang nagpa-practice sa Canada at nakapaglingkod sa mga komunidad sa ilalim ng Saskatchewan at British Columbia jurisdictions. Ang malawak na karanasang ito ay nagbigay sa amin ng mas malalim na pag-unawa sa patient care, pharmacy services, at healthcare standards sa iba’t ibang probinsya sa Canada.",
+      "Sa Olympic Park Pharmacy, naniniwala kami na ang pharmacy care ay higit pa sa simpleng pagbibigay ng gamot. Naglalaan kami ng oras upang maunawaan ang iyong natatanging pangangailangan sa kalusugan upang makapagbigay ng personalized na gabay, mapagkakatiwalaang payo, at tuloy-tuloy na suporta para matulungan kang makamit ang mas mabuting health outcomes. Kung kailangan mo man ng prescription medications, medication reviews, suporta para sa chronic disease management, vaccinations, pharmacist prescribing para sa minor ailments, travel consultations, o customized medication solutions, handa ang aming experienced pharmacy team na suportahan ka sa bawat hakbang.",
+      "Ipinagmamalaki naming mag-alok ng malawak na hanay ng healthcare services na idinisenyo upang gawing mas simple at accessible ang pangangalaga sa iyong kalusugan. Mula sa pharmacist prescribing para sa ilang minor conditions hanggang sa medication management, compliance packaging, diabetic supplies, at libreng prescription delivery, ang aming layunin ay magbigay ng praktikal at maginhawang healthcare solutions na naaayon sa iyong lifestyle at healthcare needs.",
+      "Ang aming team ay nakatuon sa paglikha ng isang magiliw, propesyonal, at welcoming na environment kung saan ang iyong kalusugan at kapakanan ang aming pangunahing prayoridad. Nauunawaan namin na mahalaga ang tiwala sa healthcare, at ikinararangal naming maging isang mapagkakatiwalaang healthcare partner para sa aming mga pasyente at komunidad.",
+      "Sa Olympic Park Pharmacy, kami ay masigasig sa pagtulong sa iyo at sa iyong pamilya na mamuhay nang mas malusog sa pamamagitan ng quality care, maaasahang serbisyo, at matibay na relasyon sa aming mga pasyente.",
+      "Mag-book ng consultation ngayon at tuklasin kung paano makakatulong ang Olympic Park Pharmacy sa iyong healthcare needs sa pamamagitan ng personalized care at professional expertise.",
+      "Maraming salamat sa pagtitiwala sa amin para sa iyong pangangalaga at sa pagpili sa Olympic Park Pharmacy bilang iyong healthcare partner."
+    ]
+  },
+  "Career": {
+    "badge": "Kami ay Hiring",
+    "title": "Sumali sa Olympic Park Pharmacy Team",
+    "subTitle": "Palagi kaming naghahanap ng mga passionate, maalaga, at dedikadong propesyonal na nakatuon sa pagsuporta sa kalusugan at kapakanan ng aming komunidad. Tuklasin ang aming mga kasalukuyang openings at mag-apply sa pamamagitan ng aming online application form.",
+    "btnText": "Tingnan ang mga Bukas na Posisyon",
+    "bottomText": "Ang mga kasalukuyang oportunidad at aplikasyon ay pinamamahalaan online."
+  }
+}
