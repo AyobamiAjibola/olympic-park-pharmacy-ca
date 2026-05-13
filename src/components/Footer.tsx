@@ -1,8 +1,11 @@
+import { location, pharmPhone, province } from "@/constant/helper";
 import logo from "../assets/logo.png";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 export function Footer() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   return (
     <footer className="bg-main text-white">
@@ -33,22 +36,22 @@ export function Footer() {
         <div>
           <h3 className="font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-3 text-sm text-blue-100">
-            <li><a href="/" className="hover:text-white">{t("Navigation.home")}</a></li>
-            <li><a href="/services" className="hover:text-white">{t("Navigation.services")}</a></li>
-            <li><a href="/about" className="hover:text-white">{t("Navigation.about")}</a></li>
-            <li><a href="/contact" className="hover:text-white">{t("Navigation.contact")}</a></li>
-            <li><a href="/careers" className="hover:text-white">{t("Navigation.career")}</a></li>
+            <li><a onClick={()=>navigate('/')} className="hover:text-white">{t("Navigation.home")}</a></li>
+            <li><a onClick={()=>navigate('/services')} className="hover:text-white">{t("Navigation.services")}</a></li>
+            <li><a onClick={()=>navigate('/about')} className="hover:text-white">{t("Navigation.about")}</a></li>
+            <li><a onClick={()=>navigate('/contact')} className="hover:text-white">{t("Navigation.contact")}</a></li>
+            <li><a onClick={()=>navigate('/careers')} className="hover:text-white">{t("Navigation.career")}</a></li>
           </ul>
         </div>
 
         <div>
           <h3 className="font-semibold mb-4">Contact</h3>
           <ul className="space-y-3 text-sm text-blue-100">
-            <li>Olympic Park Pharmacy</li>
-            <li>Calgary, Alberta</li>
+            <li>{location}</li>
+            <li>{province}</li>
             <li>
               <a href="tel:+10000000000" className="hover:text-white">
-                +1 (000) 000-0000
+                {pharmPhone}
               </a>
             </li>
             <li>
