@@ -1,23 +1,9 @@
 import { Footer } from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Helmet } from "react-helmet-async";
-import logo from "../assets/logo.png";
-import { Clock, MapPin, Phone } from "lucide-react";
-import { address, directionsUrl, mapUrl } from '@/constant/helper';
+import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import { directionsUrl, location, mapUrl, open_mon_fri, open_sat, pharmEmail, pharmPhone, province } from '@/constant/helper';
 import { useTranslation } from "react-i18next";
-
-// const aboutItem = [
-//   {
-//     icon: <Heart className="text-main" size={30} />,
-//     title: "Patient-Centered Care",
-//     desc: "We treat every patient as family, ensuring personalized attention and care."
-//   },
-//   {
-//     icon: <Users className="text-main" size={30} />,
-//     title: "Expert Team",
-//     desc: "Our qualified pharmacists provide professional guidance and support."
-//   }
-// ]
 
 export default function About() {
   const { t } = useTranslation();
@@ -44,18 +30,15 @@ export default function About() {
           <Navbar />
           <section className="pb-10 lg:px-12 px-5 md:px-8 w-full bg-slate-50 ">
             <div className="flex flex-col justify-center items-center pt-15">
-              <span className="inline-block text-3xl md:text-6xl font-bold text-main">
+              <span className="inline-flex items-center rounded-full border border-blue-100 bg-white px-2 py-1 text-xs font-semibold text-main shadow-sm">
+                Personalized Pharmacy Care 
+              </span>
+              <span className="mt-6 inline-block text-3xl md:text-6xl font-bold text-main">
                 {t("About.title")}
               </span>
-              <span className="inline-block text-sm md:text-lg font-normal text-slate-600 md:max-w-1/2 max-w-lvw">
+              <span className="mb-14 inline-block text-sm md:text-lg font-normal text-slate-600 md:max-w-1/2 max-w-lvw">
                 {t("About.subTitle")}
               </span>
-
-              <img
-                src={logo}
-                alt="Olympic Park Pharmacy logo"
-                className="w-50 h-50 object-contain"
-              />
             </div>
             
             <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -70,26 +53,6 @@ export default function About() {
                     </p>
                   ))}
                 </div>
-
-                {/* <div className="flex flex-col gap-4 mt-4">
-                  {aboutItem.map((item, index) => (
-                    <div key={index} className="flex gap-6">
-                      <div className="flex items-center justify-center min-w-14 h-14 rounded-full bg-slate-100">
-                        {item.icon}
-                      </div>
-
-                      <div className="flex flex-col text-left items-start">
-                        <span className="text-xl font-bold text-blue-900">
-                          {item.title}
-                        </span>
-
-                        <p className="text-lg leading-tight text-slate-600 max-w-4xl">
-                          {item.desc}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div> */}
               </div>
 
               <div className="overflow-hidden">
@@ -107,22 +70,29 @@ export default function About() {
                     <div className="flex items-start gap-3">
                       <MapPin className="w-5 h-5 text-main mt-1" />
                       <div className="text-left">
-                        <p className="font-semibold text-gray-900">{address}</p>
-                        <p className="text-sm text-gray-600">Sydney, NSW 2127</p>
+                        <p className="font-semibold text-gray-900">{location}</p>
+                        <p className="text-sm text-gray-600">{province}</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                       <Phone className="w-5 h-5 text-main mt-1" />
                       <div className="text-left">
-                        <p className="font-semibold text-gray-900">+1 (555) 123-4567</p>
+                        <p className="font-semibold text-gray-900">{pharmPhone}</p>
                         <p className="text-sm text-gray-600">{t("map.callUs")}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Mail className="w-5 h-5 text-main mt-1" />
+                      <div className="text-left">
+                        <p className="font-semibold text-gray-900">{pharmEmail}</p>
+                        <p className="text-sm text-gray-600">{t("map.emailUs")}</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                       <Clock className="w-5 h-5 text-main mt-1" />
                       <div className="text-left">
-                        <p className="font-semibold text-gray-900">Mon-Fri: 9am-6pm</p>
-                        <p className="text-sm text-gray-600">Sat: 9am-2pm, Sun: Closed</p>
+                        <p className="font-semibold text-gray-900">Mon-Fri: {open_mon_fri}</p>
+                        <p className="text-sm text-gray-600">Sat: {open_sat}, Sun & Holidays: Closed</p>
                       </div>
                     </div>
                   </div>

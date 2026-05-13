@@ -157,6 +157,7 @@
   "map": {
     "title": "Bisitahin ang Aming Parmasya",
     "callUs": "Tawagan kami anumang oras",
+    "emailUs": "May mga tanong ka ba? Huwag mag-atubiling mag-email sa amin anumang oras.",
     "btnText": "Kumuha ng Direksyon"
   },
   "footer": {
@@ -183,5 +184,33 @@
     "subTitle": "Palagi kaming naghahanap ng mga passionate, maalaga, at dedikadong propesyonal na nakatuon sa pagsuporta sa kalusugan at kapakanan ng aming komunidad. Tuklasin ang aming mga kasalukuyang openings at mag-apply sa pamamagitan ng aming online application form.",
     "btnText": "Tingnan ang mga Bukas na Posisyon",
     "bottomText": "Ang mga kasalukuyang oportunidad at aplikasyon ay pinamamahalaan online."
+  },
+  "contact_us": {
+    "badge": "Makipag-ugnayan",
+    "title": "Narito kami upang tumulong sa inyong mga pangangailangang pangkalusugan",
+    "subTitle": "May tanong ka ba tungkol sa mga reseta, refill, appointment, o mga serbisyo ng botika? Magpadala sa amin ng mensahe at sasagot ang aming koponan sa lalong madaling panahon.",
+    "sendUsMsg": {
+      "title": "Magpadala sa amin ng mensahe",
+      "subTitle": "Punan ang form sa ibaba at agad kaming tutugon.",
+      "fn": "Buong Pangalan",
+      "email": "Email Address",
+      "phone": "Numero ng Telepono",
+      "inquiry": "Uri ng Inquiry",
+      "msg": {
+        "name": "Mensahe",
+        "placeholder": "Paano namin kayo matutulungan?"
+      },
+      "btn": "Ipadala ang Mensahe",
+      "bottomText": "Mangyaring huwag magsama ng sensitibong impormasyong medikal sa form na ito."
+    },
+     "visit_section": {
+      "title": "Bumisita o makipag-ugnayan sa amin",
+      "subTitle": "Makipag-ugnayan sa Olympic Park Pharmacy sa pamamagitan ng telepono, email, o bumisita sa amin sa oras ng operasyon."
+    },
+    "whatsapp": {
+      "title": "Kailangan mo ba ng mas mabilis na tulong?",
+      "subTitle": "Makipag-chat nang direkta sa Olympic Park Pharmacy sa WhatsApp para sa mabilis na mga tanong at suporta.",
+      "btnText": "Mag-chat sa WhatsApp"
+    }
   }
 }

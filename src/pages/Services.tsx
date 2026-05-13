@@ -1,7 +1,6 @@
 import { Footer } from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Helmet } from "react-helmet-async";
-import logo from "../assets/logo.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -37,18 +36,15 @@ export default function Services() {
             <Navbar />
             <section className="pb-10 lg:px-12 px-5 md:px-8 w-full bg-slate-50 ">
               <div className="flex flex-col justify-center items-center pt-15">
-                <span className="inline-block text-3xl md:text-6xl font-bold text-main">
+                <span className="inline-flex items-center rounded-full border border-blue-100 bg-white px-2 py-1 text-xs font-semibold text-main shadow-sm">
+                  Trusted Healthcare Support
+                </span>
+                <span className="mt-6 inline-block text-3xl md:text-6xl font-bold text-main">
                   {t("HomePage.services.title")}
                 </span>
                 <span className="inline-block text-sm md:text-lg font-normal text-slate-600">
                   {t("HomePage.services.subTitle")}
                 </span>
-
-                <img
-                  src={logo}
-                  alt="Olympic Park Pharmacy logo"
-                  className="w-50 h-50 object-contain"
-                />
               </div>
 
               <section className="">

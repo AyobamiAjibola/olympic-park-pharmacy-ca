@@ -14,7 +14,7 @@ import { Navigation, Keyboard } from "swiper/modules";
 import { motion } from "framer-motion";
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
-import { address, directionsUrl, mapUrl } from '@/constant/helper';
+import { directionsUrl, location, mapUrl, open_mon_fri, open_sat, pharmEmail, pharmPhone, province } from '@/constant/helper';
 import ServiceCard from '@/components/ServiceCard';
 import { useTranslation } from "react-i18next";
 
@@ -468,22 +468,29 @@ const Index = () => {
                   <div className="flex items-start gap-3">
                     <MapPin className="w-5 h-5 text-main mt-1" />
                     <div className="text-left">
-                      <p className="font-semibold text-gray-900">{address}</p>
-                      <p className="text-sm text-gray-600">Sydney, NSW 2127</p>
+                      <p className="font-semibold text-gray-900">{location}</p>
+                      <p className="text-sm text-gray-600">{province}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Phone className="w-5 h-5 text-main mt-1" />
                     <div className="text-left">
-                      <p className="font-semibold text-gray-900">+1 (555) 123-4567</p>
+                      <p className="font-semibold text-gray-900">{pharmPhone}</p>
                       <p className="text-sm text-gray-600">{t("map.callUs")}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Mail className="w-5 h-5 text-main mt-1" />
+                    <div className="text-left">
+                      <p className="font-semibold text-gray-900">{pharmEmail}</p>
+                      <p className="text-sm text-gray-600">{t("map.emailUs")}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Clock className="w-5 h-5 text-main mt-1" />
                     <div className="text-left">
-                      <p className="font-semibold text-gray-900">Mon-Fri: 9am-6pm</p>
-                      <p className="text-sm text-gray-600">Sat: 9am-2pm, Sun: Closed</p>
+                      <p className="font-semibold text-gray-900">Mon-Fri: {open_mon_fri}</p>
+                      <p className="text-sm text-gray-600">Sat: {open_sat}, Sun & Holidays: Closed</p>
                     </div>
                   </div>
                 </div>

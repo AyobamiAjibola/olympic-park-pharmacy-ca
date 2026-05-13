@@ -153,6 +153,7 @@
   "map": {
     "title": "Visitez notre pharmacie",
     "callUs": "Appelez-nous à tout moment",
+    "emailUs": "Vous avez des questions ? N’hésitez pas à nous envoyer un e-mail à tout moment.",
     "btnText": "Obtenir l’itinéraire"
   },
   "footer": {
@@ -179,5 +180,33 @@
     "subTitle": "Nous sommes toujours à la recherche de professionnels passionnés, attentionnés et dévoués qui s’engagent à soutenir la santé et le bien-être de notre communauté. Découvrez nos postes actuellement disponibles et postulez via notre formulaire de candidature en ligne.",
     "btnText": "Voir les postes disponibles",
     "bottomText": "Les opportunités actuelles et les candidatures sont gérées en ligne."
+  },
+  "contact_us": {
+    "badge": "Contactez-nous",
+    "title": "Nous sommes là pour répondre à vos besoins de santé",
+    "subTitle": "Vous avez une question concernant les prescriptions, les renouvellements, les rendez-vous ou les services de pharmacie ? Envoyez-nous un message et notre équipe vous répondra dès que possible.",
+    "sendUsMsg": {
+      "title": "Envoyez-nous un message",
+      "subTitle": "Remplissez le formulaire ci-dessous et nous vous répondrons rapidement.",
+      "fn": "Nom complet",
+      "email": "Adresse e-mail",
+      "phone": "Numéro de téléphone",
+      "inquiry": "Type de demande",
+      "msg": {
+        "name": "Message",
+        "placeholder": "Comment pouvons-nous vous aider ?"
+      },
+      "btn": "Envoyer le message",
+      "bottomText": "Veuillez ne pas inclure d’informations médicales sensibles dans ce formulaire."
+    },
+    "visit_section": {
+      "title": "Visitez-nous ou contactez-nous",
+      "subTitle": "Contactez Olympic Park Pharmacy par téléphone, par e-mail ou rendez-nous visite pendant les heures d’ouverture."
+    },
+    "whatsapp": {
+      "title": "Besoin d’une assistance plus rapide ?",
+      "subTitle": "Discutez directement avec Olympic Park Pharmacy sur WhatsApp pour des questions rapides et une assistance immédiate.",
+      "btnText": "Discuter sur WhatsApp"
+    }
   }
 }

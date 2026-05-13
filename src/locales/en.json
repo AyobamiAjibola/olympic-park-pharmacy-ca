@@ -156,6 +156,7 @@
     "map": {
         "title": "Visit Our Pharmacy",
         "callUs": "Call us anytime",
+        "emailUs": "Have questions? Feel free to email us anytime.",
         "btnText": "Get Directions"
     },
     "footer": {
@@ -182,5 +183,30 @@
         "subTitle": "We are always looking for passionate, caring, and dedicated professionals who are committed to supporting the health and well-being of our community. Explore our current openings and apply through our online application form.",
         "btnText": "View Open Positions",
         "bottomText": "Current opportunities and applications are managed online."
+    },
+    "contact_us": {
+        "badge": "Contact Us",
+        "title": "We’re here to help with your health needs",
+        "subTitle": "Have a question about prescriptions, refills, appointments, or pharmacy services? Send us a message and our team will get back to you as soon as possible.",
+        "sendUsMsg": {
+            "title": "Send us a message",
+            "subTitle": "Fill out the form below and we’ll respond shortly.",
+            "fn": "Full Name",
+            "email": "Email Address",
+            "phone": "Phone Number",
+            "inquiry": "Inquiry Type",
+            "msg": {"name": "Message", "placeholder": "How can we help you?"},
+            "btn": "Send Message",
+            "bottomText": "Please do not include sensitive medical information in this form."
+        },
+        "visit_section": {
+            "title": "Visit or contact us",
+            "subTitle": "Reach Olympic Park Pharmacy by phone, email, or visit us during business hours."
+        },
+        "whatsapp": {
+            "title": "Need faster assistance?",
+            "subTitle": "Chat with Olympic Park Pharmacy directly on WhatsApp for quick questions and support.",
+            "btnText": "Chat on WhatsApp"
+        }
     }
 }
