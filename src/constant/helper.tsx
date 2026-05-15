@@ -12,6 +12,8 @@ export const address = "85 Canada Olympic Rd SW, Calgary, AB T3B 5R5";
 
 export const location = "85 Canada Olympic Rd SW";
 export const province = "Calgary, AB T3B 5R5"
+export const BOOKING_LINK = "https://calendar.app.google/VsiUVgFyJ5fGdyaE7";
+export const FORM_LINK = "https://docs.google.com/forms/d/e/1FAIpQLSdMfuGVTSweO9geCAEbhKnN7Ya0TZEh4e-C2D5PEJrPyduGqg/viewform?usp=dialog"
 
 // const lat = 51.08346944455196;
 // const lng = -114.215586118508;

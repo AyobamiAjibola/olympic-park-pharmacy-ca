@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import { FORM_LINK } from "@/constant/helper";
 
 export default function Career() {
     const { t } = useTranslation();
@@ -43,7 +44,7 @@ export default function Career() {
                         </p>
 
                         <a
-                            href="YOUR_GOOGLE_FORM_LINK"
+                            href={FORM_LINK}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="mb-2 inline-flex items-center mt-10 rounded-xl bg-main px-8 py-4 text-white font-semibold shadow hover:bg-main-light transition"

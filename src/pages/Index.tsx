@@ -17,6 +17,10 @@ import { useNavigate } from 'react-router-dom';
 import { directionsUrl, location, mapUrl, open_mon_fri, open_sat, pharmEmail, pharmPhone, province } from '@/constant/helper';
 import ServiceCard from '@/components/ServiceCard';
 import { useTranslation } from "react-i18next";
+import { useEffect, useState } from 'react';
+import type { SyntheticEvent } from "react";
+import { addDoc, collection, getDocs, query, serverTimestamp, where } from 'firebase/firestore';
+import { db } from '@/firebase';
 
 type WhyChooseItem = {
   title: string;
@@ -29,6 +33,11 @@ type HowToSteps = {
   subTitle: string;
 };
 
+export type StatusType = {
+  type: string;
+  message: string;
+}
+
 export type ServicesTypes = {
   title: string;
   desc: string;
@@ -38,6 +47,79 @@ export type ServicesTypes = {
 const Index = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
+
+  const [loading, setLoading] = useState<boolean>(false);
+  const [status, setStatus] = useState<StatusType>({
+    type: '',
+    message: ''
+  });
+  const [email, setEmail] = useState<string>("")
+
+  const handleSubmitSubscribe = async () => {
+    setLoading(true)
+    try {
+        if(email === "") {
+          setStatus({type: "error", message: "Please enter your email in the field."})
+          setLoading(false)
+          
+          return;
+        }
+        const newsletterCollection = collection(db, 'newsletter');
+        const q = query(newsletterCollection, where('email', '==', email.toLowerCase()));
+
+        const querySnapshot = await getDocs(q);
+
+        if (!querySnapshot.empty) {
+            setLoading(false)
+            return setStatus({type: "error", message: "You’re already subscribed to our newsletter."})
+        }
+        await addDoc(newsletterCollection, {
+          email: email.toLowerCase(),
+          createdAt: serverTimestamp()
+        });
+
+        setLoading(false);
+        setEmail('');
+        setStatus({type: "success", message: "Thank you for subscribing to our newsletter!"})
+    } catch (error) {
+        console.log(error, 'error')
+        setStatus({type: "error", message: "Something went wrong. Please try again."})
+        setLoading(false)
+    }
+  };
+
+  const handleSubmit = async (e: SyntheticEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+    setStatus({ type: "", message: "" });
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    formData.append("access_key", import.meta.env.VITE_WEB3FORM_API_KEY);
+    formData.append("subject", "New Prescription Transfer Message from Olympic Park Pharmacy Website");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus({type: "success", message: "Message sent successfully!"});
+        form.reset();
+      } else {
+        setStatus({type: "error", message: "Something went wrong. Please try again."});
+      }
+    } catch (error: unknown) {
+      setStatus({type: "error", message: "Failed to send message. Please try again."});
+      console.log(error)
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const whyChoose = t(
     "HomePage.chooseOlympic.why_choose",
@@ -53,6 +135,16 @@ const Index = () => {
     "HomePage.services.services",
     { returnObjects: true }
   ) as ServicesTypes[];
+
+  useEffect(() => {
+    if (!status.message) return;
+
+    const timeout = setTimeout(() => {
+      setStatus({ type: "", message: "" });
+    }, 3000);
+
+    return () => clearTimeout(timeout);
+  }, [status]);
 
   return (
     <>
@@ -257,14 +349,25 @@ const Index = () => {
                     </p>
                   </div>
 
-                  <form className="space-y-5">
+                  <form className="space-y-5" onSubmit={handleSubmit}>
+                    <input
+                      type="checkbox"
+                      name="botcheck"
+                      className="hidden"
+                      style={{ display: "none" }}
+                    />
                     <div className="grid gap-5 sm:grid-cols-2">
                       <div className="space-y-2">
-                        <label className="block text-left text-sm font-semibold text-gray-700">
-                          {t("HomePage.switchPharmacy.transfer.fn")}
-                        </label>
+                        <div className='flex items-center gap-1'>
+                          <label className="block text-left text-sm font-semibold text-gray-700">
+                            {t("HomePage.switchPharmacy.transfer.fn")}
+                          </label>
+                          <p className='text-red-600 text-left'>*</p>
+                        </div>
 
                         <input
+                          name="Full Name"
+                          required
                           type="text"
                           placeholder="John Doe"
                           className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 outline-none transition focus:border-main focus:bg-white"
@@ -272,11 +375,16 @@ const Index = () => {
                       </div>
 
                       <div className="space-y-2">
-                        <label className="block text-left text-sm font-semibold text-gray-700">
-                          {t("HomePage.switchPharmacy.transfer.ph")}
-                        </label>
+                        <div className='flex items-center gap-1'>
+                          <label className="block text-left text-sm font-semibold text-gray-700">
+                            {t("HomePage.switchPharmacy.transfer.ph")}
+                          </label>
+                          <p className='text-red-600 text-left'>*</p>
+                        </div>
 
                         <input
+                          name="Phone Number"
+                          required
                           type="tel"
                           placeholder="(555) 123-4567"
                           className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 outline-none transition focus:border-main focus:bg-white"
@@ -284,10 +392,16 @@ const Index = () => {
                       </div>
                     </div>
                     <div className="space-y-2 ">
-                      <label className="block text-left text-sm font-semibold text-gray-700">
-                        {t("HomePage.switchPharmacy.transfer.email")}
-                      </label>
+                      <div className='flex items-center gap-1'>
+                        <label className="block text-left text-sm font-semibold text-gray-700">
+                          {t("HomePage.switchPharmacy.transfer.email")}
+                        </label>
+                        <p className='text-red-600 text-left'>*</p>
+                      </div>
+
                       <input
+                        name="Email"
+                        required
                         type="email"
                         placeholder="john.doe@gmail.com"
                         className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 outline-none transition focus:border-main focus:bg-white"
@@ -296,11 +410,16 @@ const Index = () => {
 
                     <div className="grid gap-5 sm:grid-cols-2">
                       <div className="space-y-2">
-                        <label className="block text-left text-sm font-semibold text-gray-700">
-                          {t("HomePage.switchPharmacy.transfer.currentPharm.name")}
-                        </label>
+                        <div className='flex items-center gap-1'>
+                          <label className="block text-left text-sm font-semibold text-gray-700">
+                            {t("HomePage.switchPharmacy.transfer.currentPharm.name")}
+                          </label>
+                          <p className='text-red-600 text-left'>*</p>
+                        </div>
 
                         <input
+                          name="Pharmacy Name"
+                          required
                           type="text"
                           placeholder={t("HomePage.switchPharmacy.transfer.currentPharm.placeholder")}
                           className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 outline-none transition focus:border-main focus:bg-white"
@@ -308,11 +427,16 @@ const Index = () => {
                       </div>
 
                       <div className="space-y-2">
-                        <label className="block text-left text-sm font-semibold text-gray-700">
-                          {t("HomePage.switchPharmacy.transfer.pharmPhone")}
-                        </label>
+                        <div className='flex items-center gap-1'>
+                          <label className="block text-left text-sm font-semibold text-gray-700">
+                            {t("HomePage.switchPharmacy.transfer.pharmPhone")}
+                          </label>
+                          <p className='text-red-600 text-left'>*</p>
+                        </div>
 
                         <input
+                          name="Pharmacy Phone Number"
+                          required
                           type="tel"
                           placeholder="(555) 987-6543"
                           className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 outline-none transition focus:border-main focus:bg-white"
@@ -321,22 +445,29 @@ const Index = () => {
                     </div>
 
                     <div className="space-y-2 ">
-                      <label className="block text-left text-sm font-semibold text-gray-700">
-                        {t("HomePage.switchPharmacy.transfer.prescription.name")}
-                      </label>
-
+                      <div className='flex items-center gap-1'>
+                        <label className="block text-left text-sm font-semibold text-gray-700">
+                          {t("HomePage.switchPharmacy.transfer.prescription.name")}
+                        </label>
+                        <p className='text-red-600 text-left'>*</p>
+                      </div>
+                      
                       <textarea
+                        name="Prescription"
+                        required
                         rows={4}
                         placeholder={t("HomePage.switchPharmacy.transfer.prescription.placeholder")}
                         className="w-full resize-none rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 outline-none transition focus:border-main focus:bg-white"
                       />
                     </div>
-
+                    {status && <p className={`${status.type === 'success' ? 'text-green-600' : 'text-red-600'} text-semibold`}>{status.message}</p>}
                     <Button
                       type="submit"
                       className="w-full bg-main px-6 py-6 font-semibold text-white shadow-lg cursor-pointer transition hover:bg-main-light"
                     >
-                      {t("HomePage.switchPharmacy.transfer.btnText")}
+                      {loading 
+                        ? <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white"></div> 
+                        : t("HomePage.switchPharmacy.transfer.btnText")}
                     </Button>
 
                     <p className="text-center text-xs leading-relaxed text-gray-500">
@@ -349,7 +480,7 @@ const Index = () => {
           </section>
 
           {/* Services Preview */}
-          <section className="bg-white lg:px-12 px-5 md:px-8 py-16">
+          <section className="bg-white lg:px-12 px-5 md:px-8 md:pt-16 md:pb-16 pt-16 pb-8">
             <div className="mx-auto max-w-7xl">
               <div className="text-center">
                 <span className="mt-5 text-2xl tracking-tight text-main md:text-4xl">
@@ -398,7 +529,7 @@ const Index = () => {
 
             <Button
               onClick={()=>navigate('/services')}
-              className="bg-main px-6 py-6 mt-8 font-semibold text-white shadow-lg cursor-pointer transition hover:bg-main-light"
+              className="bg-main px-6 py-6 md:mt-8 font-semibold text-white shadow-lg cursor-pointer transition hover:bg-main-light"
             >
               {t("HomePage.services.btnText")}
             </Button>
@@ -425,24 +556,28 @@ const Index = () => {
                   {t("HomePage.subscribe.title")}
                 </h2>
 
-                <p className="mt-3 text-slate-300">
+                <p className="mt-3 text-slate-300 ">
                   {t("HomePage.subscribe.subTitle")}
                 </p>
-
-                <form className="mx-auto mt-8 flex max-w-xl flex-col gap-3 sm:flex-row mb-6">
+                {status && <p className={`${status.type === 'success' ? 'text-green-300' : 'text-red-300'} text-semibold`}>{status.message}</p>}
+                <div className="mx-auto mt-8 flex md:flex-row flex-col max-w-xl gap-3 mb-2">
                   <input
+                    value={email}
+                    required
+                    onChange={(e)=>setEmail(e.currentTarget.value)}
                     type="email"
                     placeholder= {t("HomePage.subscribe.placeholder")}
                     className="min-h-12 flex-1 rounded-full border border-white/10 bg-white px-5 text-slate-900 outline-none"
                   />
-
-                  <button
-                    type="submit"
-                    className="rounded-full bg-main px-6 py-3 font-semibold text-white transition hover:bg-main-light cursor-pointer"
+                  <Button
+                    onClick={handleSubmitSubscribe}
+                    className="rounded-full bg-main px-6 py-6 font-semibold text-white shadow-lg cursor-pointer transition hover:bg-main-light "
                   >
-                    {t("HomePage.subscribe.btnText")}
-                  </button>
-                </form>
+                    {loading 
+                      ? <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white"></div> 
+                      : t("HomePage.subscribe.btnText")}
+                  </Button>
+                </div>
                 <p className="text-center text-xs leading-relaxed text-accent-grey">
                   {t("HomePage.subscribe.bottomText")}
                 </p>

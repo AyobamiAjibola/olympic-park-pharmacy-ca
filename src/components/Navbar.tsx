@@ -7,6 +7,7 @@ import logo from "../assets/logo.png";
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import LangSelect from "./LangSelect";
+import { BOOKING_LINK } from "@/constant/helper";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -65,7 +66,10 @@ const Navbar = () => {
           </ul>
 
           <Button 
-            className="h-8 px-3 py-2.5 bg-main text-white font-semibold shadow-md hover:bg-main-light] transition"
+            className="h-8 px-3 py-2.5 bg-main text-white font-semibold shadow-md hover:bg-main-light transition cursor-pointer"
+            onClick={() =>
+              window.open(BOOKING_LINK, "_blank")
+            }
           >
             Book Now
           </Button>
