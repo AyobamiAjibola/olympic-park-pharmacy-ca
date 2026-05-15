@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import { Helmet } from "react-helmet-async";
 import { Mail, MapPin, Phone, Clock, Send, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { address, mapUrl, open_mon_fri, open_sat, pharmEmail, pharmPhone, pharmWhatsApp } from '@/constant/helper';
+import { location, mapUrl, open_mon_fri, open_sat, pharmEmail, pharmPhone, pharmWhatsApp, province } from '@/constant/helper';
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -263,8 +263,8 @@ export default function Contact() {
                     </div>
                     <div className="flex justify-center items-start flex-col">
                       <p className="font-semibold">Address</p>
-                      <p className="mt-1 text-slate-300">
-                        {address}
+                      <p className="mt-1 text-slate-300 text-left">
+                        {`${location} ${province}`}
                       </p>
                     </div>
                   </div>

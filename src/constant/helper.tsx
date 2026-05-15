@@ -8,10 +8,10 @@ import {
 } from "lucide-react";
 
 export const pharmacyName = "Olympic Park Pharmacy";
-export const address = "85 Canada Olympic Rd SW, Calgary, AB T3B 5R5";
+export const address =  "Canada Olympic Common Southwest, Calgary, AB T3H 6K4, Canada";
 
-export const location = "85 Canada Olympic Rd SW";
-export const province = "Calgary, AB T3B 5R5"
+export const location = "30 Canada Olympic Common SW.";
+export const province = "Calgary, AB T3H 6K4"
 export const BOOKING_LINK = "https://calendar.app.google/VsiUVgFyJ5fGdyaE7";
 export const FORM_LINK = "https://docs.google.com/forms/d/e/1FAIpQLSdMfuGVTSweO9geCAEbhKnN7Ya0TZEh4e-C2D5PEJrPyduGqg/viewform?usp=dialog"
 
@@ -27,11 +27,11 @@ export const directionsUrl =
   `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(address)}`;
 // export const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
 
-export const pharmPhone = "(403) 000-0000";
+export const pharmPhone = "+1 (780) 871-3490";
 export const pharmEmail = "info@olympicparkpharmacy.ca";
 export const open_mon_fri = "9:00 AM – 6:00 PM";
 export const open_sat = "10:00 AM – 4:00 PM";
-export const pharmWhatsApp = "8255612724";
+export const pharmWhatsApp = "+17808713490";
 
 export const services = [
   {

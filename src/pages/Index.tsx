@@ -14,7 +14,7 @@ import { Navigation, Keyboard } from "swiper/modules";
 import { motion } from "framer-motion";
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
-import { directionsUrl, location, mapUrl, open_mon_fri, open_sat, pharmEmail, pharmPhone, province } from '@/constant/helper';
+import { directionsUrl, location, mapUrl, open_mon_fri, open_sat, pharmEmail, pharmPhone, pharmWhatsApp, province } from '@/constant/helper';
 import ServiceCard from '@/components/ServiceCard';
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from 'react';
@@ -645,7 +645,7 @@ const Index = () => {
 
         {/* WhatsApp Floating Button */}
         <a
-          href="https://wa.me/1234567890"
+          href={`https://wa.me/${pharmWhatsApp}`}
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-white shadow-xl transition hover:scale-105 hover:bg-green-600"
