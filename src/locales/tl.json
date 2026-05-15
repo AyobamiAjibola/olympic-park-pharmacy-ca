@@ -212,5 +212,23 @@
       "subTitle": "Makipag-chat nang direkta sa Olympic Park Pharmacy sa WhatsApp para sa mabilis na mga tanong at suporta.",
       "btnText": "Mag-chat sa WhatsApp"
     }
+  },
+  "messages": {
+    "transfer": {
+      "success": "Matagumpay na naipadala ang mensahe!",
+      "err1": "May nangyaring problema. Pakisubukang muli.",
+      "err2": "Hindi naipadala ang mensahe. Pakisubukang muli."
+    },
+    "newsletter": {
+      "success": "Salamat sa pag-subscribe sa aming newsletter!",
+      "err1": "Pakilagay ang iyong email sa field.",
+      "success2": "Naka-subscribe ka na sa aming newsletter.",
+      "err2": "May nangyaring problema. Pakisubukang muli."
+    },
+    "contact": {
+      "success": "Matagumpay na naipadala ang mensahe!",
+      "err1": "May nangyaring problema. Pakisubukang muli.",
+      "err2": "Hindi naipadala ang mensahe. Pakisubukang muli."
+    }
   }
 }

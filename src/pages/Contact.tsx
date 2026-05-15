@@ -40,19 +40,19 @@ export default function Contact() {
       if (result.success) {
         setStatus({
           type: "success",
-          message: "Message sent successfully!"
+          message: t("messages.contact.success")
         });
         form.reset();
       } else {
         setStatus({
           type: "error",
-          message: "Something went wrong. Please try again."
+          message: t("messages.contact.err1")
         });
       }
     } catch (error: unknown) {
       setStatus({
         type: "error",
-        message: "Failed to send message. Please try again."
+        message: t("messages.contact.err2")
       });
       console.log(error)
     } finally {

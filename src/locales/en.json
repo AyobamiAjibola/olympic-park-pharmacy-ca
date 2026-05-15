@@ -208,5 +208,23 @@
             "subTitle": "Chat with Olympic Park Pharmacy directly on WhatsApp for quick questions and support.",
             "btnText": "Chat on WhatsApp"
         }
+    },
+    "messages": {
+        "transfer": {
+            "success": "Message sent successfully!",
+            "err1": "Something went wrong. Please try again.",
+            "err2": "Failed to send message. Please try again."
+        },
+        "newsletter": {
+            "success": "Thank you for subscribing to our newsletter!",
+            "err1": "Please enter your email in the field.",
+            "success2": "You’re already subscribed to our newsletter.",
+            "err2": "Something went wrong. Please try again."
+        },
+        "contact": {
+            "success": "Message sent successfully!",
+            "err1": "Something went wrong. Please try again.",
+            "err2": "Failed to send message. Please try again."
+        }
     }
 }

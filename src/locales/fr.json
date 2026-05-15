@@ -208,5 +208,23 @@
       "subTitle": "Discutez directement avec Olympic Park Pharmacy sur WhatsApp pour des questions rapides et une assistance immédiate.",
       "btnText": "Discuter sur WhatsApp"
     }
-  }
+  },
+  "messages": {
+      "transfer": {
+        "success": "Message envoyé avec succès !",
+        "err1": "Une erreur s’est produite. Veuillez réessayer.",
+        "err2": "Échec de l’envoi du message. Veuillez réessayer."
+      },
+      "newsletter": {
+        "success": "Merci de vous être abonné à notre newsletter !",
+        "err1": "Veuillez entrer votre adresse e-mail dans le champ.",
+        "success2": "Vous êtes déjà abonné à notre newsletter.",
+        "err2": "Une erreur s’est produite. Veuillez réessayer."
+      },
+      "contact": {
+        "success": "Message envoyé avec succès !",
+        "err1": "Une erreur s’est produite. Veuillez réessayer.",
+        "err2": "Échec de l’envoi du message. Veuillez réessayer."
+      }
+    }
 }

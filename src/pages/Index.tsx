@@ -59,7 +59,7 @@ const Index = () => {
     setLoading(true)
     try {
         if(email === "") {
-          setStatus({type: "error", message: "Please enter your email in the field."})
+          setStatus({type: "error", message: t("messages.newsletter.err1")})
           setLoading(false)
           
           return;
@@ -71,7 +71,7 @@ const Index = () => {
 
         if (!querySnapshot.empty) {
             setLoading(false)
-            return setStatus({type: "error", message: "You’re already subscribed to our newsletter."})
+            return setStatus({type: "success", message: t("messages.newsletter.success2")})
         }
         await addDoc(newsletterCollection, {
           email: email.toLowerCase(),
@@ -80,10 +80,10 @@ const Index = () => {
 
         setLoading(false);
         setEmail('');
-        setStatus({type: "success", message: "Thank you for subscribing to our newsletter!"})
+        setStatus({type: "success", message: t("messages.newsletter.success")})
     } catch (error) {
         console.log(error, 'error')
-        setStatus({type: "error", message: "Something went wrong. Please try again."})
+        setStatus({type: "error", message: t("messages.newsletter.err2")})
         setLoading(false)
     }
   };
@@ -108,13 +108,13 @@ const Index = () => {
       const result = await response.json();
 
       if (result.success) {
-        setStatus({type: "success", message: "Message sent successfully!"});
+        setStatus({type: "success", message: t("messages.transfer.success")});
         form.reset();
       } else {
-        setStatus({type: "error", message: "Something went wrong. Please try again."});
+        setStatus({type: "error", message: t("messages.transfer.err1")});
       }
     } catch (error: unknown) {
-      setStatus({type: "error", message: "Failed to send message. Please try again."});
+      setStatus({type: "error", message: t("messages.transfer.err2")});
       console.log(error)
     } finally {
       setLoading(false);
