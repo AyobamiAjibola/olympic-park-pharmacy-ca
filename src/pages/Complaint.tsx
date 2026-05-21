@@ -100,8 +100,8 @@ export default function Complaint() {
                             viewport={{ once: true, amount: 0.08 }} 
                             className="flex flex-col justify-center items-center"
                         >
-                            <div className="rounded-full bg-green-100 p-4">
-                                <MessageCircle className="h-8 w-8 text-green-700" />
+                            <div className="rounded-full bg-white p-4 shadow-md">
+                                <MessageCircle className="h-8 w-8 text-main" />
                             </div>
                             <span className="md:max-w-[60vw] mt-6 inline-block text-3xl md:text-4xl font-bold text-main">
                                 {t("complain.title")}

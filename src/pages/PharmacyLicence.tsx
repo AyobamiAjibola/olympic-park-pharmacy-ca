@@ -32,7 +32,7 @@ function ContactItem({
     }) {
     return (
         <div className="flex gap-3">
-            <div className="mt-1 text-green-700 [&>svg]:h-5 [&>svg]:w-5">
+            <div className="mt-1 text-main [&>svg]:h-5 [&>svg]:w-5">
                 {icon}
             </div>
             <div className="text-left">
@@ -155,7 +155,7 @@ export default function License() {
                     <div className="lg:col-span-2">
                         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
                             <div className="mb-6 flex items-center gap-3">
-                                <ShieldCheck className="h-6 w-6 text-green-700" />
+                                <ShieldCheck className="h-6 w-6 text-main mb-1" />
                                 <h2 className="text-2xl font-semibold">
                                     {t("license.li_info")}
                                 </h2>
@@ -220,7 +220,7 @@ export default function License() {
 
                         <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
                             <div className="mb-4 flex items-center gap-3">
-                                <FileText className="h-6 w-6 text-green-700" />
+                                <FileText className="h-6 w-6 text-main mb-1" />
                                 <h2 className="text-2xl font-semibold">
                                     {t("license.regulatory")}
                                 </h2>
@@ -231,18 +231,17 @@ export default function License() {
                             </p>
 
                             <div className="mt-6">
-                                <a
-                                    href="#"
-                                    className="inline-flex items-center justify-center rounded-lg bg-green-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-green-800"
+                                <Button
+                                    className="inline-flex items-center justify-center rounded-lg bg-main px-5 py-5 text-sm font-semibold text-white transition hover:bg-main-light"
                                 >
                                     {t("license.verify")}
-                                </a>
+                                </Button>
                             </div>
                         </div>
 
                         <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
                             <div className="mb-4 flex items-center gap-3">
-                                <Download className="h-6 w-6 text-green-700" />
+                                <Download className="h-6 w-6 text-main mb-1" />
                                 <h2 className="text-2xl font-semibold">
                                     {t("license.doc")}
                                 </h2>
@@ -256,7 +255,7 @@ export default function License() {
 
                         <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
                             <div className="mb-4 flex items-center gap-3 flex-col md:flex-row">
-                                <MessageCircle className="h-6 w-6 text-green-700" />
+                                <MessageCircle className="h-6 w-6 text-main mb-1" />
                                 <h2 className="text-2xl font-semibold">
                                     {t("license.concern.title")}
                                 </h2>
