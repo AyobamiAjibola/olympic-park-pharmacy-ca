@@ -31,7 +31,7 @@ export default function Complaint() {
         const form = e.currentTarget;
         const formData = new FormData(form);
     
-        formData.append("access_key", import.meta.env.VITE_WEB3FORM_API_KEY);
+        formData.append("access_key", import.meta.env.VITE_WEB3FORM_API_KEY_COMPLAIN);
         formData.append("subject", "New Complain: Olympic Park Pharmacy");
     
         try {
