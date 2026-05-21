@@ -1,9 +1,9 @@
 import { Footer } from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Helmet } from "react-helmet-async";
-import { Mail, MapPin, Phone, Clock, Send, MessageCircle } from "lucide-react";
+import { Mail, MapPin, Phone, Clock, Send, MessageCircle, Printer } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { location, mapUrl, open_mon_fri, open_sat, pharmEmail, pharmPhone, pharmWhatsApp, province } from '@/constant/helper';
+import { location, mapUrl, open_mon_fri, open_sat, open_sun, pharmEmail, pharmFax, pharmPhone, pharmWhatsApp, province } from '@/constant/helper';
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -247,6 +247,16 @@ export default function Contact() {
 
                   <div className="flex gap-4">
                     <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-emerald-500/20 text-emerald-300">
+                      <Printer size={22} />
+                    </div>
+                    <div className="flex justify-center items-start flex-col">
+                      <p className="font-semibold">Fax</p>
+                      <p className="mt-1 text-slate-300">{pharmFax}</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4">
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-emerald-500/20 text-emerald-300">
                       <Mail size={22} />
                     </div>
                     <div className="flex justify-center items-start flex-col">
@@ -281,7 +291,10 @@ export default function Contact() {
                       <p className="text-slate-300">
                         Saturday: {open_sat}
                       </p>
-                      <p className="text-slate-300">Sunday & Holidays: Closed</p>
+                      <p className="text-slate-300">
+                        Sunday: {open_sun}
+                      </p>
+                      <p className="text-slate-300">Holidays: Closed</p>
                     </div>
                   </div>
                 </div>

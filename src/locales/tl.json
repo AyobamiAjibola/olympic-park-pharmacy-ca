@@ -5,6 +5,8 @@
     "about": "Tungkol Sa Amin",
     "contact": "Makipag-ugnayan",
     "career": "Mga Karera",
+    "license": "Lisensya",
+    "complaint": "Reklamo",
     "btn": "Mag-book Ngayon"
   },
   "HomePage": {
@@ -229,6 +231,52 @@
       "success": "Matagumpay na naipadala ang mensahe!",
       "err1": "May nangyaring problema. Pakisubukang muli.",
       "err2": "Hindi naipadala ang mensahe. Pakisubukang muli."
+    }
+  },
+  "license": {
+    "badge": "Olympic Park Pharmacy",
+    "title": "Mga Lisensya ng Parmasya at Impormasyong Pang Regulasyon",
+    "subTitle": "Ang Olympic Park Pharmacy ay nagpapatakbo alinsunod sa mga panlalawigang regulasyon ng parmasya at mga propesyonal na kinakailangan sa paglilisensya sa Alberta.",
+    "li_info": "Impormasyon ng Lisensya",
+    "regulatory": "Awtoridad na Pang Regulasyon",
+    "regulatory_sub": "Ang Olympic Park Pharmacy ay lisensyado at kinokontrol ng Alberta College of Pharmacy. Maaaring beripikahin ng mga pasyente ang rehistrasyon ng parmasya o matuto pa tungkol sa mga pamantayan ng parmasya sa pamamagitan ng awtoridad na pang regulasyon.",
+    "verify": "Beripikahin ang Lisensya",
+    "doc": "Mga Dokumento",
+    "pharm_li": "Lisensya ng Parmasya",
+    "bus_reg": "Rehistrasyon ng Negosyo",
+    "concern": {
+      "title": "Mga Reklamo at Alalahanin ng Pasyente",
+      "sub_title": "Kung mayroon kang mga tanong o alalahanin tungkol sa mga serbisyo ng parmasya, mangyaring direktang makipag ugnayan sa Olympic Park Pharmacy. Maaari ring makipag ugnayan ang mga pasyente sa Alberta College of Pharmacy para sa mga alalahaning pang regulasyon."
+    },
+    "contact": {
+      "title": "Impormasyon sa Pakikipag Ugnayan"
+    },
+    "btn_text": "Isumite ang Reklamo"
+  },
+  "complain": {
+    "title": "Plaintes et préoccupations des patients",
+    "subTitle": "Olympic Park Pharmacy s'engage à fournir des soins sécuritaires, respectueux et de haute qualité. Si vous avez des préoccupations concernant nos services, notre personnel ou votre expérience en tant que patient, veuillez soumettre votre plainte ci dessous.",
+    "fn": "Nom complet",
+    "email": "Adresse e mail",
+    "phone": "Numéro de téléphone",
+    "category": "Catégorie de plainte",
+    "options": {
+      "default": "Sélectionnez une catégorie",
+      "cus": "Service à la clientèle",
+      "pre": "Problème de prescription",
+      "staff": "Conduite du personnel",
+      "privacy": "Préoccupation relative à la confidentialité",
+      "other": "Autres"
+    },
+    "detail": {
+      "name": "Détails de la plainte",
+      "placeholder": "Veuillez décrire votre préoccupation en détail"
+    },
+    "bottomTxt": "Pour les urgences médicales, veuillez contacter les services d'urgence ou parler directement avec un professionnel de la santé autorisé. Ce formulaire de plainte ne doit pas être utilisé pour des urgences médicales.",
+    "btn": "Soumettre une plainte",
+    "messages": {
+      "success": "Salamat sa pagsusumite ng iyong reklamo. Makikipag ugnayan kami sa iyo sa lalong madaling panahon.",
+      "err": "May nangyaring mali. Pakisubukang muli."
     }
   }
 }

@@ -5,6 +5,8 @@
     "about": "À propos de nous",
     "contact": "Contactez-nous",
     "career": "Carrières",
+    "license": "License",
+    "complaint": "Plainte",
     "btn": "Réserver maintenant"
   },
   "HomePage": {
@@ -210,21 +212,67 @@
     }
   },
   "messages": {
-      "transfer": {
-        "success": "Message envoyé avec succès !",
-        "err1": "Une erreur s’est produite. Veuillez réessayer.",
-        "err2": "Échec de l’envoi du message. Veuillez réessayer."
-      },
-      "newsletter": {
-        "success": "Merci de vous être abonné à notre newsletter !",
-        "err1": "Veuillez entrer votre adresse e-mail dans le champ.",
-        "success2": "Vous êtes déjà abonné à notre newsletter.",
-        "err2": "Une erreur s’est produite. Veuillez réessayer."
-      },
-      "contact": {
-        "success": "Message envoyé avec succès !",
-        "err1": "Une erreur s’est produite. Veuillez réessayer.",
-        "err2": "Échec de l’envoi du message. Veuillez réessayer."
-      }
+    "transfer": {
+      "success": "Message envoyé avec succès !",
+      "err1": "Une erreur s’est produite. Veuillez réessayer.",
+      "err2": "Échec de l’envoi du message. Veuillez réessayer."
+    },
+    "newsletter": {
+      "success": "Merci de vous être abonné à notre newsletter !",
+      "err1": "Veuillez entrer votre adresse e-mail dans le champ.",
+      "success2": "Vous êtes déjà abonné à notre newsletter.",
+      "err2": "Une erreur s’est produite. Veuillez réessayer."
+    },
+    "contact": {
+      "success": "Message envoyé avec succès !",
+      "err1": "Une erreur s’est produite. Veuillez réessayer.",
+      "err2": "Échec de l’envoi du message. Veuillez réessayer."
     }
+  },
+  "license": {
+    "badge": "Olympic Park Pharmacy",
+    "title": "Licences de pharmacie et informations réglementaires",
+    "subTitle": "Olympic Park Pharmacy exerce ses activités conformément aux réglementations provinciales en matière de pharmacie et aux exigences professionnelles de délivrance de licences en Alberta.",
+    "li_info": "Informations sur les licences",
+    "regulatory": "Autorité réglementaire",
+    "regulatory_sub": "Olympic Park Pharmacy est agréée et réglementée par l’Alberta College of Pharmacy. Les patients peuvent vérifier l’enregistrement de la pharmacie ou en apprendre davantage sur les normes pharmaceutiques auprès de l’autorité réglementaire.",
+    "verify": "Vérifier la licence",
+    "doc": "Documents",
+    "pharm_li": "Licence de pharmacie",
+    "bus_reg": "Enregistrement de l’entreprise",
+    "concern": {
+      "title": "Plaintes et préoccupations des patients",
+      "sub_title": "Si vous avez des questions ou des préoccupations concernant les services de pharmacie, veuillez contacter directement Olympic Park Pharmacy. Les patients peuvent également communiquer avec l’Alberta College of Pharmacy pour des préoccupations réglementaires."
+    },
+    "contact": {
+      "title": "Informations de contact"
+    },
+    "btn_text": "Soumettre une plainte"
+  },
+  "complain": {
+    "title": "Plaintes et préoccupations des patients",
+    "subTitle": "Olympic Park Pharmacy s'engage à fournir des soins sécuritaires, respectueux et de haute qualité. Si vous avez des préoccupations concernant nos services, notre personnel ou votre expérience en tant que patient, veuillez soumettre votre plainte ci dessous.",
+    "fn": "Nom complet",
+    "email": "Adresse e mail",
+    "phone": "Numéro de téléphone",
+    "category": "Catégorie de plainte",
+    "options": {
+      "default": "Sélectionnez une catégorie",
+      "cus": "Service à la clientèle",
+      "pre": "Problème de prescription",
+      "staff": "Conduite du personnel",
+      "privacy": "Préoccupation relative à la confidentialité",
+      "other": "Autres"
+    },
+    "detail": {
+      "name": "Détails de la plainte",
+      "placeholder": "Veuillez décrire votre préoccupation en détail"
+    },
+    "bottomTxt": "Pour les urgences médicales, veuillez contacter les services d'urgence ou parler directement avec un professionnel de la santé autorisé. Ce formulaire de plainte ne doit pas être utilisé pour des urgences médicales.",
+    "btn": "Soumettre une plainte",
+    "messages": {
+      "success": "Merci d’avoir soumis votre plainte. Nous vous répondrons dès que possible.",
+      "err": "Une erreur s’est produite. Veuillez réessayer."
+    }
+  }
 }

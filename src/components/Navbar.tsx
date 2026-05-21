@@ -24,6 +24,8 @@ const Navbar = () => {
     { to: "/services", label: t("Navigation.services")},
     { to: "/about", label: t("Navigation.about")},
     { to: "/contact", label: t("Navigation.contact")},
+    { to: "/license", label: t("Navigation.license")},
+    { to: "/complaint", label: t("Navigation.complaint")},
     { to: "/careers", label: t("Navigation.career")}
   ];
 
@@ -36,10 +38,10 @@ const Navbar = () => {
           <img
             src={logo}
             alt="Olympic Park Pharmacy logo"
-            className="w-20 h-20 object-contain"
+            className="w-20 h-20 md:w-10 md:h-10 lg:w-20 lg:h-20 object-contain"
           />
 
-          <div className="leading-tight">
+          <div className="leading-tight md:hidden lg:block">
             <p className={`text-xl md:text-lg font-bold ${pathname === '/' ? 'text-white' : 'text-main'}`}>
               Olympic Park
             </p>

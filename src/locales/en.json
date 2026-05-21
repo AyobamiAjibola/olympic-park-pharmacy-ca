@@ -5,6 +5,8 @@
         "about": "About Us",
         "contact": "Contact Us",
         "career": "Careers",
+        "license": "License",
+        "complaint": "Complaint",
         "btn": "Book Now"
     },
     "HomePage": {
@@ -225,6 +227,52 @@
             "success": "Message sent successfully!",
             "err1": "Something went wrong. Please try again.",
             "err2": "Failed to send message. Please try again."
+        }
+    },
+    "license": {
+        "badge": "Olympic Park Pharmacy",
+        "title": "Pharmacy Licenses and Regulatory Information",
+        "subTitle": "Olympic Park Pharmacy operates in compliance with provincial pharmacy regulations and professional licensing requirements in Alberta.",
+        "li_info": "License Information",
+        "regulatory": "Regulatory Authority",
+        "regulatory_sub": "Olympic Park Pharmacy is licensed and regulated by the Alberta College of Pharmacy. Patients may verify pharmacy registration or learn more about pharmacy standards through the regulatory authority.",
+        "verify": "Verify License",
+        "doc": "Documents",
+        "pharm_li": "Pharmacy License",
+        "bus_reg": "Business Registration",
+        "concern": {
+            "title": "Complaints and Patient Concerns",
+            "sub_title": "If you have questions or concerns about pharmacy services, please contact Olympic Park Pharmacy directly. Patients may also contact the Alberta College of Pharmacy for regulatory concerns."
+        },
+        "contact": {
+            "title": "Contact Information"
+        },
+        "btn_text": "Submit a Complaint"
+    },
+    "complain": {
+        "title": "Complaints and Patient Concerns",
+        "subTitle": "Olympic Park Pharmacy is committed to providing safe, respectful, and high quality care. If you have concerns regarding our services, staff, or patient experience, please submit your complaint below.",
+        "fn": "Full Name",
+        "email": "Email Address",
+        "phone": "Phone Number",
+        "category": "Complaint Category",
+        "options": {
+            "default": "Select a category",
+            "cus": "Customer Service",
+            "pre": "Prescription Issue",
+            "staff": "Staff Conduct",
+            "privacy": "Privacy Concern",
+            "other": "Others"
+        },
+        "detail": {
+            "name": "Complaint Details",
+            "placeholder": "Please describe your concern in detail"
+        },
+        "bottomTxt": "For urgent medical concerns, please contact emergency services or speak directly with a licensed healthcare professional. This complaint form should not be used for medical emergencies.",
+        "btn": "Submit Complaint",
+        "messages": {
+            "success": "Thank you for submitting your complaint. We will get back to you as soon as possible.",
+            "err": "Something went wrong. Please try again."
         }
     }
 }

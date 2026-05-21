@@ -10,6 +10,8 @@ import Contact from "./pages/Contact.tsx";
 import Services from "./pages/Services.tsx";
 import Career from "./pages/Career.tsx";
 import ScrollToTop from "./components/ScrollToTop.tsx";
+import Complaint from "./pages/Complaint.tsx";
+import License from "./pages/PharmacyLicence.tsx";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +28,8 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
           <Route path="/careers" element={<Career />} />
+          <Route path="/license" element={<License />} />
+          <Route path="/complaint" element={<Complaint />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

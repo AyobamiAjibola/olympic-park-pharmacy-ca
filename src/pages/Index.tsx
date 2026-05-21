@@ -6,6 +6,7 @@ import {
   Clock,
   Phone,
   MapPin,
+  Printer,
 } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -14,7 +15,7 @@ import { Navigation, Keyboard } from "swiper/modules";
 import { motion } from "framer-motion";
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
-import { directionsUrl, location, mapUrl, open_mon_fri, open_sat, pharmEmail, pharmPhone, pharmWhatsApp, province } from '@/constant/helper';
+import { directionsUrl, location, mapUrl, open_mon_fri, open_sat, open_sun, pharmEmail, pharmFax, pharmPhone, pharmWhatsApp, province } from '@/constant/helper';
 import ServiceCard from '@/components/ServiceCard';
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from 'react';
@@ -615,6 +616,12 @@ const Index = () => {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
+                    <Printer className="w-5 h-5 text-main " />
+                    <div className="text-left">
+                      <p className="font-semibold text-gray-900">{pharmFax}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
                     <Mail className="w-5 h-5 text-main mt-1" />
                     <div className="text-left">
                       <p className="font-semibold text-gray-900">{pharmEmail}</p>
@@ -625,7 +632,8 @@ const Index = () => {
                     <Clock className="w-5 h-5 text-main mt-1" />
                     <div className="text-left">
                       <p className="font-semibold text-gray-900">Mon-Fri: {open_mon_fri}</p>
-                      <p className="text-sm text-gray-600">Sat: {open_sat}, Sun & Holidays: Closed</p>
+                      <p className="text-sm text-gray-600">Sat: {open_sat}</p>
+                      <p className="text-sm text-gray-600">Sun: {open_sun}, Holidays: Closed</p>
                     </div>
                   </div>
                 </div>

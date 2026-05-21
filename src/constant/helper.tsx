@@ -27,11 +27,34 @@ export const directionsUrl =
   `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(address)}`;
 // export const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
 
-export const pharmPhone = "+1 (780) 871-3490";
+export const pharmPhone = "+1 (403) 900-5553";
+export const pharmFax = "+1 (403) 900-5554";
 export const pharmEmail = "info@olympicparkpharmacy.ca";
-export const open_mon_fri = "9:00 AM – 6:00 PM";
+export const open_mon_fri = "9:00 AM – 7:00 PM";
 export const open_sat = "10:00 AM – 4:00 PM";
-export const pharmWhatsApp = "+17808713490";
+export const open_sun = "10:00 AM – 2:00 PM";
+export const pharmWhatsApp = "+14039005553";
+
+export const licenses = [
+  {
+    title: "Pharmacy Operating License",
+    number: "LIC 12345",
+    status: "Active",
+    expiry: "Dec 2026",
+  },
+  {
+    title: "Business Registration",
+    number: "BR 67890",
+    status: "Active",
+    expiry: "N/A",
+  },
+  {
+    title: "Injection Authorization",
+    number: "INJ 54321",
+    status: "Active",
+    expiry: "Jun 2027",
+  },
+];
 
 export const services = [
   {
