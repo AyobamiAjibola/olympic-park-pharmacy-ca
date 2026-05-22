@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://olympicparkpharmacy.com/sitemap.xml
+Sitemap: https://olympicparkpharmacy.co/sitemap.xml
