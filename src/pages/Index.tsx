@@ -190,7 +190,7 @@ const Index = () => {
                 viewport={{ once: true, amount: 0.08 }} 
                 className="flex flex-col items-start w-full h-full"
               >
-                <span className="text-accent-grey w-auto mb-4 mt-14 inline-block rounded-full bg-white/20 px-4 py-1 text-sm backdrop-blur-md">
+                <span className="text-white font-semibold w-auto mb-4 mt-14 inline-block rounded-full bg-white/20 px-4 py-1 text-sm backdrop-blur-md">
                   {t("HomePage.hero.badge")}
                 </span>
 
@@ -201,7 +201,7 @@ const Index = () => {
                   {t("HomePage.hero.title")} Olympic Park Pharmacy
                 </span>
 
-                <p className="mt-6 text-lg leading-tight text-white md:text-xl text-left md:max-w-2xl font-light">
+                <p className="mt-6 text-lg leading-tight text-white md:text-xl text-left md:max-w-2xl font-normal">
                   {t("HomePage.hero.subText")}
                 </p>
 
@@ -298,7 +298,7 @@ const Index = () => {
                   <div className="absolute -left-10 top-10 h-72 w-72 rounded-full bg-emerald-200/40 blur-3xl" />
                   <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-blue-200/40 blur-3xl" />
 
-                  <div className="relative overflow-hidden rounded-[2rem] bg-linear-to-br from-main via-cyan-500 to-blue-500 p-8 text-white shadow-xl">
+                  <div className="relative overflow-hidden rounded-[2rem] bg-main p-8 text-white shadow-xl">
                     <div className="absolute right-0 top-0 h-40 w-40 rounded-full bg-white/10 blur-2xl" />
 
                     <h3 className="text-2xl font-bold">
@@ -324,7 +324,7 @@ const Index = () => {
                               {step.title}
                             </h4>
 
-                            <p className="mt-1 text-sm leading-relaxed text-white/75">
+                            <p className="mt-1 text-sm leading-tight text-white/75 font-normal">
                               {step.subTitle}
                             </p>
                           </div>

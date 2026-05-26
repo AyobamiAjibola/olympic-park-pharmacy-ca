@@ -96,7 +96,7 @@ const Navbar = () => {
       <div
         className={cn(
           "overflow-hidden md:hidden transition-[max-height] duration-300",
-          open ? "max-h-96" : "max-h-0",
+          open ? "h-screen" : "max-h-0",
         )}
       >
         <ul className="flex flex-col gap-1 px-6 py-4">
@@ -106,7 +106,7 @@ const Navbar = () => {
                 to={l.to}
                 end={l.to === "/"}
                 onClick={() => setOpen(false)}
-                className={`block rounded-md px-3 py-2 text-sm font-medium ${pathname === '/' ? 'hover:text-accent-grey text-accent-grey font-light' : 'hover:text-main-light text-muted-foreground'} hover:bg-accent-grey`}
+                className={`block rounded-md px-3 py-2 text-lg font-medium ${pathname === '/' ? 'hover:text-white text-white font-light' : 'hover:text-main-light text-muted-foreground'} hover:bg-accent-grey`}
                 activeClassName={`bg-accent-grey text-main text-bold`}
               >
                 {l.label}
@@ -114,17 +114,17 @@ const Navbar = () => {
             </li>
           ))}
           <li className="pt-2">
-            <Button className="py-4 w-full bg-main" size="sm" onClick={() => setOpen(false)}>
+            <Button className="py-6 w-full bg-main" size="lg" onClick={() => setOpen(false)}>
               Book Appointment
             </Button>
           </li>
         </ul>
         <div className="flex justify-center items-center my-6">
           <LangSelect 
-          changeLanguage={changeLanguage}
-          lang={i18n.language}
-          isHome={isHome}
-        />
+            changeLanguage={changeLanguage}
+            lang={i18n.language}
+            isHome={isHome}
+          />
         </div>
       </div>
     </header>
