@@ -1,11 +1,4 @@
 import { Globe } from "lucide-react";
-// import {
-//   Select,
-//   SelectContent,
-//   SelectItem,
-//   SelectTrigger,
-//   SelectValue,
-// } from "@/components/ui/select";
 
 type IProps = {
     lang: string;
@@ -16,7 +9,7 @@ type IProps = {
 const languages = [
   { code: "en", label: "English" },
   { code: "fr", label: "French" },
-  { code: "hi", label: "Hindu" },
+  { code: "hi", label: "Hindi" },
   { code: "tl", label: "Tagalog" },
 ];
 
@@ -42,49 +35,6 @@ export default function LangSelect({changeLanguage, lang, isHome}: IProps) {
                 </option>
             ))}
         </select>
-        
-        {/* <select
-            value={lang}
-            onChange={(e)=>changeLanguage(e.target.value)}
-            className={`
-                bg-transparent
-                ${isHome ? 'text-white/90' : 'text-main'}
-                text-xs
-                outline-none
-                border-none
-                cursor-pointer
-                font-medium
-            `}
-            >
-            {languages.map((l,i) => (
-                <option value={l.code} className="text-black" key={i}>
-                    {l.label}
-                </option>
-            ))}
-        </select> */}
-
-        {/* <Select value={lang} onValueChange={changeLanguage}>
-            <SelectTrigger
-                className={`
-                w-auto
-                border-none
-                shadow-none
-                ${isHome ? "text-white/90" : "text-main"}
-                `}
-            >
-                <SelectValue>
-                {lang.toLowerCase()}
-                </SelectValue>
-            </SelectTrigger>
-
-            <SelectContent>
-                {languages.map((item) => (
-                    <SelectItem key={item.code} value={item.code}>
-                        {item.label}
-                    </SelectItem>
-                ))}
-            </SelectContent>
-        </Select> */}
     </div>
   )
 }
