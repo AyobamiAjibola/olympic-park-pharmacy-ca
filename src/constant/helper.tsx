@@ -33,7 +33,7 @@ export const pharmEmail = "info@olympicparkpharmacy.ca";
 export const open_mon_fri = "9:00 AM – 7:00 PM";
 export const open_sat = "10:00 AM – 4:00 PM";
 export const open_sun = "10:00 AM – 2:00 PM";
-export const pharmWhatsApp = "+14039005553";
+export const pharmWhatsApp = "+15875865851";
 
 export const licenses = [
   {
