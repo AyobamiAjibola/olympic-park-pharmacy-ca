@@ -160,7 +160,13 @@
   },
   "footer": {
     "text1": "Prendre soin de votre santé, près de chez vous.",
-    "text2": "Sur demande, le titulaire du permis fournira le nom et le numéro de permis d’exercice de tout membre réglementé qui fournit un service pharmaceutique au patient ou qui exerce la pharmacie à l’égard du patient."
+    "text2": "Le titulaire de permis est tenu de fournir, à la demande d’un patient, le nom et le numéro de permis d’exercice de tout membre réglementé qui fournit un service pharmaceutique au patient ou qui exerce la pharmacie à l’égard de ce patient.",
+    "text3": "Cliquez",
+    "text4": "ici",
+    "text5": "pour accéder au site Web de l’Ordre des pharmaciens de l’Alberta et consulter l’affiche sur les préoccupations des patients.",
+    "text6": "Propriétaire de la pharmacie",
+    "text7": "Titulaire de la licence de pharmacie",
+    "text8": "Licence de pharmacie"
   },
   "About": {
     "title": "À propos de nous",

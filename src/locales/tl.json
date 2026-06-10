@@ -164,7 +164,13 @@
   },
   "footer": {
     "text1": "Pag-aalaga sa iyong kalusugan, malapit sa tahanan.",
-    "text2": "Kapag hiniling, ibibigay ng lisensyado ang pangalan at numero ng permit ng sinumang regulated member na nagbibigay ng serbisyo sa parmasya sa pasyente o nagsasagawa ng practice ng pharmacy kaugnay ng pasyente."
+    "text2": "Kinakailangang ibigay ng may hawak ng lisensya, kapag hiniling ng isang pasyente, ang pangalan at numero ng permit sa pagsasanay ng sinumang rehistradong propesyonal na nagbibigay ng serbisyong parmasyutiko sa pasyente o nagsasagawa ng propesyon ng parmasya kaugnay ng pasyente.",
+    "text3": "I-click",
+    "text4": "dito",
+    "text5": "upang pumunta sa website ng Alberta College of Pharmacy at tingnan ang poster tungkol sa mga alalahanin ng pasyente.",
+    "text6": "May-ari ng parmasya",
+    "text7": "May hawak ng lisensya ng parmasya",
+    "text8": "Lisensya ng parmasya"
   },
   "About": {
     "title": "Tungkol sa Amin",

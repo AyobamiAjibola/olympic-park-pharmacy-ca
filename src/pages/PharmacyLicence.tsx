@@ -3,23 +3,12 @@ import Navbar from "@/components/Navbar";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { AlertTriangle, Download, FileText, Mail, MapPin, MessageCircle, Phone, Printer, ShieldCheck } from "lucide-react";
-import { location, pharmEmail, pharmFax, pharmPhone, province } from "@/constant/helper";
-import { useEffect, useState } from "react";
+import { FileText, Mail, MapPin, MessageCircle, Phone, Printer, ShieldCheck } from "lucide-react";
+import { Licenses, location, pharmEmail, pharmFax, pharmPhone, province } from "@/constant/helper";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-
-function DocumentCard({ title, href }: { title: string; href: string }) {
-    return (
-        <a
-            href={href}
-            className="flex items-center justify-between rounded-xl border border-slate-200 p-4 transition hover:border-green-700 hover:bg-green-50"
-        >
-            <span className="font-medium">{title}</span>
-            <Download className="h-5 w-5 text-green-700" />
-        </a>
-    );
-}
+import { useState } from "react";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
 function ContactItem({
     icon,
@@ -43,76 +32,76 @@ function ContactItem({
     );
 }
 
-type License = {
-  title: string;
-  number: string;
-  status: string;
+type LicenseType = {
+  name: string;
+  no: string;
+  img: string;
   expiry: string;
-  pdf_url: string;
 };
 
 
 export default function License() {
     const { t } = useTranslation();
 
-    const licenseLink = "https://opensheet.elk.sh/1eVALv0hc3PGEgBnO50_J1gJMpvi4Grk9WHB3gx6Bu_I/licenses";
+    // const licenseLink = "https://opensheet.elk.sh/1eVALv0hc3PGEgBnO50_J1gJMpvi4Grk9WHB3gx6Bu_I/licenses";
 
-    const [licenses, setLicenses] = useState<License[]>([]);
-    const [isLoading, setIsLoading] = useState<boolean>(false);
-    const [error, setError] = useState<string>("");
+    // const [licenses, setLicenses] = useState<License[]>([]);
+    // const [isLoading, setIsLoading] = useState<boolean>(false);
+    // const [error, setError] = useState<string>("");
     const navigate = useNavigate();
+    const [selectedLicense, setSelectedLicense] = useState<LicenseType>();
 
-    const handleExp = (exp_date: string) => {
-        const expiryDate = new Date(exp_date);
+    // const handleExp = (exp_date: string) => {
+    //     const expiryDate = new Date(exp_date);
 
-        const currentDate = new Date();
+    //     const currentDate = new Date();
 
-        const isExpired =
-            expiryDate.getFullYear() < currentDate.getFullYear() ||
-            (
-                expiryDate.getFullYear() === currentDate.getFullYear() &&
-                expiryDate.getMonth() < currentDate.getMonth()
-            );
+    //     const isExpired =
+    //         expiryDate.getFullYear() < currentDate.getFullYear() ||
+    //         (
+    //             expiryDate.getFullYear() === currentDate.getFullYear() &&
+    //             expiryDate.getMonth() < currentDate.getMonth()
+    //         );
 
-        return isExpired
-    }
+    //     return isExpired
+    // }
 
-    const handlePdf = (link: string) => {
-        if(!link) return;
+    // const handlePdf = (link: string) => {
+    //     if(!link) return;
 
-        window.open(link, "_blank", "noopener,noreferrer");
-    }
+    //     window.open(link, "_blank", "noopener,noreferrer");
+    // }
 
-    useEffect(() => {
-        const fetchLicense = async () => {
-            try {
-                setIsLoading(true);
+    // useEffect(() => {
+    //     const fetchLicense = async () => {
+    //         try {
+    //             setIsLoading(true);
 
-                const response = await fetch(licenseLink);
+    //             const response = await fetch(licenseLink);
 
-                if (!response.ok) {
-                    throw new Error("Failed to fetch licenses");
-                }
+    //             if (!response.ok) {
+    //                 throw new Error("Failed to fetch licenses");
+    //             }
 
-                const data = await response.json();
+    //             const data = await response.json();
 
-                setLicenses(data);
-            } catch (error) {
-                console.error(error);
+    //             setLicenses(data);
+    //         } catch (error) {
+    //             console.error(error);
 
-                setError(
-                    error instanceof Error
-                        ? `${error.message}: Something went wrong`
-                        : "Something went wrong"
-                );
-            } finally {
-                setIsLoading(false);
-            }
-        };
+    //             setError(
+    //                 error instanceof Error
+    //                     ? `${error.message}: Something went wrong`
+    //                     : "Something went wrong"
+    //             );
+    //         } finally {
+    //             setIsLoading(false);
+    //         }
+    //     };
 
-        fetchLicense()
+    //     fetchLicense()
         
-    }, []);
+    // }, []);
 
     return (
         <>
@@ -152,145 +141,155 @@ export default function License() {
 
                 <section className="px-4 pb-14">
                     <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-3">
-                    <div className="lg:col-span-2">
-                        <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-                            <div className="mb-6 flex items-center gap-3">
-                                <ShieldCheck className="h-6 w-6 text-main mb-1" />
-                                <h2 className="text-2xl font-semibold">
-                                    {t("license.li_info")}
-                                </h2>
-                            </div>
-                            {error && 
-                                <div className="flex gap-2 flex-col items-center justify-center">
-                                    <AlertTriangle size={50} className="text-red-500"/>
-                                    <span className="text-black/60">{error}</span>
+                        <div className="lg:col-span-2">
+                            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                                <div className="mb-6 flex items-center gap-3">
+                                    <ShieldCheck className="h-6 w-6 text-main mb-1" />
+                                    <h2 className="text-2xl font-semibold">
+                                        {t("license.li_info")}
+                                    </h2>
                                 </div>
-                            }
-                            {
-                                isLoading 
-                                    ? (
-                                        <div className='relative z-10 flex items-center justify-center gap-5 flex-col'>
-                                            <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-main"></div>
-                                            <span className='text-center font-light text-lg'>Loading Licenses...</span>
-                                        </div>
-                                    )
-                                    : (
-                                        <div className="grid gap-4">
-                                            {
-                                                licenses.length === 0
-                                                    ? (
-                                                        <span className="text-black/60 text-center">
-                                                            Please check back later. No licenses are available at this time.
+                                
+                                <div className="grid gap-5">
+                                    {Licenses.map((license, index) => (
+                                        <div
+                                            key={index}
+                                            className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition"
+                                        >
+                                            <div className="grid gap-6 md:grid-cols-[1fr_220px] md:items-center">
+                                                <div className="text-left">
+                                                    <div className="mb-3 inline-flex rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-main">
+                                                        Verified License
+                                                    </div>
+
+                                                    <h3 className="text-xl font-semibold text-slate-900">
+                                                        {license.name}
+                                                    </h3>
+
+                                                    <div className="mt-4 space-y-2 text-sm text-slate-600">
+                                                        <p>
+                                                            <span className="font-medium text-slate-800">
+                                                                License Number:
+                                                            </span>{" "}
+                                                            {license.no}
+                                                        </p>
+
+                                                        <p>
+                                                            <span className="font-medium text-slate-800">
+                                                                Expiry:
+                                                            </span>{" "}
+                                                            {license.expiry}
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div className="flex justify-center md:justify-end">
+                                                    <button
+                                                        type="button"
+                                                        onClick={() => setSelectedLicense(license)}
+                                                        className="group cursor-zoom-in relative rounded-xl border border-slate-200 bg-slate-50 p-3 transition hover:border-main hover:shadow-md"
+                                                    >
+                                                        <img
+                                                            src={license.img}
+                                                            alt={license.name}
+                                                            className="h-44 w-44 rounded-lg object-contain"
+                                                        />
+
+                                                        <span className="absolute bottom-3 right-3 rounded-md bg-black/70 px-2 py-1 text-xs font-medium text-white opacity-0 transition group-hover:opacity-100">
+                                                            Click to preview
                                                         </span>
-                                                    )
-                                                    : (
-                                                        licenses.map((license) => (
-                                                            <div
-                                                                key={license.number}
-                                                                className={`rounded-xl border border-slate-200 p-5 cursor-pointer ${license.pdf_url ? 'hover:bg-slate-50 hover:shadow-sm' : ""}`}
-                                                                onClick={()=>handlePdf(license.pdf_url)}
-                                                            >
-                                                                <div className="flex items-start justify-between">
-                                                                    <div className="text-left">
-                                                                        <h3 className="text-lg font-semibold">
-                                                                            {license.title}
-                                                                        </h3>
-
-                                                                        <p className="mt-2 text-sm text-slate-600">
-                                                                            License Number: {license.number}
-                                                                        </p>
-
-                                                                        <p className="text-sm text-slate-600">
-                                                                            Expiry: {license.expiry}
-                                                                        </p>
-                                                                    </div>
-
-                                                                    {!handleExp(license.expiry) && <span className="rounded-full bg-green-100 px-3 py-1 text-xs font-semibold text-green-700">
-                                                                        {license.status}
-                                                                    </span>}
-                                                                </div>
-                                                            </div>
-                                                        ))
-                                                    )
-                                            }
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
-                                    )
-                            }
-                        </div>
-
-                        <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-                            <div className="mb-4 flex items-center gap-3">
-                                <FileText className="h-6 w-6 text-main mb-1" />
-                                <h2 className="text-2xl font-semibold">
-                                    {t("license.regulatory")}
-                                </h2>
+                                    ))}
+                                </div>
                             </div>
 
-                            <p className="leading-7 text-slate-600">
-                                {t("license.regulatory_sub")}
-                            </p>
+                            <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                                <div className="mb-4 flex items-center gap-3">
+                                    <FileText className="h-6 w-6 text-main mb-1" />
+                                    <h2 className="text-2xl font-semibold">
+                                        {t("license.regulatory")}
+                                    </h2>
+                                </div>
 
-                            <div className="mt-6">
+                                <p className="leading-7 text-slate-600">
+                                    {t("license.regulatory_sub")}
+                                </p>
+
+                                <div className="mt-6">
+                                    <Button
+                                        className="inline-flex items-center justify-center rounded-lg bg-main px-5 py-5 text-sm font-semibold text-white transition hover:bg-main-light"
+                                    >
+                                        {t("license.verify")}
+                                    </Button>
+                                </div>
+                            </div>
+
+                            <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                                <div className="mb-4 flex items-center gap-3 flex-col md:flex-row">
+                                    <MessageCircle className="h-6 w-6 text-main mb-1" />
+                                    <h2 className="text-2xl font-semibold">
+                                        {t("license.concern.title")}
+                                    </h2>
+                                </div>
+
+                                <p className="leading-7 text-slate-600">
+                                    {t("license.concern.sub_title")}
+                                </p>
+
                                 <Button
-                                    className="inline-flex items-center justify-center rounded-lg bg-main px-5 py-5 text-sm font-semibold text-white transition hover:bg-main-light"
+                                    onClick={()=>navigate("/complaint")}
+                                    className="cursor-pointer mt-4 inline-flex items-center justify-center rounded-lg bg-main px-5 py-5 text-sm font-semibold text-white transition hover:bg-main-light"
                                 >
-                                    {t("license.verify")}
+                                    {t("license.btn_text")}
                                 </Button>
                             </div>
                         </div>
 
-                        <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-                            <div className="mb-4 flex items-center gap-3">
-                                <Download className="h-6 w-6 text-main mb-1" />
-                                <h2 className="text-2xl font-semibold">
-                                    {t("license.doc")}
-                                </h2>
+                        <aside className="space-y-6">
+                            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                                <h3 className="text-xl font-semibold">
+                                    {t("license.contact.title")}
+                                </h3>
+
+                                <div className="mt-5 space-y-4">
+                                    <ContactItem icon={<Phone />} label="Phone" value={pharmPhone} />
+                                    <ContactItem icon={<Printer />} label="Fax" value={pharmFax} />
+                                    <ContactItem icon={<Mail />} label="Email" value={pharmEmail} />
+                                    <ContactItem icon={<MapPin />} label="Address" value={`${location} ${province}`} />
+                                </div>
                             </div>
 
-                            <div className="grid gap-4 md:grid-cols-2">
-                                <DocumentCard title={t("license.pharm_li")} href="#" />
-                                <DocumentCard title={t("license.bus_reg")} href="#" />
-                            </div>
-                        </div>
-
-                        <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-                            <div className="mb-4 flex items-center gap-3 flex-col md:flex-row">
-                                <MessageCircle className="h-6 w-6 text-main mb-1" />
-                                <h2 className="text-2xl font-semibold">
-                                    {t("license.concern.title")}
-                                </h2>
-                            </div>
-
-                            <p className="leading-7 text-slate-600">
-                                {t("license.concern.sub_title")}
-                            </p>
-
-                            <Button
-                                onClick={()=>navigate("/complaint")}
-                                className="cursor-pointer mt-4 inline-flex items-center justify-center rounded-lg bg-main px-5 py-5 text-sm font-semibold text-white transition hover:bg-main-light"
-                            >
-                                {t("license.btn_text")}
-                            </Button>
-                        </div>
-                    </div>
-
-                    <aside className="space-y-6">
-                        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-                            <h3 className="text-xl font-semibold">
-                                {t("license.contact.title")}
-                            </h3>
-
-                            <div className="mt-5 space-y-4">
-                                <ContactItem icon={<Phone />} label="Phone" value={pharmPhone} />
-                                <ContactItem icon={<Printer />} label="Fax" value={pharmFax} />
-                                <ContactItem icon={<Mail />} label="Email" value={pharmEmail} />
-                                <ContactItem icon={<MapPin />} label="Address" value={`${location} ${province}`} />
-                            </div>
-                        </div>
-
-                    </aside>
+                        </aside>
                     </div>
                 </section>
+
+                <Dialog
+                    open={!!selectedLicense}
+                    onOpenChange={(open) => {
+                        if (!open) setSelectedLicense(undefined);
+                    }}
+                >
+                    <DialogContent className="max-w-3xl h-[90vh] overflow-y-scroll">
+                        <DialogHeader>
+                            <DialogTitle className="text-main font-extrabold">{selectedLicense?.name}</DialogTitle>
+                            <DialogDescription>
+                                License Number: {selectedLicense?.no} | Expiry: {selectedLicense?.expiry}
+                            </DialogDescription>
+                        </DialogHeader>
+
+                        <div className="mt-4 rounded-xl border border-slate-200 bg-slate-50 p-4">
+                            <img
+                                src={selectedLicense?.img}
+                                alt={selectedLicense?.name}
+                                className="max-h-[75vh] w-full rounded-lg object-contain"
+                            />
+                        </div>
+                    </DialogContent>
+                </Dialog>
+
                 <Footer/>
             </div>
         </>

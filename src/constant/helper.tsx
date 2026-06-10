@@ -105,3 +105,12 @@ export const services = [
     icon: <PillBottle size={22} />
   }
 ];
+
+export const Licenses = [
+  {
+    name: "Alberta College of Pharmacy",
+    img: "/ACP_License.png",
+    expiry: "June 30, 2026",
+    no: "4966"
+  }
+]

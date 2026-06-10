@@ -2,6 +2,7 @@ import { location, pharmPhone, province } from "@/constant/helper";
 import logo from "../assets/logo.png";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 export function Footer() {
   const { t } = useTranslation();
@@ -9,7 +10,7 @@ export function Footer() {
 
   return (
     <footer className="bg-main text-white">
-      <div className="max-w-7xl mx-auto px-5 md:px-8 py-14 grid gap-10 md:grid-cols-4">
+      <div className="max-w-7xl mx-auto px-5 md:px-8 pt-14 pb-10 grid gap-2 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-3 mb-4">
             <div className="bg-white rounded-2xl p-1">
@@ -28,9 +29,44 @@ export function Footer() {
             </div>
           </div>
 
-          <p className="max-w-md text-blue-100 text-sm leading-6 text-left">
+          <p className="max-w-md text-blue-100 text-sm leading-normal text-left">
             {t("footer.text2")}
           </p>
+          <div className="mt-2">
+            <p className="max-w-md text-blue-100 text-sm leading-normal text-left">
+              {t("footer.text3")} {" "}
+              <span 
+                onClick={() => {
+                  window.open(
+                    "https://abpharmacy.ca/wp-content/uploads/Poster_PatientConcerns.pdf",
+                    "_blank",
+                    "noopener,noreferrer"
+                  );
+                }}
+                className="font-bold underline cursor-pointer">{t("footer.text4")}</span>
+              {" "} {t("footer.text5")}
+            </p>
+          </div>
+          <div className="mt-4 flex justify-between items-center">
+            <div className="flex gap-2 items-center">
+              <Avatar className="h-10 w-10">
+                <AvatarImage src="https://github.com/shadcn.png" />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
+              <div className="flex flex-col items-start">
+                <span className="font-bold text-sm text-left">{t("footer.text6")}</span>
+                <span className="text-sm">Pramodkumar Lakhian</span>
+              </div>
+            </div>
+            <div className="flex flex-col items-start">
+              <span className="font-bold text-sm text-left">{t("footer.text6")}</span>
+              <span className="text-sm">Pramodkumar Lakhian</span>
+            </div>
+            <div className="flex flex-col items-start">
+              <span className="font-bold text-sm text-left">{t("footer.text7")}</span>
+              <span className="text-sm">13276</span>
+            </div>
+          </div>
         </div>
 
         <div>

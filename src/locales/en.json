@@ -163,7 +163,13 @@
     },
     "footer": {
         "text1": "Caring for your health, close to home.",
-        "text2": "On request, the licensee will provide the name and practice permit number of any regulated member who provides a pharmacy service to the patient or who engages in the practice of pharmacy with respect to the patient." 
+        "text2": "The licensee is required to provide, on the request of a patient, the name and practice permit number of any regulated member who provides a pharmacy service to the patient or who engages in the practice of pharmacy with respect to a patient",
+        "text3": "Click",
+        "text4": "here",
+        "text5": "to go to the Alberta College of Pharmacy website to view the Patient Concerns poster.",
+        "text6": "Pharmacy owner",
+        "text7": "Pharmacy licensee",
+        "text8": "Pharmacy license"
     },
     "About": {
         "title": "About Us",
