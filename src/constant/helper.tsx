@@ -12,10 +12,10 @@ export const address =  "Canada Olympic Common Southwest, Calgary, AB T3H 6K4, C
 
 export const location = "30 Canada Olympic Common SW.";
 export const province = "Calgary, AB T3H 6K4"
-export const BOOKING_LINK = "https://calendar.app.google/1mut6MD6XZANHeRB9";
+export const BOOKING_LINK = "https://calendar.app.google/VsiUVgFyJ5fGdyaE7";
 export const FORM_LINK = "https://docs.google.com/forms/d/e/1FAIpQLSdMfuGVTSweO9geCAEbhKnN7Ya0TZEh4e-C2D5PEJrPyduGqg/viewform?usp=dialog"
 
-// const lat = 51.08346944455196;
+// const lat = 51.08346944455196; 
 // const lng = -114.215586118508;
 
 // export const mapUrl = `https://www.google.com/maps?q=${lat},${lng}&z=16&output=embed`;
