@@ -77,7 +77,7 @@ const Navbar = () => {
                         {l.label}
                         <ChevronDown size={24}/>
                       </button>
-                      <ul className="absolute hidden w-28 group-hover:block bg-white shadow-lg rounded-1xl">
+                      <ul className={`absolute hidden w-28 group-hover:block ${pathname === '/' ? 'bg-black/40' : 'bg-white'} shadow-lg rounded-1xl`}>
                         {l.children.map((child) => (
                           <li key={child.to}
                             className={`py-2 ${child.to === '/about' && 'border-b border-b-neutral-300'}`}

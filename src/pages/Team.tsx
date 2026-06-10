@@ -27,10 +27,10 @@ export default function Team() {
                         Personalized Pharmacy Care 
                     </span>
                     <span className="mt-6 inline-block text-3xl md:text-6xl font-bold text-main">
-                        {t("About.title")}
+                        {t("team.title")}
                     </span>
                     <span className="mb-14 inline-block text-sm md:text-lg font-normal text-slate-600 md:max-w-1/2 max-w-lvw">
-                        {t("About.subTitle")}
+                        {t("team.subTitle")}
                     </span>
                     </div>
                 </section>
