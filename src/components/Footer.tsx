@@ -60,7 +60,7 @@ export function Footer() {
             </div>
             <div className="flex flex-col items-start">
               <span className="font-bold text-sm text-left">{t("footer.text6")}</span>
-              <span className="text-sm">Pramodkumar Lakhian</span>
+              <span className="text-sm">Lakhiani Health Corporation</span>
             </div>
             <div className="flex flex-col items-start">
               <span className="font-bold text-sm text-left">{t("footer.text7")}</span>
