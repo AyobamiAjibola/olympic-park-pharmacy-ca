@@ -161,7 +161,7 @@ const Navbar = () => {
                     >
                       <div/>
                       <span className="ml-6">{l.label}</span>
-                      {openMobileDropdown ? <ArrowDown size={20}/> : <ArrowUp size={20}/>}
+                      {!openMobileDropdown ? <ArrowDown size={20}/> : <ArrowUp size={20}/>}
                     </button>
 
                     {/* <ul className="absolute hidden group-hover:block bg-white shadow-lg">

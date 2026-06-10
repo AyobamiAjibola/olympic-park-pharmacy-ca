@@ -47,20 +47,20 @@ export function Footer() {
               {" "} {t("footer.text5")}
             </p>
           </div>
-          <div className="mt-4 flex justify-between items-center">
+          <div className="mt-4 flex justify-between items-start">
             <div className="flex gap-2 items-center">
-              <Avatar className="h-10 w-10">
+              <Avatar className="h-10 w-10 md:block hidden">
                 <AvatarImage src="https://github.com/shadcn.png" />
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>
               <div className="flex flex-col items-start">
                 <span className="font-bold text-sm text-left">{t("footer.text6")}</span>
-                <span className="text-sm">Pramodkumar Lakhian</span>
+                <span className="text-sm text-left">Pramodkumar Lakhian</span>
               </div>
             </div>
             <div className="flex flex-col items-start">
               <span className="font-bold text-sm text-left">{t("footer.text6")}</span>
-              <span className="text-sm">Lakhiani Health Corporation</span>
+              <span className="text-sm text-left">Lakhiani Health Corporation</span>
             </div>
             <div className="flex flex-col items-start">
               <span className="font-bold text-sm text-left">{t("footer.text7")}</span>
@@ -68,10 +68,10 @@ export function Footer() {
             </div>
           </div>
         </div>
-
-        <div>
-          <h3 className="font-semibold mb-4">Quick Links</h3>
-          <ul className="space-y-3 text-sm text-blue-100">
+        <div className="my-6 bg-white/30 h-[0.5px] block md:hidden"/>
+        <div className="">
+          <h3 className="font-semibold mb-3 text-xl">Quick Links</h3>
+          <ul className="space-y-3 text-sm text-blue-100 leading-tight cursor-pointer">
             <li><a onClick={()=>navigate('/')} className="hover:text-white">{t("Navigation.home")}</a></li>
             <li><a onClick={()=>navigate('/services')} className="hover:text-white">{t("Navigation.services")}</a></li>
             <li><a onClick={()=>navigate('/about')} className="hover:text-white">{t("Navigation.about")}</a></li>
@@ -79,10 +79,10 @@ export function Footer() {
             <li><a onClick={()=>navigate('/careers')} className="hover:text-white">{t("Navigation.career")}</a></li>
           </ul>
         </div>
-
+        <div className="my-6 bg-white/30 h-[0.5px] block md:hidden"/>
         <div>
-          <h3 className="font-semibold mb-4">Contact</h3>
-          <ul className="space-y-3 text-sm text-blue-100">
+          <h3 className="font-semibold mb-3 text-xl">Contact</h3>
+          <ul className="space-y-3 text-sm text-blue-100 leading-tight">
             <li>{location}</li>
             <li>{province}</li>
             <li>
