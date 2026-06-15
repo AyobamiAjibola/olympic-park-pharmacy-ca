@@ -55,15 +55,15 @@ export function Footer() {
               </Avatar>
               <div className="flex flex-col items-start">
                 <span className="font-bold text-sm text-left">{t("footer.text6")}</span>
-                <span className="text-sm text-left">Pramodkumar Lakhian</span>
+                <span className="text-sm text-left">Pramodkumar Lakhiani</span>
               </div>
             </div>
             <div className="flex flex-col items-start">
-              <span className="font-bold text-sm text-left">{t("footer.text6")}</span>
-              <span className="text-sm text-left">Lakhiani Health Corporation</span>
+              <span className="font-bold text-sm text-left">{t("footer.text7")}</span>
+              <span className="text-sm text-left">Pramodkumar Lakhiani</span>
             </div>
             <div className="flex flex-col items-start">
-              <span className="font-bold text-sm text-left">{t("footer.text7")}</span>
+              <span className="font-bold text-sm text-left">{t("footer.text8")}</span>
               <span className="text-sm">13276</span>
             </div>
           </div>
