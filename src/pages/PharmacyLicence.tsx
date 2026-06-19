@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { FileText, Mail, MapPin, MessageCircle, Phone, Printer, ShieldCheck } from "lucide-react";
+import { Mail, MapPin, MessageCircle, Phone, Printer, ShieldCheck } from "lucide-react";
 import { Licenses, location, pharmEmail, pharmFax, pharmPhone, province } from "@/constant/helper";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
@@ -203,27 +203,6 @@ export default function License() {
                                             </div>
                                         </div>
                                     ))}
-                                </div>
-                            </div>
-
-                            <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-                                <div className="mb-4 flex items-center gap-3">
-                                    <FileText className="h-6 w-6 text-main mb-1" />
-                                    <h2 className="text-2xl font-semibold">
-                                        {t("license.regulatory")}
-                                    </h2>
-                                </div>
-
-                                <p className="leading-7 text-slate-600">
-                                    {t("license.regulatory_sub")}
-                                </p>
-
-                                <div className="mt-6">
-                                    <Button
-                                        className="inline-flex items-center justify-center rounded-lg bg-main px-5 py-5 text-sm font-semibold text-white transition hover:bg-main-light"
-                                    >
-                                        {t("license.verify")}
-                                    </Button>
                                 </div>
                             </div>
 

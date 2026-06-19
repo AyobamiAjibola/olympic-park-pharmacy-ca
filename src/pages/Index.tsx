@@ -55,6 +55,7 @@ const Index = () => {
     message: ''
   });
   const [email, setEmail] = useState<string>("")
+  const [dateOfBirth, setDateOfBirth] = useState("");
 
   const handleSubmitSubscribe = async () => {
     setLoading(true)
@@ -392,21 +393,41 @@ const Index = () => {
                         />
                       </div>
                     </div>
-                    <div className="space-y-2 ">
-                      <div className='flex items-center gap-1'>
-                        <label className="block text-left text-sm font-semibold text-gray-700">
-                          {t("HomePage.switchPharmacy.transfer.email")}
-                        </label>
-                        <p className='text-red-600 text-left'>*</p>
+
+                    <div className="grid gap-5 sm:grid-cols-2">
+                      <div className="space-y-2 ">
+                        <div className='flex items-center gap-1'>
+                          <label className="block text-left text-sm font-semibold text-gray-700">
+                            {t("HomePage.switchPharmacy.transfer.email")}
+                          </label>
+                          <p className='text-red-600 text-left'>*</p>
+                        </div>
+
+                        <input
+                          name="Email"
+                          required
+                          type="email"
+                          placeholder="john.doe@gmail.com"
+                          className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 outline-none transition focus:border-main focus:bg-white"
+                        />
                       </div>
 
-                      <input
-                        name="Email"
-                        required
-                        type="email"
-                        placeholder="john.doe@gmail.com"
-                        className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 outline-none transition focus:border-main focus:bg-white"
-                      />
+                      <div className="space-y-2 ">
+                        <div className='flex items-center gap-1'>
+                          <label className="block text-left text-sm font-semibold text-gray-700">
+                            Date Of Birth
+                          </label>
+                          <p className='text-red-600 text-left'>*</p>
+                        </div>
+
+                        <input
+                          id="dob"
+                          type="date"
+                          value={dateOfBirth}
+                          onChange={(e) => setDateOfBirth(e.target.value)}
+                          className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 outline-none transition focus:border-main focus:bg-white"
+                        />
+                      </div>
                     </div>
 
                     <div className="grid gap-5 sm:grid-cols-2">

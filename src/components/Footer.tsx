@@ -2,7 +2,7 @@ import { location, pharmPhone, province } from "@/constant/helper";
 import logo from "../assets/logo.png";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+// import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 export function Footer() {
   const { t } = useTranslation();
@@ -49,10 +49,10 @@ export function Footer() {
           </div>
           <div className="mt-4 flex justify-between items-start">
             <div className="flex gap-2 items-center">
-              <Avatar className="h-10 w-10 md:block hidden">
+              {/* <Avatar className="h-10 w-10 md:block hidden">
                 <AvatarImage src="https://github.com/shadcn.png" />
                 <AvatarFallback>CN</AvatarFallback>
-              </Avatar>
+              </Avatar> */}
               <div className="flex flex-col items-start">
                 <span className="font-bold text-sm text-left">{t("footer.text6")}</span>
                 <span className="text-sm text-left">Pramodkumar Lakhiani</span>
