@@ -3,10 +3,8 @@ import Navbar from "@/components/Navbar";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { Mail, MapPin, MessageCircle, Phone, Printer, ShieldCheck } from "lucide-react";
+import { Mail, MapPin, Phone, Printer, ShieldCheck } from "lucide-react";
 import { Licenses, location, pharmEmail, pharmFax, pharmPhone, province } from "@/constant/helper";
-import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
@@ -42,66 +40,7 @@ type LicenseType = {
 
 export default function License() {
     const { t } = useTranslation();
-
-    // const licenseLink = "https://opensheet.elk.sh/1eVALv0hc3PGEgBnO50_J1gJMpvi4Grk9WHB3gx6Bu_I/licenses";
-
-    // const [licenses, setLicenses] = useState<License[]>([]);
-    // const [isLoading, setIsLoading] = useState<boolean>(false);
-    // const [error, setError] = useState<string>("");
-    const navigate = useNavigate();
     const [selectedLicense, setSelectedLicense] = useState<LicenseType>();
-
-    // const handleExp = (exp_date: string) => {
-    //     const expiryDate = new Date(exp_date);
-
-    //     const currentDate = new Date();
-
-    //     const isExpired =
-    //         expiryDate.getFullYear() < currentDate.getFullYear() ||
-    //         (
-    //             expiryDate.getFullYear() === currentDate.getFullYear() &&
-    //             expiryDate.getMonth() < currentDate.getMonth()
-    //         );
-
-    //     return isExpired
-    // }
-
-    // const handlePdf = (link: string) => {
-    //     if(!link) return;
-
-    //     window.open(link, "_blank", "noopener,noreferrer");
-    // }
-
-    // useEffect(() => {
-    //     const fetchLicense = async () => {
-    //         try {
-    //             setIsLoading(true);
-
-    //             const response = await fetch(licenseLink);
-
-    //             if (!response.ok) {
-    //                 throw new Error("Failed to fetch licenses");
-    //             }
-
-    //             const data = await response.json();
-
-    //             setLicenses(data);
-    //         } catch (error) {
-    //             console.error(error);
-
-    //             setError(
-    //                 error instanceof Error
-    //                     ? `${error.message}: Something went wrong`
-    //                     : "Something went wrong"
-    //             );
-    //         } finally {
-    //             setIsLoading(false);
-    //         }
-    //     };
-
-    //     fetchLicense()
-        
-    // }, []);
 
     return (
         <>
@@ -204,26 +143,6 @@ export default function License() {
                                         </div>
                                     ))}
                                 </div>
-                            </div>
-
-                            <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-                                <div className="mb-4 flex items-center gap-3 flex-col md:flex-row">
-                                    <MessageCircle className="h-6 w-6 text-main mb-1" />
-                                    <h2 className="text-2xl font-semibold">
-                                        {t("license.concern.title")}
-                                    </h2>
-                                </div>
-
-                                <p className="leading-7 text-slate-600">
-                                    {t("license.concern.sub_title")}
-                                </p>
-
-                                <Button
-                                    onClick={()=>navigate("/complaint")}
-                                    className="cursor-pointer mt-4 inline-flex items-center justify-center rounded-lg bg-main px-5 py-5 text-sm font-semibold text-white transition hover:bg-main-light"
-                                >
-                                    {t("license.btn_text")}
-                                </Button>
                             </div>
                         </div>
 

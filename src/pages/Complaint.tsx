@@ -229,6 +229,9 @@ export default function Complaint() {
                                         }
                                     </Button>
                                 </div>
+                                <p className="leading-7 text-slate-600">
+                                    {t("license.concern.sub_title")}
+                                </p>
                             </form>
                         </div>
                     </div>
