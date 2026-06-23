@@ -82,7 +82,8 @@ const Index = () => {
 
         setLoading(false);
         setEmail('');
-        setStatus({type: "success", message: t("messages.newsletter.success")})
+        // setStatus({type: "success", message: t("messages.newsletter.success")})
+        navigate('/thank-you')
     } catch (error) {
         console.log(error, 'error')
         setStatus({type: "error", message: t("messages.newsletter.err2")})
@@ -110,7 +111,8 @@ const Index = () => {
       const result = await response.json();
 
       if (result.success) {
-        setStatus({type: "success", message: t("messages.transfer.success")});
+        // setStatus({type: "success", message: t("messages.transfer.success")});
+        navigate('/thank-you')
         form.reset();
       } else {
         setStatus({type: "error", message: t("messages.transfer.err1")});
@@ -633,7 +635,7 @@ const Index = () => {
                     <Phone className="w-5 h-5 text-main mt-1" />
                     <div className="text-left">
                       <p className="font-semibold text-gray-900">{pharmPhone}</p>
-                      <p className="text-sm text-gray-600">{t("map.callUs")}</p>
+                      {/* <p className="text-sm text-gray-600">{t("map.callUs")}</p> */}
                     </div>
                   </div>
                   <div className="flex items-start gap-3">

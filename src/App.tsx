@@ -13,6 +13,7 @@ import ScrollToTop from "./components/ScrollToTop.tsx";
 import Complaint from "./pages/Complaint.tsx";
 import License from "./pages/PharmacyLicence.tsx";
 import Team from "./pages/Team.tsx";
+import ThankYou from "./pages/ThankYou.tsx";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/license" element={<License />} />
           <Route path="/complaint" element={<Complaint />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/thank-you" element={<ThankYou />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import type { SyntheticEvent } from "react";
 import type { StatusType } from "./Index";
+import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -17,6 +18,7 @@ export default function Contact() {
     type: '',
     message: ''
   });
+  const navigate = useNavigate();
 
   const handleSubmit = async (e: SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -38,10 +40,11 @@ export default function Contact() {
       const result = await response.json();
 
       if (result.success) {
-        setStatus({
-          type: "success",
-          message: t("messages.contact.success")
-        });
+        // setStatus({
+        //   type: "success",
+        //   message: t("messages.contact.success")
+        // });
+        navigate('/thank-you')
         form.reset();
       } else {
         setStatus({

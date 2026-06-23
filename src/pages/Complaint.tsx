@@ -14,6 +14,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState, type SyntheticEvent } from "react";
 import type { StatusType } from "./Index";
+import { useNavigate } from "react-router-dom";
 
 export default function Complaint() {
     const { t } = useTranslation();
@@ -22,6 +23,7 @@ export default function Complaint() {
         type: '',
         message: ''
     });
+    const navigate = useNavigate();
 
     const handleSubmit = async (e: SyntheticEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -43,10 +45,11 @@ export default function Complaint() {
           const result = await response.json();
     
           if (result.success) {
-            setStatus({
-              type: "success",
-              message: t("complain.messages.success")
-            });
+            // setStatus({
+            //   type: "success",
+            //   message: t("complain.messages.success")
+            // });
+            navigate('/thank-you')
             form.reset();
           } else {
             setStatus({

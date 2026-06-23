@@ -163,21 +163,6 @@ const Navbar = () => {
                       <span className="ml-6">{l.label}</span>
                       {!openMobileDropdown ? <ArrowDown size={20}/> : <ArrowUp size={20}/>}
                     </button>
-
-                    {/* <ul className="absolute hidden group-hover:block bg-white shadow-lg">
-                      {l.children.map((child) => (
-                        <li key={child.to}>
-                          <NavLink 
-                            to={child.to}
-                            end={l.to === "/"}
-                            onClick={() => setOpen(false)}
-                            className={`block rounded-md px-3 py-2 text-lg font-medium ${pathname === '/' ? 'hover:text-white text-white font-light' : 'hover:text-main-light text-muted-foreground'} hover:bg-accent-grey`}
-                            activeClassName={`bg-accent-grey text-main text-bold`}
-                          >{child.label}</NavLink>
-                        </li>
-                      ))}
-                    </ul>
-                  </> */}
                     {openMobileDropdown === l.label && (
                       <ul className="mt-2 space-y-1 bg-black/10 rounded-sm">
                         {l.children.map((child) => (

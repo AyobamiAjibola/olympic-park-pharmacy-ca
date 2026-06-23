@@ -78,7 +78,7 @@ export default function About() {
                       <Phone className="w-5 h-5 text-main mt-1" />
                       <div className="text-left">
                         <p className="font-semibold text-gray-900">{pharmPhone}</p>
-                        <p className="text-sm text-gray-600">{t("map.callUs")}</p>
+                        {/* <p className="text-sm text-gray-600">{t("map.callUs")}</p> */}
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
