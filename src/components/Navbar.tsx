@@ -201,7 +201,11 @@ const Navbar = () => {
             </li>
           ))}
           <li className="pt-2">
-            <Button className="py-6 w-full bg-main" size="lg" onClick={() => setOpen(false)}>
+            <Button className="py-6 w-full bg-main" size="lg" 
+              onClick={() =>
+                window.open(BOOKING_LINK, "_blank")
+              }
+            >
               Book Appointment
             </Button>
           </li>
