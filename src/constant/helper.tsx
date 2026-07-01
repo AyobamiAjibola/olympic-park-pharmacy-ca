@@ -110,7 +110,7 @@ export const Licenses = [
   {
     name: "Alberta College of Pharmacy",
     img: "/ACP_License.png",
-    expiry: "June 30, 2026",
+    expiry: "June 30, 2027",
     no: "4966"
   }
 ]
