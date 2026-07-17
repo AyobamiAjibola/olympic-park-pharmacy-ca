@@ -1,8 +1,7 @@
 import { location, pharmPhone, province } from "@/constant/helper";
 import logo from "../assets/logo.png";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
-// import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Link, useNavigate } from "react-router-dom";
 
 export function Footer() {
   const { t } = useTranslation();
@@ -77,6 +76,7 @@ export function Footer() {
             <li><a onClick={()=>navigate('/about')} className="hover:text-white">{t("Navigation.about")}</a></li>
             <li><a onClick={()=>navigate('/contact')} className="hover:text-white">{t("Navigation.contact")}</a></li>
             <li><a onClick={()=>navigate('/careers')} className="hover:text-white">{t("Navigation.career")}</a></li>
+            <li><a onClick={()=>navigate('/privacy-policy')} className="hover:text-white">Privacy Policy</a></li>
           </ul>
         </div>
         <div className="my-6 bg-white/30 h-[0.5px] block md:hidden"/>
@@ -101,8 +101,8 @@ export function Footer() {
 
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-5 md:px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-blue-100">
-          <p>
-            © {new Date().getFullYear()} Olympic Park Pharmacy. All rights reserved.
+          <p className="font-bold">
+            © {new Date().getFullYear()} Olympic Park Pharmacy. All rights reserved. {" "} | {" "} <Link to={"/privacy-policy"} className="cursor-pointer">Privacy Policy</Link>
           </p>
 
           {/* <div className="flex gap-5">

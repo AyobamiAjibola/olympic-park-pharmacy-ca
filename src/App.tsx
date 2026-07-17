@@ -14,6 +14,7 @@ import Complaint from "./pages/Complaint.tsx";
 import License from "./pages/PharmacyLicence.tsx";
 import Team from "./pages/Team.tsx";
 import ThankYou from "./pages/ThankYou.tsx";
+import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/complaint" element={<Complaint />} />
           <Route path="/team" element={<Team />} />
           <Route path="/thank-you" element={<ThankYou />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
