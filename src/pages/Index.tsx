@@ -56,6 +56,7 @@ const Index = () => {
   });
   const [email, setEmail] = useState<string>("")
   const [dateOfBirth, setDateOfBirth] = useState("");
+  const [isFormValid, setIsFormValid] = useState(false);
 
   const handleSubmitSubscribe = async () => {
     setLoading(true)
@@ -111,9 +112,10 @@ const Index = () => {
       const result = await response.json();
 
       if (result.success) {
-        // setStatus({type: "success", message: t("messages.transfer.success")});
-        navigate('/thank-you')
         form.reset();
+        setDateOfBirth("");
+        setIsFormValid(false);
+        navigate("/thank-you");
       } else {
         setStatus({type: "error", message: t("messages.transfer.err1")});
       }
@@ -353,7 +355,12 @@ const Index = () => {
                     </p>
                   </div>
 
-                  <form className="space-y-5" onSubmit={handleSubmit}>
+                  <form className="space-y-5" onSubmit={handleSubmit}
+                    onInput={(e) => {
+                      const form = e.currentTarget;
+                      setIsFormValid(form.checkValidity());
+                    }}
+                  >
                     <input
                       type="checkbox"
                       name="botcheck"
@@ -425,6 +432,7 @@ const Index = () => {
                         <input
                           id="dob"
                           type="date"
+                          required
                           value={dateOfBirth}
                           onChange={(e) => setDateOfBirth(e.target.value)}
                           className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 outline-none transition focus:border-main focus:bg-white"
@@ -487,7 +495,12 @@ const Index = () => {
                     {status && <p className={`${status.type === 'success' ? 'text-green-600' : 'text-red-600'} text-semibold`}>{status.message}</p>}
                     <Button
                       type="submit"
-                      className="w-full bg-main px-6 py-6 font-semibold text-white shadow-lg cursor-pointer transition hover:bg-main-light"
+                      disabled={!isFormValid || loading}
+                      className={`w-full px-6 py-6 font-semibold text-white shadow-lg transition ${
+                        !isFormValid || loading
+                          ? "cursor-not-allowed bg-gray-400"
+                          : "cursor-pointer bg-main hover:bg-main-light"
+                      }`}
                     >
                       {loading 
                         ? <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white"></div> 
