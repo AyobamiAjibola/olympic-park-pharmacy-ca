@@ -3,13 +3,32 @@ import logo from "../assets/logo.png";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 
+const pharmacyInfo = [
+  {
+    label: "Proprietor",
+    value: "Lakhiani Health Corporation",
+  },
+  {
+    label: "Proprietor's Representative",
+    value: "Pramodkumar Lakhiani",
+  },
+  {
+    label: "Pharmacy Licensee / Manager",
+    value: "Pramodkumar Lakhiani",
+  },
+  {
+    label: "Pharmacist License",
+    value: "13276",
+  },
+];
+
 export function Footer() {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
   return (
     <footer className="bg-main text-white">
-      <div className="max-w-7xl mx-auto px-5 md:px-8 pt-14 pb-10 grid gap-2 md:grid-cols-4">
+      <div className="max-w-7xl mx-auto px-5 md:px-8 pt-14 pb-4 grid gap-2 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-3 mb-4">
             <div className="bg-white rounded-2xl p-1">
@@ -46,27 +65,8 @@ export function Footer() {
               {" "} {t("footer.text5")}
             </p>
           </div>
-          <div className="mt-4 flex justify-between items-start">
-            <div className="flex gap-2 items-center">
-              <div className="flex flex-col items-start">
-                <span className="font-bold text-sm text-left">Proprietor</span>
-                <span className="text-sm text-left">Lakhiani Health Corporation</span>
-              </div>
-              <div className="flex flex-col items-start">
-                <span className="font-bold text-sm text-left">Proprietor’s Representative</span>
-                <span className="text-sm text-left">Pramodkumar Lakhiani</span>
-              </div>
-            </div>
-            <div className="flex flex-col items-start">
-              <span className="font-bold text-sm text-left">Pharmacy Licensee / Manager</span>
-              <span className="text-sm text-left">Pramodkumar Lakhiani</span>
-            </div>
-            <div className="flex flex-col items-start">
-              <span className="font-bold text-sm text-left">Pharmacist License</span>
-              <span className="text-sm">13276</span>
-            </div>
-          </div>
         </div>
+
         <div className="my-6 bg-white/30 h-[0.5px] block md:hidden"/>
         <div className="">
           <h3 className="font-semibold mb-3 text-xl">Quick Links</h3>
@@ -80,6 +80,7 @@ export function Footer() {
           </ul>
         </div>
         <div className="my-6 bg-white/30 h-[0.5px] block md:hidden"/>
+        
         <div>
           <h3 className="font-semibold mb-3 text-xl">Contact</h3>
           <ul className="space-y-3 text-sm text-blue-100 leading-tight">
@@ -96,6 +97,17 @@ export function Footer() {
               </a>
             </li>
           </ul>
+        </div>
+      </div>
+
+      <div className="mt-4 mx-auto px-5 md:px-8 pb-6 border-t border-white/10 pt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {pharmacyInfo.map(({ label, value }) => (
+            <div key={label}>
+              <p className="text-sm font-bold text-left">{label}</p>
+              <p className="text-sm text-left text-blue-100">{value}</p>
+            </div>
+          ))}
         </div>
       </div>
 
