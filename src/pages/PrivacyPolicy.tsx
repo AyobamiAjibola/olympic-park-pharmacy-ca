@@ -87,56 +87,53 @@ export default function PrivacyPolicy() {
                             </p>
 
                             <p>
-                                This Privacy Policy explains how Olympic Park Community
-                                Pharmacy, referred to as “we,” “us,” or “our,” collects,
-                                uses, discloses, and protects personal information when
-                                you use our website and services.
+                                This Privacy Policy explains how Olympic Park Community Pharmacy (“we”, “us”, “our”)
+                                collects, uses, discloses, and protects personal information when you use our website
+                                and services.
                             </p>
                         </div>
 
                         <div className="space-y-10 text-left">
                             <PolicySection number={1} title="Information We Collect">
                                 <p>
-                                    We collect personal information about you only when
-                                    necessary to provide services, respond to inquiries, or
-                                    improve our website. This may include:
+                                    We collect personal information about you only when necessary to provide services,
+                                    respond to inquiries, or improve our Site. This may include:
                                 </p>
 
                                 <div>
-                                    <h3 className="mb-3 font-semibold text-gray-900">
+                                    <h3 className="mb-3 font-bold text-gray-900">
                                         Personal Identifiers
                                     </h3>
 
                                     <PolicyList
                                         items={[
-                                        "Your name",
-                                        "Date of birth",
-                                        "Email address",
-                                        "Phone number",
-                                        "Prescription details",
+                                            "Your name",
+                                            "Date of birth",
+                                            "Email address",
+                                            "Phone number",
+                                            "Prescription details",
                                         ]}
                                     />
                                 </div>
 
                                 <div>
-                                    <h3 className="mb-3 font-semibold text-gray-900">
+                                    <h3 className="mb-3 font-bold text-gray-900">
                                         Electronic and Usage Information
                                     </h3>
 
                                     <PolicyList
                                         items={[
-                                        "IP address",
-                                        "Browser type and settings",
-                                        "Pages visited and actions taken on the website",
-                                        "Cookies and similar tracking technologies",
+                                            "IP address",
+                                            "Browser type and settings",
+                                            "Pages visited and actions taken on the Site",
+                                            "Cookies and similar tracking technologies",
                                         ]}
                                     />
                                 </div>
 
                                 <p>
-                                    We do not collect sensitive personal health information
-                                    through the website unless you expressly submit it
-                                    through secure, purpose specific forms.
+                                    We do {" "}<p className='font-bold'>not</p>{" "} collect sensitive personal health information through the Site unless you
+                                    expressly submit it via secure, purpose-specific forms.
                                 </p>
                             </PolicySection>
 
@@ -144,48 +141,40 @@ export default function PrivacyPolicy() {
                                 <p>We collect personal information when you:</p>
 
                                 <PolicyList
-                                items={[
-                                    "Submit a prescription transfer request or appointment request form",
-                                    "Communicate with us by email, phone, or through the website",
-                                    "Interact with cookies or analytics services",
-                                ]}
+                                    items={[
+                                        "Submit a prescription transfer request or appointment request form",
+                                        "Communicate with us by email, phone, or through the Site",
+                                        "Interact with cookies or analytics services",
+                                    ]}
                                 />
                             </PolicySection>
 
                             <PolicySection number={3} title="Purpose of Collection">
                                 <p>
-                                    We collect and use personal information for the following
-                                    purposes:
+                                    We collect and use personal information for the following purposes:
                                 </p>
 
                                 <PolicyList
                                     items={[
                                         "To respond to your inquiries or requests",
                                         "To provide and improve our services",
-                                        "To administer and secure the website",
+                                        "To administer and secure the Site",
                                         "To comply with legal and regulatory requirements",
                                     ]}
                                 />
 
                                 <p>
-                                    We will only collect, use, and disclose personal
-                                    information with your knowledge and consent, except where
-                                    otherwise required by law.
+                                    We will only collect, use, and disclose personal information with your knowledge and
+                                    consent, except where otherwise required by law.
                                 </p>
                             </PolicySection>
 
                             <PolicySection number={4} title="Legal Basis for Processing">
                                 <p>
-                                    Our collection and use of personal information is governed
-                                    by the Personal Information Protection and Electronic
-                                    Documents Act, also known as PIPEDA, and applicable
-                                    provincial privacy laws.
-                                </p>
-
-                                <p>
-                                    These laws require that information is collected for
-                                    legitimate purposes that have been identified to you, and
-                                    only with your consent.
+                                    Our collection and use of personal information is governed by the Personal Information
+                                    Protection and Electronic Documents Act (PIPEDA) and applicable provincial privacy
+                                    laws as required. These laws require that information is collected for legitimate
+                                    purposes that have been identified to you, and only with your consent.
                                 </p>
                             </PolicySection>
 
@@ -204,9 +193,8 @@ export default function PrivacyPolicy() {
                                 />
 
                                 <p>
-                                    You can set your browser to refuse cookies or notify you
-                                    when cookies are being used. However, some features of the
-                                    website may not function properly without them.
+                                    You can set your browser to refuse cookies or notify you when cookies are being used.
+                                    However, some features of the Site may not function properly without them.
                                 </p>
                             </PolicySection>
 
@@ -218,30 +206,24 @@ export default function PrivacyPolicy() {
 
                                 <PolicyList
                                     items={[
-                                        "Service providers who help operate our website or deliver services",
+                                        "Service providers who help operate our Site or deliver services",
                                         "Third parties with your consent",
                                         "Law enforcement, regulators, or other parties as required by applicable law",
                                     ]}
                                 />
 
                                 <p>
-                                    We do not sell or lease your personal information to
+                                    We do not {" "}<p className='font-bold'>sell</p>{" "} or lease your personal information to
                                     unrelated third parties.
                                 </p>
                             </PolicySection>
 
                             <PolicySection number={7} title="Data Security">
                                 <p>
-                                    We use reasonable technical and organizational safeguards
-                                    to protect personal information against unauthorized
-                                    access, modification, or disclosure.
-                                </p>
-
-                                <p>
-                                    We maintain administrative, physical, and electronic
-                                    measures appropriate to the sensitivity of the information
-                                    collected. However, no internet transmission is completely
-                                    secure.
+                                    We use reasonable technical and organizational safeguards to protect personal
+                                    information against unauthorized access, modification, or disclosure. We maintain
+                                    administrative, physical, and electronic measures appropriate to the sensitivity of the
+                                    information collected. However, no internet transmission is 100% secure.
                                 </p>
                             </PolicySection>
 
@@ -250,14 +232,9 @@ export default function PrivacyPolicy() {
                                 title="Retention of Personal Information"
                             >
                                 <p>
-                                    We retain personal information only for as long as
-                                    necessary to fulfill the purposes outlined in this Privacy
-                                    Policy or as required by law.
-                                </p>
-
-                                <p>
-                                    Once the information is no longer needed, it will be
-                                    securely destroyed.
+                                    We retain personal information only as long as necessary to fulfill the purposes outlined
+                                    in this Privacy Policy or as required by law. Once the information is no longer needed, it
+                                    will be securely destroyed.
                                 </p>
                             </PolicySection>
 
@@ -272,40 +249,30 @@ export default function PrivacyPolicy() {
                                         "Request access to personal information we hold about you",
                                         "Request corrections to inaccurate or incomplete information",
                                         "Withdraw consent for our continued use of your personal information",
+                                        "To exercise these rights, please contact us using the details below."
                                     ]}
                                 />
-
-                                <p>
-                                    To exercise these rights, please contact us using the
-                                    details below.
-                                </p>
                             </PolicySection>
 
                             <PolicySection number={10} title="Children’s Privacy">
                                 <p>
-                                    Our website is not intended for use by individuals under
-                                    the age of 13. We do not knowingly collect personal
-                                    information from children without verified parental
-                                    consent.
+                                    Our Site is not intended for use by individuals under the age of 13. We do not knowingly
+                                    collect personal information from children without verified parental consent.
                                 </p>
                             </PolicySection>
 
                             <PolicySection number={11} title="Changes to This Policy">
                                 <p>
-                                    We may update this Privacy Policy to reflect changes in
-                                    our practices or legal requirements.
-                                </p>
-
-                                <p>
-                                    We will revise the updated date at the top of the policy
-                                    and notify users where appropriate.
+                                    We may update this Privacy Policy to reflect changes in our practices or legal
+                                    requirements. We will revise the “Last updated” date at the top of the policy and notify
+                                    users as appropriate.
                                 </p>
                             </PolicySection>
                        
                             <PolicySection number={12} title="Contact Us">
                                 <p>
-                                    If you have questions or concerns about this Privacy
-                                    Policy or our privacy practices, please contact us:
+                                    If you have questions or concerns about this Privacy Policy or our privacy practices,
+                                    please contact:
                                 </p>
 
                                 <address className="not-italic">
@@ -329,7 +296,7 @@ export default function PrivacyPolicy() {
 
                                             <p>
                                                 <span className="font-medium text-gray-900">
-                                                    Email:
+                                                    For more info email at:
                                                 </span>{" "}
                                                 <a
                                                     href="mailto:admin@olympicparkpharmacy.ca"
