@@ -87,13 +87,13 @@ export function Footer() {
             <li>{location}</li>
             <li>{province}</li>
             <li>
-              <a href="tel:+10000000000" className="hover:text-white">
+              <a href="tel:+14039005553" className="hover:text-white">
                 {pharmPhone}
               </a>
             </li>
             <li>
-              <a href="mailto:info@olympicparkpharmacy.com" className="hover:text-white">
-                info@olympicparkpharmacy.com
+              <a href="mailto:info@olympicparkpharmacy.ca" className="hover:text-white">
+                info@olympicparkpharmacy.ca
               </a>
             </li>
           </ul>
