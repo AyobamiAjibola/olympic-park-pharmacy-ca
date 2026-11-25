@@ -106,6 +106,7 @@
 
         {
           "title": "Libreng Prescription Delivery",
+          "link": "/services/prescription-delivery",
           "desc": "Nauunawaan namin na hindi laging maginhawa ang pagpunta sa pharmacy, lalo na para sa mga abalang indibidwal, seniors, mga pasyenteng may mobility challenges, o mga nagpapagaling mula sa sakit. Kaya naman nag-aalok kami ng libreng prescription delivery diretso sa iyong bahay o workplace upang matiyak na matatanggap mo ang iyong mga gamot nang ligtas at nasa tamang oras. Ang aming delivery service ay idinisenyo upang magbigay ng comfort, convenience, at peace of mind sa pamamagitan ng pagbawas ng hindi kinakailangang biyahe at pagtulong sa iyong manatiling consistent sa treatment plan mo. Ang maaasahang access sa gamot ay mahalaga sa pagpapanatili ng mabuting kalusugan, lalo na para sa mga may chronic conditions o ongoing treatments.",
           "short_desc": "Mag-enjoy ng maginhawa at maaasahang delivery ng iyong prescription medications diretso sa iyong bahay o workplace."
         },
@@ -135,6 +136,7 @@
         },
         {
           "title": "Travel Consultation",
+          "link": "/services/travel-vaccines",
           "desc": "Bago ka bumiyahe, uupo kasama mo ang aming pharmacist para pag-usapan kung saan ka pupunta at kung ano ang kakailanganin mo. Titingnan namin ang iyong vaccination record, irerekomenda ang mga travel vaccine para sa iyong destinasyon, at maaari kaming magreseta ng mga gamot na dadalhin mo, gaya ng antibiotic para sa biyahe. Mayroon kaming mga travel vaccine, maliban sa yellow fever.",
           "short_desc": "May balak bang biyahe? Kumuha ng payo tungkol sa mga bakuna at gamot na kailangan mo bago umalis."
         },

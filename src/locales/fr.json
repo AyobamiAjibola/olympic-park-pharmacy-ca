@@ -104,6 +104,7 @@
         },
         {
           "title": "Livraison gratuite des ordonnances",
+          "link": "/services/prescription-delivery",
           "desc": "Nous comprenons qu’il n’est pas toujours pratique de se rendre à la pharmacie, surtout pour les personnes occupées, les aînés, les patients à mobilité réduite ou ceux en convalescence. C’est pourquoi nous offrons un service gratuit de livraison d’ordonnances directement à votre domicile ou lieu de travail afin de vous aider à recevoir vos médicaments de façon sécuritaire et ponctuelle. Notre service de livraison est conçu pour offrir confort, commodité et tranquillité d’esprit en réduisant les déplacements inutiles et en facilitant le respect de votre plan de traitement. Un accès fiable aux médicaments joue un rôle essentiel dans le maintien d’une bonne santé, particulièrement pour les personnes vivant avec des maladies chroniques ou suivant des traitements continus.",
           "short_desc": "Profitez d’une livraison pratique et fiable de vos médicaments directement à votre domicile ou lieu de travail."
         },
@@ -132,6 +133,7 @@
         },
         {
           "title": "Consultation voyage",
+          "link": "/services/travel-vaccines",
           "desc": "Avant votre voyage, notre pharmacien prend le temps de discuter avec vous de votre destination et de ce dont vous aurez besoin. Nous examinons votre carnet de vaccination, vous recommandons les vaccins de voyage adaptés à votre destination et pouvons vous prescrire des médicaments à emporter, comme des antibiotiques pour le voyage. Nous avons en stock les vaccins de voyage, sauf celui contre la fièvre jaune.",
           "short_desc": "Vous partez en voyage? Obtenez des conseils sur les vaccins et les médicaments dont vous aurez besoin avant le départ."
         },

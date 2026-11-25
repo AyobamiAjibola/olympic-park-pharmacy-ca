@@ -43,6 +43,7 @@ export type ServicesTypes = {
   title: string;
   desc: string;
   short_desc: string;
+  link?: string;
 }
 
 const Index = () => {
@@ -141,6 +142,9 @@ const Index = () => {
     "HomePage.services.services",
     { returnObjects: true }
   ) as ServicesTypes[];
+  const featuredServices = services
+    .map((service, index) => ({ service, index }))
+    .filter(({ service, index }) => index < 6 || service.link);
 
   useEffect(() => {
     if (!status.message) return;
@@ -278,7 +282,7 @@ const Index = () => {
           </section>
 
           {/* Prescription Section */}
-          <section id="prescription" className="lg:px-12 px-5 md:px-8 relative overflow-hidden bg-linear-to-br from-emerald-50 via-white to-blue-50 pt-10 pb-20">
+          <section id="prescription" className="scroll-mt-20 lg:px-12 px-5 md:px-8 relative overflow-hidden bg-linear-to-br from-emerald-50 via-white to-blue-50 pt-10 pb-20">
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -546,7 +550,7 @@ const Index = () => {
                     },
                   }}
                 >
-                  {services.slice(0, 6).map((service, index) => (
+                  {featuredServices.map(({ service, index }) => (
                     <SwiperSlide key={service.title} className="h-auto mb-12">
                       <ServiceCard index={index} {...service} />
                     </SwiperSlide>
@@ -554,7 +558,7 @@ const Index = () => {
                 </Swiper>
               </div>
               <div className="hidden md:grid xl:grid-cols-3 md:grid-cols-2 gap-8 mt-10">
-                {services.slice(0, 6).map((service, index) => (
+                {featuredServices.map(({ service, index }) => (
                   <ServiceCard
                     key={service.title}
                     index={index}

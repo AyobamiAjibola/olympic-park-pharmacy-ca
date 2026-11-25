@@ -85,6 +85,7 @@
         "services": {
             "title": "Our Services",
             "subTitle": "Helpful pharmacy services designed around your health needs.",
+            "learnMore": "See the full page",
             "services": [
                 {
                     "title": "Compounding",
@@ -102,6 +103,7 @@
 
                 {
                     "title": "Free Prescription Delivery",
+                    "link": "/services/prescription-delivery",
                     "desc": "We understand that visiting the pharmacy may not always be convenient, especially for busy individuals, seniors, patients with mobility challenges, or those recovering from illness. That is why we offer free prescription delivery services directly to your home or workplace, helping ensure you receive your medications safely and on time. Our delivery service is designed to provide comfort, convenience, and peace of mind by reducing unnecessary travel and making it easier to stay consistent with your treatment plan. Reliable access to medications plays a vital role in maintaining good health, particularly for individuals managing chronic conditions or ongoing treatments. By offering prompt and dependable delivery, we help patients avoid interruptions in medication therapy while providing a more convenient healthcare experience. Our team carefully handles all prescriptions with professionalism and confidentiality to ensure your medications arrive securely and efficiently.",
                     "short_desc":
                     "Enjoy convenient and reliable delivery of your prescription medications directly to your home or workplace."
@@ -134,6 +136,7 @@
                 },
                 {
                     "title": "Travel Consultation",
+                    "link": "/services/travel-vaccines",
                     "desc": "Before you travel, our pharmacist sits down with you to talk about where you’re going and what you’ll need. We look at your vaccination record, recommend the travel vaccines for your destination, and can prescribe medications to carry with you, such as antibiotics for the trip. We stock travel vaccines, except yellow fever.",
                     "short_desc":
                     "Planning a trip? Get advice on the vaccines and medications you need before you go."
@@ -288,5 +291,193 @@
             "success": "Thank you for submitting your complaint. We will get back to you as soon as possible.",
             "err": "Something went wrong. Please try again."
         }
+    },
+  "DeliveryPage": {
+    "metaTitle": "Free Prescription Delivery in Calgary | Olympic Park Community Pharmacy",
+    "metaDescription": "Free same-day prescription delivery anywhere in Calgary and Airdrie. Order by 2pm for same-day delivery. Call (403) 900-5553 or transfer your prescription online.",
+    "badge": "Free delivery, Calgary and Airdrie",
+    "title": "Free same-day prescription delivery in Calgary and Airdrie",
+    "subTitle": "Order by 2pm for same-day delivery. No delivery fee, anywhere in Calgary or Airdrie. Skip the drive and the parking lot.",
+    "proofLine": "5.0 stars on Google from 31 reviews.",
+    "proofQuote": "“Amazing service! Very reliable!”",
+    "ctaCall": "Call (403) 900-5553",
+    "ctaSecondary": "Transfer your prescription",
+    "areaLine": "We deliver anywhere in Calgary and Airdrie, from 30 Canada Olympic Common SW.",
+    "quotesTitle": "What patients say",
+    "quotes": [
+      "“super fast turnaround time. Great convenience with family doctors next door”",
+      "“always call ahead of time when my prescriptions are close to needing a refill”",
+      "“they even stay late to provide us with a great service.”"
+    ],
+    "quoteSource": "Google review",
+    "faqTitle": "Questions about delivery",
+    "faqs": [
+      {
+        "q": "Is delivery really free?",
+        "a": "Yes. There is no delivery fee anywhere in Calgary or Airdrie."
+      },
+      {
+        "q": "What is the cut-off for same-day delivery?",
+        "a": "2pm. Order by 2pm for same-day delivery. Ordering later? Call us and we'll tell you when to expect it."
+      },
+      {
+        "q": "I live on the other side of the city. Is that too far?",
+        "a": "Not if you're in Calgary or Airdrie. In Pramod's words: “I don't want the distance to be the barrier.”"
+      },
+      {
+        "q": "My prescription is at another pharmacy. Can you still deliver it?",
+        "a": "Yes. Transfer it to us online and we contact your old pharmacy for you. Once it's here, it can be delivered like any other prescription."
+      },
+      {
+        "q": "How do I order a refill without coming in?",
+        "a": "Call (403) 900-5553, message us on WhatsApp, or send us a message through the contact page and choose Prescription Refill."
+      },
+      {
+        "q": "Can you bill my insurance?",
+        "a": "We bill many major insurance providers directly for eligible prescriptions. Call us and we'll check yours."
+      }
+    ],
+    "finalTitle": "Your medicine should come to you",
+    "finalText": "Call us or send your prescription details. Order by 2pm for same-day delivery.",
+    "hours": "Monday to Friday 9am - 7pm, Saturday 10am - 4pm, Sunday 10am - 2pm",
+    "crossLinkText": "Travelling soon? See our travel vaccines and consultations",
+    "crossLinkHref": "/services/travel-vaccines",
+    "steps": {
+      "title": "How delivery works",
+      "items": [
+        {
+          "title": "Send it to us",
+          "text": "Call (403) 900-5553, message us on WhatsApp, or transfer your prescription from your old pharmacy online."
+        },
+        {
+          "title": "We fill it",
+          "text": "Your prescription is filled here, at 30 Canada Olympic Common SW. Order by 2pm for same-day delivery."
+        },
+        {
+          "title": "It comes to your door",
+          "text": "Anywhere in Calgary or Airdrie, with no delivery fee."
+        }
+      ]
+    },
+    "reasons": {
+      "title": "Why patients get their medicine from us",
+      "items": [
+        {
+          "title": "Free, anywhere in Calgary and Airdrie",
+          "text": "Southwest, northeast, or out in Airdrie. Delivery costs you nothing."
+        },
+        {
+          "title": "Same day, with a 2pm cut-off",
+          "text": "Order by 2pm for same-day delivery. No waiting until tomorrow for a refill you need now."
+        },
+        {
+          "title": "The family doctors are next door",
+          "text": "Prescriptions from the doctors next door print straight at our pharmacy, so there's no paper to carry over."
+        },
+        {
+          "title": "A pharmacist who explains",
+          "text": "Questions about a new medicine or a side effect? Call and talk it through before your delivery goes out."
+        }
+      ]
+    },
+    "prose": {
+      "title": "Made for the medicines you take every month",
+      "paragraphs": [
+        "If you take something for blood pressure, diabetes or any condition that needs a refill every month or every three months, delivery means one less trip to plan around. Taking several medicines? We can sort them into blister packs, so each dose is ready when you need it.",
+        "Switching from another pharmacy is simple. Send us your details through the transfer form and we contact your old pharmacy for you. We let you know when your medicine is ready, and from then on your refills come to your door."
+      ],
+      "linkText": "Transfer your prescription",
+      "linkHref": "/#prescription"
     }
+  },
+  "TravelPage": {
+    "metaTitle": "Travel Vaccines Calgary | Olympic Park Community Pharmacy",
+    "metaDescription": "Travel vaccines and travel consultations in Calgary. We stock every travel vaccine except yellow fever, check your record and can prescribe what to carry.",
+    "badge": "Travel consultations",
+    "title": "Travel vaccines and travel consultations in Calgary",
+    "subTitle": "Tell us where you're going. We check your vaccination record, recommend the vaccines for your trip, and can prescribe medicine to take with you. We stock every travel vaccine except yellow fever.",
+    "proofLine": "5.0 stars on Google from 31 reviews.",
+    "proofQuote": "“He takes the time to clearly explain the purpose of each medication and discuss any potential side effects.”",
+    "ctaCall": "Call (403) 900-5553",
+    "ctaSecondary": "Book a travel consultation",
+    "areaLine": "At 30 Canada Olympic Common SW, Calgary, next to the family doctors.",
+    "quotesTitle": "What patients say",
+    "quotes": [
+      "“He takes the time to clearly explain the purpose of each medication and discuss any potential side effects.”",
+      "“Mr. Pramod was carefully ruling out any red flags to ensure that I received the most appropriate treatment and to help avoid an unnecessary emergency room visit.”",
+      "“super fast turnaround time. Great convenience with family doctors next door”"
+    ],
+    "quoteSource": "Google review",
+    "faqTitle": "Questions about travel vaccines",
+    "faqs": [
+      {
+        "q": "Which travel vaccines do you have?",
+        "a": "Every travel vaccine except yellow fever. Tell us your destination and we'll say which ones you need."
+      },
+      {
+        "q": "Can you prescribe medicine for my trip?",
+        "a": "Yes. Our pharmacist is a prescribing pharmacist and can prescribe medicines to carry, such as antibiotics for the trip."
+      },
+      {
+        "q": "Do I need an appointment?",
+        "a": "Booking online is the easiest way to get a time that suits you. You can also call us at (403) 900-5553."
+      },
+      {
+        "q": "Can you deliver my travel prescriptions?",
+        "a": "Yes. Delivery is free anywhere in Calgary and Airdrie. Order by 2pm for same-day delivery."
+      }
+    ],
+    "finalTitle": "Passport, charger, vaccines",
+    "finalText": "Let's sort the third one. Book your travel consultation online or give us a call.",
+    "hours": "Monday to Friday 9am - 7pm, Saturday 10am - 4pm, Sunday 10am - 2pm",
+    "crossLinkText": "Need your prescriptions delivered? Free same-day delivery in Calgary and Airdrie",
+    "crossLinkHref": "/services/prescription-delivery",
+    "steps": {
+      "title": "How a travel consultation works",
+      "items": [
+        {
+          "title": "Book a time",
+          "text": "Book online or call us. Bring your vaccination record if you have it, and your travel dates."
+        },
+        {
+          "title": "Talk it through",
+          "text": "We go over where you're going and what you'll be doing, and check your record to see what you already have."
+        },
+        {
+          "title": "Vaccines and prescriptions",
+          "text": "We recommend the vaccines your trip calls for and can give them here. We can also prescribe medicine to carry, such as antibiotics for the trip."
+        }
+      ]
+    },
+    "reasons": {
+      "title": "Why travellers come to us",
+      "items": [
+        {
+          "title": "Every travel vaccine except yellow fever",
+          "text": "We stock the travel vaccines your trip is likely to need. If it needs yellow fever, we'll tell you so you can arrange it elsewhere."
+        },
+        {
+          "title": "A prescribing pharmacist",
+          "text": "Our pharmacist can prescribe medicine to take with you, such as antibiotics for the trip."
+        },
+        {
+          "title": "Time for your questions",
+          "text": "Patients say he takes the time to explain each medicine and its side effects. Bring every question you have."
+        },
+        {
+          "title": "Next to the family doctors",
+          "text": "We're at 30 Canada Olympic Common SW, next door to the family doctors. Travel prescriptions can be delivered free anywhere in Calgary and Airdrie."
+        }
+      ]
+    },
+    "prose": {
+      "title": "Before you go",
+      "paragraphs": [
+        "Book as soon as your trip is set. Some vaccines take more than one dose, so the earlier you come in, the more options you have.",
+        "We don't carry the yellow fever vaccine. If your destination needs it, we'll tell you at your consultation so you can arrange it before you leave. Every other travel vaccine, we stock."
+      ],
+      "linkText": "Book a travel consultation",
+      "linkHref": "BOOKING_LINK"
+    }
+  }
 }

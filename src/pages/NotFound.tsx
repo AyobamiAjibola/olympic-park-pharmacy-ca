@@ -17,6 +17,7 @@ const NotFound = () => {
      <>
         <Helmet>
           <title>404 | Olympic Park Community Pharmacy</title>
+          <meta name="description" content="Trusted pharmacy care, prescription services, and healthcare support in Calgary." />
         </Helmet>
         <div className="min-h-screen bg-background">
           <Navbar/>

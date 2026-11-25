@@ -16,6 +16,8 @@ import Team from "./pages/Team.tsx";
 import ThankYou from "./pages/ThankYou.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 
+import ServiceDetail from "./pages/ServiceDetail";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -30,6 +32,8 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services/prescription-delivery" element={<ServiceDetail page="DeliveryPage" />} />
+          <Route path="/services/travel-vaccines" element={<ServiceDetail page="TravelPage" />} />
           <Route path="/careers" element={<Career />} />
           <Route path="/license" element={<License />} />
           <Route path="/complaint" element={<Complaint />} />
