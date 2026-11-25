@@ -101,7 +101,7 @@ const Index = () => {
     const formData = new FormData(form);
 
     formData.append("access_key", import.meta.env.VITE_WEB3FORM_API_KEY);
-    formData.append("subject", "New Prescription Transfer Message from Olympic Park Pharmacy Website");
+    formData.append("subject", "New Prescription Transfer Message from Olympic Park Community Pharmacy Website");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -155,14 +155,14 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Home | Olympic Park Pharmacy</title>
+        <title>Home | Olympic Park Community Pharmacy</title>
         <meta
           name="description"
-          content="Olympic Park Pharmacy provides prescription support, health consultations, refills, appointment booking, and friendly pharmacy care."
+          content="Olympic Park Community Pharmacy provides prescription support, health consultations, refills, appointment booking, and friendly pharmacy care."
         />
         <meta
           name="keywords"
-          content="Olympic Park Pharmacy, pharmacy, prescription refill, Calgary pharmacy, medication review"
+          content="Olympic Park Community Pharmacy, pharmacy, prescription refill, Calgary pharmacy, medication review"
         />
       </Helmet>
       
@@ -200,10 +200,10 @@ const Index = () => {
                 </span>
 
                 <span className="hidden md:block text-white text-4xl mt-6 font-bold leading-tight sm:text-5xl md:text-6xl text-left">
-                  {t("HomePage.hero.title")} Olympic Park <br/> Pharmacy
+                  {t("HomePage.hero.title")} Olympic Park <br/> Community Pharmacy
                 </span>
                 <span className="block md:hidden text-white text-4xl mt-6 font-bold leading-tight sm:text-5xl md:text-6xl text-left">
-                  {t("HomePage.hero.title")} Olympic Park Pharmacy
+                  {t("HomePage.hero.title")} Olympic Park Community Pharmacy
                 </span>
 
                 <p className="mt-6 text-lg leading-tight text-white md:text-xl text-left md:max-w-2xl font-normal">
@@ -242,14 +242,14 @@ const Index = () => {
             >
               <div className="mx-auto mb-10 max-w-3xl text-center">
                 <span className="mt-5 text-2xl tracking-tight text-main md:text-4xl">
-                  {t("HomePage.chooseOlympic.title")} Olympic Park Pharmacy
+                  {t("HomePage.chooseOlympic.title")} Olympic Park Community Pharmacy
                 </span>
               </div>
               <div className="grid items-start gap-6 lg:grid-cols-[0.9fr_1.1fr]">
                 <div className="relative">
                   <img
                     src="/choose.jpg"
-                    alt="Pharmacist helping customers"
+                    alt="Pharmacist helping a customer at a pharmacy counter"
                     className="w-full h-90 object-cover rounded-3xl shadow-2xl"
                   />
 
@@ -626,7 +626,7 @@ const Index = () => {
             <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="overflow-hidden">
                 <iframe
-                  title="Olympic Park Pharmacy Location"
+                  title="Olympic Park Community Pharmacy Location"
                   src={mapUrl}
                   className="h-112.5 w-full border-0 rounded-2xl"
                   loading="lazy"

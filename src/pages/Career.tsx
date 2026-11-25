@@ -11,14 +11,14 @@ export default function Career() {
     return (
         <>
             <Helmet>
-                <title>Career | Olympic Park Pharmacy</title>
+                <title>Career | Olympic Park Community Pharmacy</title>
                 <meta
                     name="description"
-                    content="Olympic Park Pharmacy provides prescription support, health consultations, refills, appointment booking, and friendly pharmacy care."
+                    content="Olympic Park Community Pharmacy provides prescription support, health consultations, refills, appointment booking, and friendly pharmacy care."
                 />
                 <meta
                     name="keywords"
-                    content="Olympic Park Pharmacy, pharmacy, prescription refill, Calgary pharmacy, medication review"
+                    content="Olympic Park Community Pharmacy, pharmacy, prescription refill, Calgary pharmacy, medication review"
                 />
             </Helmet>
             

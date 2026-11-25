@@ -45,15 +45,15 @@ export default function License() {
     return (
         <>
             <Helmet>
-                <title>License | Olympic Park Pharmacy</title>
+                <title>License | Olympic Park Community Pharmacy</title>
                 <meta
                     name="description"
-                    content="Contact Olympic Park Pharmacy License"
+                    content="Contact Olympic Park Community Pharmacy License"
                 />
         
                 <meta
                     name="keywords"
-                    content="Olympic Park Pharmacy, pharmacy, prescription refill, Calgary pharmacy, medication review"
+                    content="Olympic Park Community Pharmacy, pharmacy, prescription refill, Calgary pharmacy, medication review"
                 />
             </Helmet>
             <div className="min-h-screen bg-linear-to-br from-emerald-50 via-white to-blue-50">

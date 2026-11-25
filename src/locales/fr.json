@@ -22,7 +22,7 @@
       "why_choose": [
         {
           "title": "Équipe pharmaceutique expérimentée",
-          "desc": "Nos pharmaciens agréés et professionnels de la santé se consacrent à vous aider à prendre des décisions éclairées concernant vos médicaments et votre bien-être général."
+          "desc": "Notre pharmacien agréé se consacre à vous aider à prendre des décisions éclairées concernant vos médicaments et votre bien-être général."
         },
         {
           "title": "Éducation et accompagnement des patients",
@@ -94,8 +94,8 @@
       "services": [
         {
           "title": "Préparation magistrale",
-          "desc": "Chaque patient a des besoins de santé uniques, et les médicaments standards ne conviennent pas toujours parfaitement. Nos solutions médicamenteuses personnalisées sont conçues pour offrir des options de traitement adaptées à votre condition médicale, votre mode de vie, vos allergies, vos besoins de dosage ou vos préférences personnelles. Grâce à nos services spécialisés de préparation magistrale, nous pouvons collaborer avec votre professionnel de la santé afin de créer des médicaments dans des concentrations, formes posologiques ou combinaisons personnalisées qui peuvent ne pas être disponibles commercialement. Ce service est particulièrement bénéfique pour les enfants ayant de la difficulté à avaler des comprimés, les patients nécessitant des formulations sans allergènes, les personnes ayant besoin d’ajustements de dosage spécifiques ou celles vivant avec des maladies chroniques nécessitant des soins personnalisés. Les médicaments personnalisés peuvent améliorer l’efficacité du traitement, l’adhésion aux médicaments et le confort global du patient. Notre équipe pharmaceutique s’engage à fournir des solutions sûres, précises et de haute qualité tout en vous accompagnant tout au long de votre parcours de soins.",
-          "short_desc": "Nous pouvons préparer des médicaments personnalisés adaptés à vos besoins de santé et exigences de traitement."
+          "desc": "Chaque patient a des besoins de santé uniques, et les médicaments standards ne conviennent pas toujours. Nous travaillons avec votre professionnel de la santé pour obtenir des médicaments magistraux dans des dosages, des formes ou des combinaisons sur mesure qui ne sont pas toujours offerts dans le commerce, et nous vous les livrons. C’est particulièrement utile pour les enfants qui ont du mal à avaler des comprimés, les patients qui ont besoin de formulations sans allergènes, les personnes qui ont besoin d’un dosage précis et toute personne qui gère une maladie chronique. Notre pharmacien vous guide et vous accompagne tout au long de votre traitement.",
+          "short_desc": "Nous obtenons des médicaments personnalisés adaptés à vos besoins de santé, et nous vous les livrons."
         },
         {
           "title": "Facturation directe aux assurances",
@@ -126,15 +126,20 @@
         },
 
         {
-          "title": "Consultation voyage",
+          "title": "Fournitures pour stomie",
           "desc": "Vivre avec une stomie nécessite des produits fiables, des soins personnalisés et un soutien attentionné. Notre pharmacie offre une gamme complète de produits de soins pour stomie conçus pour aider les patients à maintenir confort, confiance et qualité de vie au quotidien. Nous proposons différents sacs, barrières cutanées, adhésifs, produits nettoyants et accessoires provenant de fabricants de confiance. Notre équipe comprend la nature sensible des soins de stomie et s’engage à offrir une assistance respectueuse, discrète et personnalisée.",
           "short_desc": "Nous offrons une large gamme de fournitures pour stomie, incluant sacs, barrières cutanées et accessoires pour le confort et les soins quotidiens."
+        },
+        {
+          "title": "Consultation voyage",
+          "desc": "Avant votre voyage, notre pharmacien prend le temps de discuter avec vous de votre destination et de ce dont vous aurez besoin. Nous examinons votre carnet de vaccination, vous recommandons les vaccins de voyage adaptés à votre destination et pouvons vous prescrire des médicaments à emporter, comme des antibiotiques pour le voyage. Nous avons en stock les vaccins de voyage, sauf celui contre la fièvre jaune.",
+          "short_desc": "Vous partez en voyage? Obtenez des conseils sur les vaccins et les médicaments dont vous aurez besoin avant le départ."
         },
 
         {
           "title": "Test rapide et précis du streptocoque",
           "desc": "Les maux de gorge et symptômes associés peuvent être inconfortables et parfois indiquer une infection streptococcique nécessitant des soins rapides. Notre pharmacie offre des services rapides et précis de dépistage du streptocoque afin d’identifier rapidement les infections et fournir des conseils appropriés pour le traitement et les prochaines étapes. Un diagnostic précoce est important puisque les infections non traitées peuvent entraîner des complications et un inconfort prolongé.",
-          "short_desc": "Protégez-vous et votre famille grâce à notre gamme de vaccins, incluant les vaccins contre la grippe et autres services d’immunisation."
+          "short_desc": "Un test rapide de dépistage du streptocoque à la pharmacie, avec un pharmacien pour vous guider sur la suite."
         },
         {
           "title": "Vaccinations et vaccins contre la grippe",
@@ -170,23 +175,23 @@
   },
   "team": {
     "title": "Notre Équipe",
-    "subTitle": "Une équipe de pharmaciens agréés et de professionnels de la santé dévoués à offrir des soins pharmaceutiques et des services exceptionnels."
+    "subTitle": "Un pharmacien agréé dévoué à offrir des soins pharmaceutiques et des services exceptionnels."
   },
   "About": {
     "title": "À propos de nous",
     "subTitle": "Engagés à fournir des services de santé accessibles, fiables et axés sur la communauté à Calgary.",
     "paragraphs": [
-      "Chez Olympic Park Pharmacy, nous nous engageons à offrir des soins de santé attentionnés, personnalisés et accessibles aux individus et aux familles de notre communauté. Notre objectif est de créer un environnement accueillant où chaque patient se sent valorisé, soutenu et en confiance tout au long de son parcours de santé.",
+      "Chez Olympic Park Community Pharmacy, nous nous engageons à offrir des soins de santé attentionnés, personnalisés et accessibles aux individus et aux familles de notre communauté. Notre objectif est de créer un environnement accueillant où chaque patient se sent valorisé, soutenu et en confiance tout au long de son parcours de santé.",
       "Nous sommes fiers d’offrir une vaste gamme de services de santé conçus pour rendre vos soins plus simples et accessibles. De la prescription par le pharmacien pour certaines affections mineures à la gestion des médicaments, en passant par l’emballage de conformité, les fournitures pour le diabète et la livraison gratuite des ordonnances, notre priorité est de fournir des solutions pratiques adaptées à votre mode de vie et à vos besoins.",
       "Notre équipe est dévouée à créer une atmosphère chaleureuse, conviviale et professionnelle où votre santé et votre bien-être demeurent nos principales priorités. Nous comprenons que la confiance est essentielle dans le domaine des soins de santé, et nous sommes honorés d’être un partenaire de confiance pour nos patients et notre communauté.",
-      "Chez Olympic Park Pharmacy, nous sommes passionnés par l’idée d’aider vous et votre famille à vivre en meilleure santé grâce à des soins de qualité, un service fiable et des relations humaines durables.",
-      "Prenez rendez-vous dès aujourd’hui et découvrez comment Olympic Park Pharmacy peut répondre à vos besoins de santé grâce à des soins personnalisés et une expertise professionnelle.",
-      "Merci de nous faire confiance pour vos soins et de choisir Olympic Park Pharmacy comme partenaire de votre santé."
+      "Chez Olympic Park Community Pharmacy, nous sommes passionnés par l’idée d’aider vous et votre famille à vivre en meilleure santé grâce à des soins de qualité, un service fiable et des relations humaines durables.",
+      "Prenez rendez-vous dès aujourd’hui et découvrez comment Olympic Park Community Pharmacy peut répondre à vos besoins de santé grâce à des soins personnalisés et une expertise professionnelle.",
+      "Merci de nous faire confiance pour vos soins et de choisir Olympic Park Community Pharmacy comme partenaire de votre santé."
     ]
   },
   "Career": {
     "badge": "Nous recrutons",
-    "title": "Rejoignez l’équipe d’Olympic Park Pharmacy",
+    "title": "Rejoignez l’équipe d’Olympic Park Community Pharmacy",
     "subTitle": "Nous sommes toujours à la recherche de professionnels passionnés, attentionnés et dévoués qui s’engagent à soutenir la santé et le bien-être de notre communauté. Découvrez nos postes actuellement disponibles et postulez via notre formulaire de candidature en ligne.",
     "btnText": "Voir les postes disponibles",
     "bottomText": "Les opportunités actuelles et les candidatures sont gérées en ligne."
@@ -211,11 +216,11 @@
     },
     "visit_section": {
       "title": "Visitez-nous ou contactez-nous",
-      "subTitle": "Contactez Olympic Park Pharmacy par téléphone, par e-mail ou rendez-nous visite pendant les heures d’ouverture."
+      "subTitle": "Contactez Olympic Park Community Pharmacy par téléphone, par e-mail ou rendez-nous visite pendant les heures d’ouverture."
     },
     "whatsapp": {
       "title": "Besoin d’une assistance plus rapide ?",
-      "subTitle": "Discutez directement avec Olympic Park Pharmacy sur WhatsApp pour des questions rapides et une assistance immédiate.",
+      "subTitle": "Discutez directement avec Olympic Park Community Pharmacy sur WhatsApp pour des questions rapides et une assistance immédiate.",
       "btnText": "Discuter sur WhatsApp"
     }
   },
@@ -238,19 +243,19 @@
     }
   },
   "license": {
-    "badge": "Olympic Park Pharmacy",
+    "badge": "Olympic Park Community Pharmacy",
     "title": "Licences de pharmacie et informations réglementaires",
-    "subTitle": "Olympic Park Pharmacy exerce ses activités conformément aux réglementations provinciales en matière de pharmacie et aux exigences professionnelles de délivrance de licences en Alberta.",
+    "subTitle": "Olympic Park Community Pharmacy exerce ses activités conformément aux réglementations provinciales en matière de pharmacie et aux exigences professionnelles de délivrance de licences en Alberta.",
     "li_info": "Informations sur les licences",
     "regulatory": "Autorité réglementaire",
-    "regulatory_sub": "Olympic Park Pharmacy est agréée et réglementée par l’Alberta College of Pharmacy. Les patients peuvent vérifier l’enregistrement de la pharmacie ou en apprendre davantage sur les normes pharmaceutiques auprès de l’autorité réglementaire.",
+    "regulatory_sub": "Olympic Park Community Pharmacy est agréée et réglementée par l’Alberta College of Pharmacy. Les patients peuvent vérifier l’enregistrement de la pharmacie ou en apprendre davantage sur les normes pharmaceutiques auprès de l’autorité réglementaire.",
     "verify": "Vérifier la licence",
     "doc": "Documents",
     "pharm_li": "Licence de pharmacie",
     "bus_reg": "Enregistrement de l’entreprise",
     "concern": {
       "title": "Plaintes et préoccupations des patients",
-      "sub_title": "Si vous avez des questions ou des préoccupations concernant les services de pharmacie, veuillez contacter directement Olympic Park Pharmacy. Les patients peuvent également communiquer avec l’Alberta College of Pharmacy pour des préoccupations réglementaires."
+      "sub_title": "Si vous avez des questions ou des préoccupations concernant les services de pharmacie, veuillez contacter directement Olympic Park Community Pharmacy. Les patients peuvent également communiquer avec l’Alberta College of Pharmacy pour des préoccupations réglementaires."
     },
     "contact": {
       "title": "Informations de contact"
@@ -259,7 +264,7 @@
   },
   "complain": {
     "title": "Plaintes et préoccupations des patients",
-    "subTitle": "Olympic Park Pharmacy s'engage à fournir des soins sécuritaires, respectueux et de haute qualité. Si vous avez des préoccupations concernant nos services, notre personnel ou votre expérience en tant que patient, veuillez soumettre votre plainte ci dessous.",
+    "subTitle": "Olympic Park Community Pharmacy s'engage à fournir des soins sécuritaires, respectueux et de haute qualité. Si vous avez des préoccupations concernant nos services, notre personnel ou votre expérience en tant que patient, veuillez soumettre votre plainte ci dessous.",
     "fn": "Nom complet",
     "email": "Adresse e mail",
     "phone": "Numéro de téléphone",

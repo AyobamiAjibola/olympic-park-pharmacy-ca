@@ -41,7 +41,7 @@ export default function PrivacyPolicy() {
   return (
      <>
         <Helmet>
-            <title>Privacy Policy | Olympic Park Pharmacy</title>
+            <title>Privacy Policy | Olympic Park Community Pharmacy</title>
             <meta
                 name="description"
                 content="Contact Olympic Park Privacy Policy"
@@ -49,7 +49,7 @@ export default function PrivacyPolicy() {
     
             <meta
                 name="keywords"
-                content="Olympic Park Pharmacy, pharmacy, prescription refill, Calgary pharmacy, medication review"
+                content="Olympic Park Community Pharmacy, pharmacy, prescription refill, Calgary pharmacy, medication review"
             />
         </Helmet>
         <div className="min-h-screen bg-linear-to-br from-emerald-50 via-white to-blue-50">

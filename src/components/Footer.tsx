@@ -34,13 +34,13 @@ export function Footer() {
             <div className="bg-white rounded-2xl p-1">
               <img
                 src={logo}
-                alt="Olympic Park Pharmacy logo"
+                alt="Olympic Park Community Pharmacy logo"
                 className="w-14 h-14 object-contain"
               />
             </div>
 
             <div>
-              <span className="text-2xl font-extrabold text-left text-blue-100">Olympic Park Pharmacy</span>
+              <span className="text-2xl font-extrabold text-left text-blue-100">Olympic Park Community Pharmacy</span>
               <p className="text-sm text-blue-100 text-left">
                 {t("footer.text1")}
               </p>
@@ -114,7 +114,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-5 md:px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-blue-100">
           <p className="font-bold">
-            © {new Date().getFullYear()} Olympic Park Pharmacy. All rights reserved. {" "} | {" "} <Link to={"/privacy-policy"} className="cursor-pointer">Privacy Policy</Link>
+            © {new Date().getFullYear()} Olympic Park Community Pharmacy. All rights reserved. {" "} | {" "} <Link to={"/privacy-policy"} className="cursor-pointer">Privacy Policy</Link>
           </p>
 
           {/* <div className="flex gap-5">

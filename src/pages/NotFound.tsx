@@ -16,7 +16,7 @@ const NotFound = () => {
   return (
      <>
         <Helmet>
-          <title>404 | Olympic Park Pharmacy</title>
+          <title>404 | Olympic Park Community Pharmacy</title>
         </Helmet>
         <div className="min-h-screen bg-background">
           <Navbar/>

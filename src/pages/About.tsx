@@ -15,15 +15,15 @@ export default function About() {
   return (
     <>
         <Helmet>
-          <title>About us | Olympic Park Pharmacy</title>
+          <title>About us | Olympic Park Community Pharmacy</title>
           <meta
             name="description"
-            content="Learn more about Olympic Park Pharmacy, our mission, location, and commitment to quality healthcare."
+            content="Learn more about Olympic Park Community Pharmacy, our mission, location, and commitment to quality healthcare."
           />
 
           <meta
             name="keywords"
-            content="Olympic Park Pharmacy, pharmacy, prescription refill, Calgary pharmacy, medication review"
+            content="Olympic Park Community Pharmacy, pharmacy, prescription refill, Calgary pharmacy, medication review"
           />
         </Helmet>
         <div className="min-h-screen bg-background">
@@ -57,7 +57,7 @@ export default function About() {
 
               <div className="overflow-hidden">
                 <iframe
-                  title="Olympic Park Pharmacy Location"
+                  title="Olympic Park Community Pharmacy Location"
                   src={mapUrl}
                   className="h-112.5 w-full border-0 rounded-2xl"
                   loading="lazy"

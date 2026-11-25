@@ -19,15 +19,15 @@ export default function Services() {
   return (
     <>
         <Helmet>
-          <title>Services | Olympic Park Pharmacy</title>
+          <title>Services | Olympic Park Community Pharmacy</title>
           <meta
             name="description"
-            content="Explore prescription refills, medication reviews, consultations, and pharmacy services at Olympic Park Pharmacy."
+            content="Explore prescription refills, medication reviews, consultations, and pharmacy services at Olympic Park Community Pharmacy."
           />
 
           <meta
             name="keywords"
-            content="Olympic Park Pharmacy, pharmacy, prescription refill, Calgary pharmacy, medication review"
+            content="Olympic Park Community Pharmacy, pharmacy, prescription refill, Calgary pharmacy, medication review"
           />
         </Helmet>
         

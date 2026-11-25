@@ -44,7 +44,7 @@ const Navbar = () => {
         <NavLink to="/" className="flex items-center">
           <img
             src={logo}
-            alt="Olympic Park Pharmacy logo"
+            alt="Olympic Park Community Pharmacy logo"
             className="w-20 h-20 md:w-10 md:h-10 lg:w-20 lg:h-20 object-contain"
           />
 
@@ -53,7 +53,7 @@ const Navbar = () => {
               Olympic Park
             </p>
             <p className={`text-[16px] font-medium ${pathname === '/' ? 'text-accent-grey' : 'text-slate-500' }`}>
-              Pharmacy
+              Community Pharmacy
             </p>
           </div>
         </NavLink>

@@ -22,7 +22,7 @@
             "why_choose": [
                 {
                     "title": "Experienced Pharmacy Team",
-                    "desc": "Our licensed pharmacists and healthcare professionals are dedicated to helping you make informed decisions about your medications and overall wellness."
+                    "desc": "Our licensed pharmacist is dedicated to helping you make informed decisions about your medications and overall wellness."
                 },
                 {
                     "title": "Patient Education & Guidance",
@@ -88,9 +88,9 @@
             "services": [
                 {
                     "title": "Compounding",
-                    "desc": "Every patient has unique healthcare needs, and sometimes standard medications may not always provide the best fit. Our customized medication solutions are designed to provide personalized treatment options tailored specifically to your medical condition, lifestyle, allergies, dosage requirements, or personal preferences. Through specialized medication preparation and compounding services, we can work with your Healthcare provider to order medication through contracted compounding pharmacy in customized strengths, dosage forms or combination that may not be commercially available. This service is especially beneficial for children who may struggle with swallowing tablets, patients requiring allergy-friendly formulations, individuals with specific dosage adjustments, or those managing chronic health conditions that require personalized care. Customized medications can improve treatment effectiveness, medication adherence, and overall patient comfort, helping ensure you receive care that truly meets your needs. Our pharmacy team is committed to delivering safe, precise, and high-quality medication solutions while providing guidance and support throughout your treatment journey.",
+                    "desc": "Every patient has unique healthcare needs, and sometimes standard medications are not the best fit. We work with your healthcare provider to arrange compounded medication in customized strengths, dosage forms or combinations that may not be commercially available, and we deliver it to you. This is especially helpful for children who struggle to swallow tablets, patients who need allergy-friendly formulations, people with specific dosage adjustments, and anyone managing a chronic condition that needs personalized care. Our pharmacist guides and supports you throughout your treatment.",
                     "short_desc":
-                    "We can prepare personalized medications tailored to your unique health needs and treatment requirements."
+                    "We arrange personalized medications made for your health needs, and deliver them to you."
                 },
 
                 {
@@ -127,16 +127,22 @@
                     "Organized medication packaging designed to help you take medications correctly and on schedule."
                 },
                 {
-                    "title": "Travel Consultation",
+                    "title": "Ostomy Supplies",
                     "desc": "Living with an ostomy requires dependable products, personalized care, and compassionate support. Our pharmacy offers a complete selection of ostomy care products designed to help patients maintain comfort, confidence, and quality of life in their daily routines. We carry a wide range of pouches, skin barriers, adhesives, cleansing products, accessories, and specialized ostomy supplies from trusted manufacturers. Proper ostomy care is essential for protecting skin health, preventing irritation, improving comfort, and supporting an active lifestyle. Our pharmacy team understands the sensitive nature of ostomy care and is committed to providing respectful, discreet, and personalized assistance when selecting products that best suit your needs. We strive to ensure patients have reliable access to the products and support they need to feel comfortable, confident, and supported throughout their healthcare journey.",
                     "short_desc":
                     "We offer a broad range of ostomy supplies, including pouches, skin barriers, and accessories designed for comfort, confidence, and everyday care."
                 },
                 {
+                    "title": "Travel Consultation",
+                    "desc": "Before you travel, our pharmacist sits down with you to talk about where you’re going and what you’ll need. We look at your vaccination record, recommend the travel vaccines for your destination, and can prescribe medications to carry with you, such as antibiotics for the trip. We stock travel vaccines, except yellow fever.",
+                    "short_desc":
+                    "Planning a trip? Get advice on the vaccines and medications you need before you go."
+                },
+                {
                     "title": "Fast & Accurate Strep Testing",
                     "desc": "Sore throats and related symptoms can be uncomfortable and may sometimes indicate a strep infection that requires timely medical attention. Our pharmacy offers fast and accurate strep testing services to help identify infections quickly and provide guidance on appropriate next steps for treatment and care. Early testing and diagnosis are important because untreated strep infections can lead to complications and prolonged discomfort. Our healthcare team provides efficient assessments in a professional and supportive environment, helping patients receive answers and care sooner. Fast strep testing can help reduce uncertainty, support quicker treatment decisions, and improve recovery outcomes while minimizing unnecessary delays in care. We are committed to providing accessible healthcare services that prioritize your comfort, safety, and overall well-being.",
                     "short_desc":
-                    "Protect yourself and your family with our range of vaccinations, including seasonal flu shots and other immunization services."
+                    "Quick strep testing at the pharmacy, with a pharmacist to guide your next steps."
                 },
                 {
                     "title": "Vaccinations and Flu Shots",
@@ -173,23 +179,23 @@
     },
     "team": {
         "title": "Our Team",
-        "subTitle": "A team of licensed pharmacists and healthcare professionals dedicated to delivering exceptional pharmaceutical care and service."
+        "subTitle": "A licensed pharmacist dedicated to delivering exceptional pharmaceutical care and service."
     },
     "About": {
         "title": "About Us",
         "subTitle": "Committed to providing accessible, trusted, and community-focused healthcare services in Calgary.",
         "paragraphs": [
-            "At Olympic Park Pharmacy, we are committed to providing compassionate, personalized, and accessible healthcare services to individuals and families in our community. Our goal is to create a welcoming environment where every patient feels valued, supported, and confident in their healthcare journey.",
+            "At Olympic Park Community Pharmacy, we are committed to providing compassionate, personalized, and accessible healthcare services to individuals and families in our community. Our goal is to create a welcoming environment where every patient feels valued, supported, and confident in their healthcare journey.",
             "We are proud to offer a wide range of healthcare services designed to make caring for your health more convenient and accessible. From pharmacist prescribing for select minor conditions to medication management solutions, compliance packaging, diabetic supplies, and free prescription delivery, our focus is on providing practical healthcare support tailored to your lifestyle and needs.",
             "Our team is dedicated to creating a warm, friendly, and professional atmosphere where your health and well-being remain our top priorities. We understand that trust is an important part of healthcare, and we are honored to serve as a reliable healthcare partner for our patients and community.",
-            "At Olympic Park Pharmacy, we are passionate about helping you and your family live healthier lives through quality care, trusted service, and meaningful patient relationships.",
-            "Book a consultation today and discover how Olympic Park Pharmacy can support your healthcare needs with personalized care and professional expertise.",
-            "Thank you for trusting us with your care and for choosing Olympic Park Pharmacy as your healthcare partner."
+            "At Olympic Park Community Pharmacy, we are passionate about helping you and your family live healthier lives through quality care, trusted service, and meaningful patient relationships.",
+            "Book a consultation today and discover how Olympic Park Community Pharmacy can support your healthcare needs with personalized care and professional expertise.",
+            "Thank you for trusting us with your care and for choosing Olympic Park Community Pharmacy as your healthcare partner."
         ]
     },
     "Career": {
         "badge": "We're Hiring",
-        "title": "Join the Olympic Park Pharmacy Team",
+        "title": "Join the Olympic Park Community Pharmacy Team",
         "subTitle": "We are always looking for passionate, caring, and dedicated professionals who are committed to supporting the health and well-being of our community. Explore our current openings and apply through our online application form.",
         "btnText": "View Open Positions",
         "bottomText": "Current opportunities and applications are managed online."
@@ -211,11 +217,11 @@
         },
         "visit_section": {
             "title": "Visit or contact us",
-            "subTitle": "Reach Olympic Park Pharmacy by phone, email, or visit us during business hours."
+            "subTitle": "Reach Olympic Park Community Pharmacy by phone, email, or visit us during business hours."
         },
         "whatsapp": {
             "title": "Need faster assistance?",
-            "subTitle": "Chat with Olympic Park Pharmacy directly on WhatsApp for quick questions and support.",
+            "subTitle": "Chat with Olympic Park Community Pharmacy directly on WhatsApp for quick questions and support.",
             "btnText": "Chat on WhatsApp"
         }
     },
@@ -238,19 +244,19 @@
         }
     },
     "license": {
-        "badge": "Olympic Park Pharmacy",
+        "badge": "Olympic Park Community Pharmacy",
         "title": "Pharmacy Licenses and Regulatory Information",
-        "subTitle": "Olympic Park Pharmacy operates in compliance with provincial pharmacy regulations and professional licensing requirements in Alberta.",
+        "subTitle": "Olympic Park Community Pharmacy operates in compliance with provincial pharmacy regulations and professional licensing requirements in Alberta.",
         "li_info": "License Information",
         "regulatory": "Regulatory Authority",
-        "regulatory_sub": "Olympic Park Pharmacy is licensed and regulated by the Alberta College of Pharmacy. Patients may verify pharmacy registration or learn more about pharmacy standards through the regulatory authority.",
+        "regulatory_sub": "Olympic Park Community Pharmacy is licensed and regulated by the Alberta College of Pharmacy. Patients may verify pharmacy registration or learn more about pharmacy standards through the regulatory authority.",
         "verify": "Verify License",
         "doc": "Documents",
         "pharm_li": "Pharmacy License",
         "bus_reg": "Business Registration",
         "concern": {
             "title": "Complaints and Patient Concerns",
-            "sub_title": "If you have questions or concerns about pharmacy services, please contact Olympic Park Pharmacy directly. Patients may also contact the Alberta College of Pharmacy for regulatory concerns."
+            "sub_title": "If you have questions or concerns about pharmacy services, please contact Olympic Park Community Pharmacy directly. Patients may also contact the Alberta College of Pharmacy for regulatory concerns."
         },
         "contact": {
             "title": "Contact Information"
@@ -259,7 +265,7 @@
     },
     "complain": {
         "title": "Complaints and Patient Concerns",
-        "subTitle": "Olympic Park Pharmacy is committed to providing safe, respectful, and high quality care. If you have concerns regarding our services, staff, or patient experience, please submit your complaint below.",
+        "subTitle": "Olympic Park Community Pharmacy is committed to providing safe, respectful, and high quality care. If you have concerns regarding our services, staff, or patient experience, please submit your complaint below.",
         "fn": "Full Name",
         "email": "Email Address",
         "phone": "Phone Number",

@@ -7,7 +7,7 @@ import {
   PillBottle
 } from "lucide-react";
 
-export const pharmacyName = "Olympic Park Pharmacy";
+export const pharmacyName = "Olympic Park Community Pharmacy";
 export const address =  "Canada Olympic Common Southwest, Calgary, AB T3H 6K4, Canada";
 
 export const location = "30 Canada Olympic Common SW.";

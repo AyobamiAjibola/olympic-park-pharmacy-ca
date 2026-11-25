@@ -22,7 +22,7 @@
       "why_choose": [
         {
           "title": "May Karanasang Koponan ng Parmasya",
-          "desc": "Ang aming mga lisensyadong pharmacist at healthcare professionals ay nakatuon sa pagtulong sa iyo na makagawa ng tamang desisyon tungkol sa iyong mga gamot at pangkalahatang kalusugan."
+          "desc": "Ang aming lisensyadong pharmacist ay nakatuon sa pagtulong sa iyo na makagawa ng tamang desisyon tungkol sa iyong mga gamot at pangkalahatang kalusugan."
         },
         {
           "title": "Edukasyon at Gabay para sa mga Pasyente",
@@ -94,8 +94,8 @@
       "services": [
         {
           "title": "Compounding",
-          "desc": "Bawat pasyente ay may natatanging pangangailangan sa kalusugan, at minsan ay hindi sapat ang mga karaniwang gamot upang matugunan ang mga ito. Ang aming customized medication solutions ay idinisenyo upang magbigay ng personalized na mga opsyon sa paggamot batay sa iyong kondisyon sa kalusugan, pamumuhay, allergies, dosage requirements, at personal na kagustuhan. Sa pamamagitan ng aming specialized compounding services, maaari kaming makipagtulungan sa iyong healthcare provider upang gumawa ng mga gamot na may customized na lakas, porma, o kombinasyon na maaaring hindi available sa merkado. Ang serbisyong ito ay lalong kapaki-pakinabang para sa mga batang nahihirapang lumunok ng tableta, mga pasyenteng nangangailangan ng allergy-friendly formulations, mga taong may espesyal na dosage adjustments, at mga pasyenteng may chronic conditions na nangangailangan ng personalized na pangangalaga. Ang customized medications ay makakatulong upang mapabuti ang bisa ng paggamot, medication adherence, at pangkalahatang kaginhawaan ng pasyente. Ang aming pharmacy team ay nakatuon sa pagbibigay ng ligtas, tumpak, at mataas na kalidad na medication solutions habang nagbibigay ng suporta at gabay sa buong treatment journey mo.",
-          "short_desc": "Maaari kaming gumawa ng personalized na mga gamot na naaayon sa iyong natatanging pangangailangan sa kalusugan at paggamot."
+          "desc": "Bawat pasyente ay may natatanging pangangailangan sa kalusugan, at minsan ay hindi angkop ang mga karaniwang gamot. Nakikipagtulungan kami sa iyong healthcare provider upang maayos ang compounded na gamot sa customized na lakas, anyo o kombinasyon na maaaring hindi mabibili sa karaniwang tindahan, at ihahatid namin ito sa iyo. Lalo itong nakakatulong sa mga batang nahihirapang lumunok ng tableta, mga pasyenteng nangangailangan ng allergy-friendly na formulation, mga taong may partikular na dosage, at sinumang may chronic na kondisyon. Gagabayan at susuportahan ka ng aming pharmacist sa buong panahon ng iyong paggamot.",
+          "short_desc": "Inaayos namin ang personalized na mga gamot na angkop sa iyong pangangailangan sa kalusugan, at ihahatid namin ito sa iyo."
         },
 
         {
@@ -129,15 +129,20 @@
         },
 
         {
-          "title": "Travel Consultation",
+          "title": "Ostomy Supplies",
           "desc": "Ang pamumuhay na may ostomy ay nangangailangan ng maaasahang produkto, personalized na pangangalaga, at compassionate support. Ang aming pharmacy ay nag-aalok ng kumpletong selection ng ostomy care products upang matulungan ang mga pasyente na mapanatili ang comfort, confidence, at quality of life sa kanilang pang-araw-araw na routine. Mayroon kaming pouches, skin barriers, adhesives, cleansing products, accessories, at iba pang specialized ostomy supplies mula sa trusted manufacturers. Ang aming pharmacy team ay committed sa pagbibigay ng respectful, discreet, at personalized na assistance upang matulungan kang mahanap ang tamang products para sa iyong pangangailangan.",
           "short_desc": "Nag-aalok kami ng malawak na range ng ostomy supplies kabilang ang pouches, skin barriers, at accessories para sa comfort at everyday care."
+        },
+        {
+          "title": "Travel Consultation",
+          "desc": "Bago ka bumiyahe, uupo kasama mo ang aming pharmacist para pag-usapan kung saan ka pupunta at kung ano ang kakailanganin mo. Titingnan namin ang iyong vaccination record, irerekomenda ang mga travel vaccine para sa iyong destinasyon, at maaari kaming magreseta ng mga gamot na dadalhin mo, gaya ng antibiotic para sa biyahe. Mayroon kaming mga travel vaccine, maliban sa yellow fever.",
+          "short_desc": "May balak bang biyahe? Kumuha ng payo tungkol sa mga bakuna at gamot na kailangan mo bago umalis."
         },
 
         {
           "title": "Mabilis at Tumpak na Strep Testing",
           "desc": "Ang sore throat at kaugnay na sintomas ay maaaring hindi komportable at minsan ay indikasyon ng strep infection na nangangailangan ng agarang medical attention. Ang aming pharmacy ay nag-aalok ng mabilis at tumpak na strep testing upang mabilis na matukoy ang impeksyon at makapagbigay ng gabay para sa tamang treatment at care. Ang maagang testing at diagnosis ay mahalaga upang maiwasan ang complications at prolonged discomfort.",
-          "short_desc": "Protektahan ang iyong sarili at pamilya sa pamamagitan ng aming vaccinations kabilang ang seasonal flu shots at iba pang immunization services."
+          "short_desc": "Mabilis na strep test sa pharmacy, kasama ang pharmacist na gagabay sa iyong susunod na hakbang."
         },
 
         {
@@ -174,23 +179,23 @@
   },
   "team": {
     "title": "Aming Koponan",
-    "subTitle": "Isang pangkat ng mga lisensyadong parmasyutiko at mga propesyonal sa pangangalagang pangkalusugan na nakatuon sa pagbibigay ng natatanging pangangalaga at serbisyo sa parmasya."
+    "subTitle": "Isang lisensyadong pharmacist na nakatuon sa pagbibigay ng natatanging pangangalaga at serbisyo sa parmasya."
   },
   "About": {
     "title": "Tungkol sa Amin",
     "subTitle": "Nakatuon sa pagbibigay ng accessible, mapagkakatiwalaan, at community-focused na serbisyong pangkalusugan sa Calgary.",
     "paragraphs": [
-      "Sa Olympic Park Pharmacy, kami ay nakatuon sa pagbibigay ng maalaga, personalized, at accessible na serbisyong pangkalusugan para sa mga indibidwal at pamilya sa aming komunidad. Layunin naming lumikha ng isang mainit at welcoming na kapaligiran kung saan ang bawat pasyente ay nakakaramdam ng pagpapahalaga, suporta, at kumpiyansa sa kanilang healthcare journey.",
+      "Sa Olympic Park Community Pharmacy, kami ay nakatuon sa pagbibigay ng maalaga, personalized, at accessible na serbisyong pangkalusugan para sa mga indibidwal at pamilya sa aming komunidad. Layunin naming lumikha ng isang mainit at welcoming na kapaligiran kung saan ang bawat pasyente ay nakakaramdam ng pagpapahalaga, suporta, at kumpiyansa sa kanilang healthcare journey.",
       "Ipinagmamalaki naming mag-alok ng malawak na hanay ng healthcare services na idinisenyo upang gawing mas simple at accessible ang pangangalaga sa iyong kalusugan. Mula sa pharmacist prescribing para sa ilang minor conditions hanggang sa medication management, compliance packaging, diabetic supplies, at libreng prescription delivery, ang aming layunin ay magbigay ng praktikal at maginhawang healthcare solutions na naaayon sa iyong lifestyle at healthcare needs.",
       "Ang aming team ay nakatuon sa paglikha ng isang magiliw, propesyonal, at welcoming na environment kung saan ang iyong kalusugan at kapakanan ang aming pangunahing prayoridad. Nauunawaan namin na mahalaga ang tiwala sa healthcare, at ikinararangal naming maging isang mapagkakatiwalaang healthcare partner para sa aming mga pasyente at komunidad.",
-      "Sa Olympic Park Pharmacy, kami ay masigasig sa pagtulong sa iyo at sa iyong pamilya na mamuhay nang mas malusog sa pamamagitan ng quality care, maaasahang serbisyo, at matibay na relasyon sa aming mga pasyente.",
-      "Mag-book ng consultation ngayon at tuklasin kung paano makakatulong ang Olympic Park Pharmacy sa iyong healthcare needs sa pamamagitan ng personalized care at professional expertise.",
-      "Maraming salamat sa pagtitiwala sa amin para sa iyong pangangalaga at sa pagpili sa Olympic Park Pharmacy bilang iyong healthcare partner."
+      "Sa Olympic Park Community Pharmacy, kami ay masigasig sa pagtulong sa iyo at sa iyong pamilya na mamuhay nang mas malusog sa pamamagitan ng quality care, maaasahang serbisyo, at matibay na relasyon sa aming mga pasyente.",
+      "Mag-book ng consultation ngayon at tuklasin kung paano makakatulong ang Olympic Park Community Pharmacy sa iyong healthcare needs sa pamamagitan ng personalized care at professional expertise.",
+      "Maraming salamat sa pagtitiwala sa amin para sa iyong pangangalaga at sa pagpili sa Olympic Park Community Pharmacy bilang iyong healthcare partner."
     ]
   },
   "Career": {
     "badge": "Kami ay Hiring",
-    "title": "Sumali sa Olympic Park Pharmacy Team",
+    "title": "Sumali sa Olympic Park Community Pharmacy Team",
     "subTitle": "Palagi kaming naghahanap ng mga passionate, maalaga, at dedikadong propesyonal na nakatuon sa pagsuporta sa kalusugan at kapakanan ng aming komunidad. Tuklasin ang aming mga kasalukuyang openings at mag-apply sa pamamagitan ng aming online application form.",
     "btnText": "Tingnan ang mga Bukas na Posisyon",
     "bottomText": "Ang mga kasalukuyang oportunidad at aplikasyon ay pinamamahalaan online."
@@ -215,11 +220,11 @@
     },
      "visit_section": {
       "title": "Bumisita o makipag-ugnayan sa amin",
-      "subTitle": "Makipag-ugnayan sa Olympic Park Pharmacy sa pamamagitan ng telepono, email, o bumisita sa amin sa oras ng operasyon."
+      "subTitle": "Makipag-ugnayan sa Olympic Park Community Pharmacy sa pamamagitan ng telepono, email, o bumisita sa amin sa oras ng operasyon."
     },
     "whatsapp": {
       "title": "Kailangan mo ba ng mas mabilis na tulong?",
-      "subTitle": "Makipag-chat nang direkta sa Olympic Park Pharmacy sa WhatsApp para sa mabilis na mga tanong at suporta.",
+      "subTitle": "Makipag-chat nang direkta sa Olympic Park Community Pharmacy sa WhatsApp para sa mabilis na mga tanong at suporta.",
       "btnText": "Mag-chat sa WhatsApp"
     }
   },
@@ -242,19 +247,19 @@
     }
   },
   "license": {
-    "badge": "Olympic Park Pharmacy",
+    "badge": "Olympic Park Community Pharmacy",
     "title": "Mga Lisensya ng Parmasya at Impormasyong Pang Regulasyon",
-    "subTitle": "Ang Olympic Park Pharmacy ay nagpapatakbo alinsunod sa mga panlalawigang regulasyon ng parmasya at mga propesyonal na kinakailangan sa paglilisensya sa Alberta.",
+    "subTitle": "Ang Olympic Park Community Pharmacy ay nagpapatakbo alinsunod sa mga panlalawigang regulasyon ng parmasya at mga propesyonal na kinakailangan sa paglilisensya sa Alberta.",
     "li_info": "Impormasyon ng Lisensya",
     "regulatory": "Awtoridad na Pang Regulasyon",
-    "regulatory_sub": "Ang Olympic Park Pharmacy ay lisensyado at kinokontrol ng Alberta College of Pharmacy. Maaaring beripikahin ng mga pasyente ang rehistrasyon ng parmasya o matuto pa tungkol sa mga pamantayan ng parmasya sa pamamagitan ng awtoridad na pang regulasyon.",
+    "regulatory_sub": "Ang Olympic Park Community Pharmacy ay lisensyado at kinokontrol ng Alberta College of Pharmacy. Maaaring beripikahin ng mga pasyente ang rehistrasyon ng parmasya o matuto pa tungkol sa mga pamantayan ng parmasya sa pamamagitan ng awtoridad na pang regulasyon.",
     "verify": "Beripikahin ang Lisensya",
     "doc": "Mga Dokumento",
     "pharm_li": "Lisensya ng Parmasya",
     "bus_reg": "Rehistrasyon ng Negosyo",
     "concern": {
       "title": "Mga Reklamo at Alalahanin ng Pasyente",
-      "sub_title": "Kung mayroon kang mga tanong o alalahanin tungkol sa mga serbisyo ng parmasya, mangyaring direktang makipag ugnayan sa Olympic Park Pharmacy. Maaari ring makipag ugnayan ang mga pasyente sa Alberta College of Pharmacy para sa mga alalahaning pang regulasyon."
+      "sub_title": "Kung mayroon kang mga tanong o alalahanin tungkol sa mga serbisyo ng parmasya, mangyaring direktang makipag ugnayan sa Olympic Park Community Pharmacy. Maaari ring makipag ugnayan ang mga pasyente sa Alberta College of Pharmacy para sa mga alalahaning pang regulasyon."
     },
     "contact": {
       "title": "Impormasyon sa Pakikipag Ugnayan"
@@ -263,7 +268,7 @@
   },
   "complain": {
     "title": "Plaintes et préoccupations des patients",
-    "subTitle": "Olympic Park Pharmacy s'engage à fournir des soins sécuritaires, respectueux et de haute qualité. Si vous avez des préoccupations concernant nos services, notre personnel ou votre expérience en tant que patient, veuillez soumettre votre plainte ci dessous.",
+    "subTitle": "Olympic Park Community Pharmacy s'engage à fournir des soins sécuritaires, respectueux et de haute qualité. Si vous avez des préoccupations concernant nos services, notre personnel ou votre expérience en tant que patient, veuillez soumettre votre plainte ci dessous.",
     "fn": "Nom complet",
     "email": "Adresse e mail",
     "phone": "Numéro de téléphone",

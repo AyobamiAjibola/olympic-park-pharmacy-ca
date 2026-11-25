@@ -29,7 +29,7 @@ export default function Contact() {
     const formData = new FormData(form);
 
     formData.append("access_key", import.meta.env.VITE_WEB3FORM_API_KEY);
-    formData.append("subject", "New Contact Message from Olympic Park Pharmacy Website");
+    formData.append("subject", "New Contact Message from Olympic Park Community Pharmacy Website");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -76,15 +76,15 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Contact Us | Olympic Park Pharmacy</title>
+        <title>Contact Us | Olympic Park Community Pharmacy</title>
         <meta
           name="description"
-          content="Contact Olympic Park Pharmacy for prescriptions, appointments, consultations, and healthcare inquiries."
+          content="Contact Olympic Park Community Pharmacy for prescriptions, appointments, consultations, and healthcare inquiries."
         />
 
         <meta
           name="keywords"
-          content="Olympic Park Pharmacy, pharmacy, prescription refill, Calgary pharmacy, medication review"
+          content="Olympic Park Community Pharmacy, pharmacy, prescription refill, Calgary pharmacy, medication review"
         />
       </Helmet>
       <div className="min-h-screen bg-linear-to-br from-emerald-50 via-white to-blue-50">
@@ -336,7 +336,7 @@ export default function Contact() {
         <section className="pb-10 lg:px-12 px-5 md:px-8 w-full bg-slate-50 ">
           <div className="overflow-hidden">
             <iframe
-              title="Olympic Park Pharmacy Location"
+              title="Olympic Park Community Pharmacy Location"
               src={mapUrl}
               className="h-112.5 w-full border-0 rounded-2xl"
               loading="lazy"

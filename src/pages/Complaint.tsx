@@ -34,7 +34,7 @@ export default function Complaint() {
         const formData = new FormData(form);
     
         formData.append("access_key", import.meta.env.VITE_WEB3FORM_API_KEY_COMPLAIN);
-        formData.append("subject", "New Complain: Olympic Park Pharmacy");
+        formData.append("subject", "New Complain: Olympic Park Community Pharmacy");
     
         try {
           const response = await fetch("https://api.web3forms.com/submit", {
@@ -81,7 +81,7 @@ export default function Complaint() {
     return (
         <>
             <Helmet>
-                <title>Complaint | Olympic Park Pharmacy</title>
+                <title>Complaint | Olympic Park Community Pharmacy</title>
                 <meta
                     name="description"
                     content="Contact Olympic Park Complaint"
@@ -89,7 +89,7 @@ export default function Complaint() {
         
                 <meta
                     name="keywords"
-                    content="Olympic Park Pharmacy, pharmacy, prescription refill, Calgary pharmacy, medication review"
+                    content="Olympic Park Community Pharmacy, pharmacy, prescription refill, Calgary pharmacy, medication review"
                 />
             </Helmet>
             <div className="min-h-screen bg-linear-to-br from-emerald-50 via-white to-blue-50">

@@ -16,6 +16,7 @@ import {
     Stethoscope,
     Activity,
     PackageCheck,
+    BriefcaseMedical,
     Plane,
     TestTube,
     Syringe
@@ -36,6 +37,7 @@ const servicesIcons =[
    <Stethoscope size={22} />,
    <Activity size={22} />,
    <PackageCheck size={22} />,
+   <BriefcaseMedical size={22} />,
    <Plane size={22} />,
    <TestTube size={22} />,
    <Syringe size={22} />
