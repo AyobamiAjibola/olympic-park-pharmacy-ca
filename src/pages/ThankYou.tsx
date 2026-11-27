@@ -20,6 +20,7 @@ export default function ThankYou() {
     return (
         <>
             <Helmet>
+                <meta name="robots" content="noindex" />
                 <title>Thank you | Olympic Park Community Pharmacy</title>
                 <meta
                     name="description"

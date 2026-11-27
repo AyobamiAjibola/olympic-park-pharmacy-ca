@@ -51,7 +51,6 @@ export default function ServiceDetail({ page }: { page: "DeliveryPage" | "Travel
   const { t } = useTranslation();
   const copy = t(page, { returnObjects: true }) as typeof en.DeliveryPage;
   const delivery = page === "DeliveryPage";
-  const slug = delivery ? "prescription-delivery" : "travel-vaccines";
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -80,7 +79,6 @@ export default function ServiceDetail({ page }: { page: "DeliveryPage" | "Travel
         <Helmet>
           <title>{copy.metaTitle}</title>
           <meta name="description" content={copy.metaDescription} />
-          <link rel="canonical" href={site + "/services/" + slug} />
           <script type="application/ld+json">{JSON.stringify(schema)}</script>
         </Helmet>,
         document.head,
